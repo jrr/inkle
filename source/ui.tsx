@@ -42,6 +42,7 @@ const App: FC = () => {
   const [x, y] = useStdoutDimensions();
 
   const [gameState, dispatch] = useReducer(reducer, initialState);
+
   useInput((input, key) => {
     if (key.escape) {
       exit();
@@ -59,6 +60,7 @@ const App: FC = () => {
       dispatch({ action: "backspace" });
     }
   });
+
   return (
     <Box
       flexDirection="column"

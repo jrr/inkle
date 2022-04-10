@@ -1,6 +1,10 @@
 import { GameState, GuessedRow } from "./types";
 import { GameAction } from "./ui";
 
+const rowIsFull = (state: GameState & { status: "guessing" }) =>
+  state.currentRow.length == 5;
+const onFinalGuess = (state: GameState) => state.guessedRows.length == 6 - 1;
+
 export function reducer(state: GameState, action: GameAction): GameState {
   if (state.status == "guessing") {
     switch (action.action) {
@@ -13,15 +17,13 @@ export function reducer(state: GameState, action: GameAction): GameState {
         }
         break;
       case "input-letter":
-        if (state.currentRow.length < 5) {
+        if (!rowIsFull(state)) {
           return { ...state, currentRow: state.currentRow + action.letter };
         }
         break;
       case "submit-guess":
-        if (state.currentRow.length == 5) {
-          // todo: "if(rowIsFull(gameState))"
-          if (state.guessedRows.length == 6 - 1) {
-            // todo: "if(onFinalGuess(gameState))"
+        if (rowIsFull(state)) {
+          if (onFinalGuess(state)) {
             return {
               ...state,
               status: "complete",
