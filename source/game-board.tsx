@@ -10,7 +10,8 @@ export const GameBoard: React.FC<{ gameState: GameState }> = ({
   gameState,
 }) => {
   const numBlankRows =
-    6 - gameState.guessedRows.length - (gameState.currentRow == null ? 0 : 1);
+    6 -
+    (gameState.guessedRows.length + (gameState.status == "guessing" ? 1 : 0));
   return (
     <Text>
       {gameState.guessedRows.map((row, i) => (
@@ -20,7 +21,7 @@ export const GameBoard: React.FC<{ gameState: GameState }> = ({
           isLastRow={i == rows.length - 1}
         />
       ))}
-      {gameState.currentRow != null && (
+      {gameState.status == "guessing" && (
         <Transform transform={spaceString}>
           <Text key="current-row">{gameState.currentRow}</Text>
         </Transform>

@@ -9,5 +9,15 @@ export type GuessedRow = {
 
 export type GameState = {
   guessedRows: GuessedRow[];
-  currentRow: string | null;
-};
+} & (
+  | {
+      status: "guessing";
+      currentRow: string;
+    }
+  | {
+      status: "complete";
+    }
+);
+
+export const NUM_TRIES = 6;
+export const WORD_LEN = 5;

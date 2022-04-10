@@ -5,6 +5,7 @@ import { GameState } from "./types";
 import { reducer } from "./reducer";
 
 const initialState: GameState = {
+  status: "guessing",
   guessedRows: [
     {
       letters: [
