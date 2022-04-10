@@ -1,8 +1,10 @@
 import React, { FC, useReducer, useState } from "react";
-import { Box, Newline, Spacer, Text, useApp, useInput } from "ink";
+import { Box, Newline, Spacer, useApp, useInput } from "ink";
 import { GameBoard } from "./game-board";
 import { GameState } from "./types";
 import { reducer } from "./reducer";
+import useStdoutDimensions from "ink-use-stdout-dimensions";
+import { TitleText } from "./title-text";
 
 const initialState: GameState = {
   status: "guessing",
@@ -28,12 +30,16 @@ const initialState: GameState = {
   ],
   currentRow: "JKL",
 };
+
 export type GameAction =
   | { action: "input-letter"; letter: string }
   | { action: "submit-guess" }
   | { action: "backspace" };
+
 const App: FC = () => {
   const { exit } = useApp();
+
+  const [x, y] = useStdoutDimensions();
 
   const [gameState, dispatch] = useReducer(reducer, initialState);
   useInput((input, key) => {
@@ -54,23 +60,18 @@ const App: FC = () => {
     }
   });
   return (
-    <>
-      <Box
-        flexDirection="column"
-        alignItems="center"
-        minHeight={12}
-        justifyContent="space-around"
-      >
-        <Box>
-          <Text color="#fff" backgroundColor="green">
-            INKLE
-          </Text>
-        </Box>
-        <Box borderStyle="round" borderColor="green">
-          <GameBoard gameState={gameState} />
-        </Box>
+    <Box
+      flexDirection="column"
+      alignItems="center"
+      height={y}
+      justifyContent="space-around"
+    >
+      <TitleText large={x > 45 && y > 16} title="INKLE" />
+
+      <Box borderStyle="round" borderColor="green">
+        <GameBoard gameState={gameState} />
       </Box>
-    </>
+    </Box>
   );
 };
 

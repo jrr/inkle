@@ -2,8 +2,7 @@ import React from "react";
 import { Box, Newline, Spacer, Text, Transform } from "ink";
 import { BoardRow } from "./board-row";
 import { GameState } from "./types";
-
-const spaceString = (s: string) => [...s].join(" ");
+import { spaceString } from "./util";
 
 const rows = ["ASDFG", "QWERT", "ZXCVB", "ASD  ", "     ", "     "];
 export const GameBoard: React.FC<{ gameState: GameState }> = ({

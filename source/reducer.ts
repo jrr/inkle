@@ -42,6 +42,7 @@ export function reducer(state: GameState, action: GameAction): GameState {
   }
   return state;
 }
+
 function buildGuess(currentRow: string): GuessedRow {
   return {
     letters: [...currentRow].map((c) => ({ color: "gray", letter: c })),
