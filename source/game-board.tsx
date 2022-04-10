@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Newline, Spacer, Text } from "ink";
+import { Box, Newline, Spacer, Text, Transform } from "ink";
 import { BoardRow } from "./board-row";
 import { GameState } from "./types";
 
@@ -21,7 +21,9 @@ export const GameBoard: React.FC<{ gameState: GameState }> = ({
         />
       ))}
       {gameState.currentRow != null && (
-        <Text key="current-row">{spaceString(gameState.currentRow)}</Text>
+        <Transform transform={spaceString}>
+          <Text key="current-row">{gameState.currentRow}</Text>
+        </Transform>
       )}
       {[...Array(numBlankRows)].map((_, i) => (
         <Newline key={`blank-${i}`} />
