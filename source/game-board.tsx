@@ -25,9 +25,8 @@ export const GameBoard: React.FC<{ gameState: GameState }> = ({
           <Text key="current-row">{gameState.currentRow}</Text>
         </Transform>
       )}
-      {[...Array(numBlankRows)].map((_, i) => (
-        <Newline key={`blank-${i}`} />
-      ))}
+      {numBlankRows > 0 &&
+        [...Array(numBlankRows)].map((_, i) => <Newline key={`blank-${i}`} />)}
     </Text>
   );
 };
