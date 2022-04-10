@@ -1,10 +1,25 @@
 import React, { FC } from "react";
-import { Text } from "ink";
+import { Box, Newline, Spacer, Text } from "ink";
+import { GameBoard } from "./game-board";
 
-const App: FC<{ name?: string }> = ({ name = "Stranger" }) => (
-  <Text>
-    Hello, <Text color="green">{name}</Text>
-  </Text>
+const App: FC = () => (
+  <>
+    <Box
+      flexDirection="column"
+      alignItems="center"
+      minHeight={12}
+      justifyContent="space-around"
+    >
+      <Box>
+        <Text color="#fff" backgroundColor="green">
+          INKLE
+        </Text>
+      </Box>
+      <Box borderStyle="round" borderColor="green">
+        <GameBoard />
+      </Box>
+    </Box>
+  </>
 );
 
 module.exports = App;
