@@ -4,7 +4,8 @@ import { GameAction } from "./ui";
 
 const rowIsFull = (state: GameState & { status: "guessing" }) =>
   state.currentRow.length == 5;
-const onFinalGuess = (state: GameState) => state.guessedRows.length == 6 - 1;
+export const onFinalGuess = (state: GameState) =>
+  state.guessedRows.length == 6 - 1;
 
 export function reducer(state: GameState, action: GameAction): GameState {
   if (state.status == "guessing") {
