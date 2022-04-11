@@ -8,9 +8,7 @@
   },
   "scripts": {
     "build": "tsc && chmod +x dist/cli.js",
-    "start": "npm run build && dist/cli.js",
-    "pretest": "npm run build",
-    "test": "xo && ava"
+    "start": "yarn build && dist/cli.js"
   },
   "files": [
     "dist/cli.js"
@@ -22,35 +20,16 @@
     "meow": "^9.0.0",
     "react": "^17.0.2"
   },
-  "ava": {
-    "typescript": {
-      "extensions": [
-        "tsx"
-      ],
-      "rewritePaths": {
-        "source/": "dist/"
-      }
-    }
-  },
-  "xo": {
-    "extends": "xo-react",
-    "rules": {
-      "react/prop-types": "off"
-    }
-  },
   "devDependencies": {
-    "@ava/typescript": "^3.0.1",
     "@sindresorhus/tsconfig": "^2.0.0",
     "@types/ink-big-text": "^1.2.1",
     "@types/react": "^18.0.1",
-    "ava": "^4.1.0",
     "chalk": "^4.1.2",
-    "eslint-config-xo-react": "^0.27.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "ink-testing-library": "^2.1.0",
     "itiriri": "^2.0.1",
-    "typescript": "^4.6.3",
-    "xo": "^0.39.1"
-  }
+    "typescript": "^4.6.3"
+  },
+  "packageManager": "yarn@3.2.0"
 }

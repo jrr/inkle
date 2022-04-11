@@ -1,3 +1,6 @@
+/*
+todo: redo tsx tests (w/ jest?)
+
 import React from "react";
 import chalk from "chalk";
 import test from "ava";
@@ -15,3 +18,5 @@ test("greet unknown user", (t) => {
 
 //   t.is(lastFrame(), chalk`Hello, {green Jane}`);
 // });
+
+*/
