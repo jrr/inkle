@@ -1,3 +1,4 @@
+import { colorGuess } from "./game-logic";
 import { GameState, GuessedRow } from "./types";
 import { GameAction } from "./ui";
 
@@ -23,30 +24,39 @@ export function reducer(state: GameState, action: GameAction): GameState {
         break;
       case "submit-guess":
         if (rowIsFull(state)) {
+          if (state.currentRow == state.solution) {
+            return {
+              ...state,
+              status: "win",
+              guessedRows: [
+                ...state.guessedRows,
+                colorGuess(state.solution, state.currentRow),
+              ],
+            };
+          }
           if (onFinalGuess(state)) {
             return {
               ...state,
-              status: "complete",
-              guessedRows: [...state.guessedRows, buildGuess(state.currentRow)],
+              status: "loss",
+              guessedRows: [
+                ...state.guessedRows,
+                colorGuess(state.solution, state.currentRow),
+              ],
             };
-          } else {
+          }
+          {
             return {
               ...state,
               currentRow: "",
-              guessedRows: [...state.guessedRows, buildGuess(state.currentRow)],
+              guessedRows: [
+                ...state.guessedRows,
+                colorGuess(state.solution, state.currentRow),
+              ],
             };
           }
         }
     }
   }
 
-  if (state.status == "complete") {
-  }
   return state;
-}
-
-function buildGuess(currentRow: string): GuessedRow {
-  return {
-    letters: [...currentRow].map((c) => ({ color: "gray", letter: c })),
-  };
 }

@@ -9,7 +9,7 @@ export const GameBoard: React.FC<{ gameState: GameState }> = ({
   gameState,
 }) => {
   const numBlankRows =
-    6 -
+    5 -
     (gameState.guessedRows.length + (gameState.status == "guessing" ? 1 : 0));
   return (
     <Text>
@@ -21,12 +21,18 @@ export const GameBoard: React.FC<{ gameState: GameState }> = ({
         />
       ))}
       {gameState.status == "guessing" && (
-        <Transform transform={spaceString}>
-          <Text key="current-row">{gameState.currentRow}</Text>
-        </Transform>
+        <React.Fragment key="current-row">
+          <Text>{spaceString(gameState.currentRow)}</Text>
+          <Newline />
+        </React.Fragment>
       )}
       {numBlankRows > 0 &&
-        [...Array(numBlankRows)].map((_, i) => <Newline key={`blank-${i}`} />)}
+        [...Array(numBlankRows)].map((_, i) => (
+          <React.Fragment key={`blank-${i}`}>
+            <Text>{"         "}</Text>
+            <Newline />
+          </React.Fragment>
+        ))}
     </Text>
   );
 };

@@ -8,6 +8,14 @@ import { TitleText } from "./title-text";
 
 const initialState: GameState = {
   status: "guessing",
+  guessedRows: [],
+  currentRow: "",
+  solution: "OATER",
+};
+
+// todo: make this accessible behind command-line flag?
+const testState: GameState = {
+  status: "guessing",
   guessedRows: [
     {
       letters: [
@@ -29,6 +37,7 @@ const initialState: GameState = {
     },
   ],
   currentRow: "JKL",
+  solution: "OATER",
 };
 
 export type GameAction =

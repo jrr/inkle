@@ -9,13 +9,17 @@ export type GuessedRow = {
 
 export type GameState = {
   guessedRows: GuessedRow[];
+  solution: string;
 } & (
   | {
       status: "guessing";
       currentRow: string;
     }
   | {
-      status: "complete";
+      status: "win";
+    }
+  | {
+      status: "loss";
     }
 );
 
