@@ -1,16 +1,17 @@
 import React, { FC } from "react";
 import { Box, Text } from "ink";
 import BigText from "ink-big-text";
+import { GameColors } from "./game-colors";
 
 export const TitleText: FC<{
   large: boolean;
   title: string;
-  titleColors: string[];
-}> = ({ large, title, titleColors }) =>
+  colors: GameColors;
+}> = ({ large, title, colors }) =>
   large ? (
-    <BigText colors={titleColors} text={title} font="block" />
+    <BigText colors={colors.largeTitle} text={title} font="block" />
   ) : (
     <Box>
-      <Text color={titleColors[1]}>I N K L E</Text>
+      <Text color={colors.smallTitle}>I N K L E</Text>
     </Box>
   );

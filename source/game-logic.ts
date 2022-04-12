@@ -1,7 +1,6 @@
 import itiriri from "itiriri";
 import { possibleSolutions } from "./possible-solutions";
 import { GuessedLetter, GuessedRow } from "./types";
-import { pickTwo } from "./util";
 import { validWords } from "./valid-words";
 
 // https://stackoverflow.com/a/46700791
@@ -55,6 +54,3 @@ export const pickSolution = () => {
   }
   throw new Error("Problem selecting word.");
 };
-
-export const chooseTwoTitleColors = () =>
-  pickTwo(["yellow", "green", "gray", "white"]);

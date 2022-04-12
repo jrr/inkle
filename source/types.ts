@@ -11,7 +11,6 @@ export type GameState = {
   guessedRows: GuessedRow[];
   solution: string;
   note?: string;
-  titleColors: string[];
 } & (
   | {
       status: "guessing";
