@@ -1,5 +1,7 @@
 # inkle
 
+<center><img src="inkle.png"/></center>
+
 Worlde in your Terminal, built with [Ink](https://github.com/vadimdemedes/ink).
 
 This is a work-in-progress. If you just want to play Wordle in your Terminal,
