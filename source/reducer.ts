@@ -1,4 +1,6 @@
+import { KEY_NEW_GAME } from "./constants";
 import { colorGuess, isValidWord } from "./game-logic";
+import { newGame } from "./game-states";
 import { GameState, GuessedRow } from "./types";
 import { GameAction } from "./ui";
 
@@ -33,7 +35,7 @@ export function reducer(state: GameState, action: GameAction): GameState {
                 ...state.guessedRows,
                 colorGuess(state.solution, state.currentRow),
               ],
-              note: "You win!",
+              note: `You win! Press '${KEY_NEW_GAME}' for a new game.`,
             };
           }
           if (!isValidWord(state.currentRow)) {
@@ -51,7 +53,7 @@ export function reducer(state: GameState, action: GameAction): GameState {
                 ...state.guessedRows,
                 colorGuess(state.solution, state.currentRow),
               ],
-              note: `The word was ${state.solution}. Better luck next time.`,
+              note: `The word was ${state.solution}. Better luck next time. Press '${KEY_NEW_GAME}' for a new game.`,
             };
           }
           {
@@ -66,7 +68,10 @@ export function reducer(state: GameState, action: GameAction): GameState {
           }
         }
     }
+  } else {
+    if (action.action == "input-letter" && action.letter == KEY_NEW_GAME) {
+      return newGame();
+    }
   }
-
   return state;
 }
