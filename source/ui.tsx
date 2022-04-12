@@ -10,7 +10,7 @@ const initialState: GameState = {
   status: "guessing",
   guessedRows: [],
   currentRow: "",
-  solution: "REACT",
+  solution: "BONKS",
 };
 
 // todo: make this accessible behind command-line flag?
