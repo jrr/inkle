@@ -1,4 +1,4 @@
-import { colorGuess, isValidWord } from "./game-logic";
+import { chooseTwoTitleColors, colorGuess, isValidWord } from "./game-logic";
 import { GameState, GuessedRow } from "./types";
 import { GameAction } from "./ui";
 
@@ -34,6 +34,7 @@ export function reducer(state: GameState, action: GameAction): GameState {
                 colorGuess(state.solution, state.currentRow),
               ],
               note: "You win!",
+              titleColors: chooseTwoTitleColors(),
             };
           }
           if (!isValidWord(state.currentRow)) {
@@ -51,7 +52,8 @@ export function reducer(state: GameState, action: GameAction): GameState {
                 ...state.guessedRows,
                 colorGuess(state.solution, state.currentRow),
               ],
-              note: "Better luck next time.",
+              note: `The word was ${state.solution}. Better luck next time.`,
+              titleColors: ["black", "red"],
             };
           }
           {
@@ -62,6 +64,7 @@ export function reducer(state: GameState, action: GameAction): GameState {
                 ...state.guessedRows,
                 colorGuess(state.solution, state.currentRow),
               ],
+              titleColors: chooseTwoTitleColors(),
             };
           }
         }

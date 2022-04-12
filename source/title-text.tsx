@@ -1,22 +1,16 @@
 import React, { FC } from "react";
 import { Box, Text } from "ink";
 import BigText from "ink-big-text";
-import { pickTwo } from "./util";
 
-export const TitleText: FC<{ large: boolean; title: string }> = ({
-  large,
-  title,
-}) =>
+export const TitleText: FC<{
+  large: boolean;
+  title: string;
+  titleColors: string[];
+}> = ({ large, title, titleColors }) =>
   large ? (
-    <BigText
-      colors={pickTwo(["yellow", "green", "gray", "white"])}
-      text={title}
-      font="block"
-    />
+    <BigText colors={titleColors} text={title} font="block" />
   ) : (
     <Box>
-      <Text color="#fff" backgroundColor="green">
-        I N K L E
-      </Text>
+      <Text color={titleColors[1]}>I N K L E</Text>
     </Box>
   );

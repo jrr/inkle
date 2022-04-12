@@ -5,16 +5,17 @@ import { GameState } from "./types";
 import { reducer } from "./reducer";
 import useStdoutDimensions from "ink-use-stdout-dimensions";
 import { TitleText } from "./title-text";
-import { pickSolution } from "./game-logic";
+import { chooseTwoTitleColors, pickSolution } from "./game-logic";
 
 const initialState: GameState = {
   status: "guessing",
   guessedRows: [],
   currentRow: "",
   solution: pickSolution(),
+  titleColors: chooseTwoTitleColors(),
 };
 
-// todo: make this accessible behind command-line flag?
+// todo: make this accessible behind command-line flag
 const testState: GameState = {
   status: "guessing",
   guessedRows: [
@@ -39,6 +40,7 @@ const testState: GameState = {
   ],
   currentRow: "JKL",
   solution: "OATER",
+  titleColors: chooseTwoTitleColors(),
 };
 
 export type GameAction =
@@ -78,7 +80,11 @@ const App: FC = () => {
       height={y}
       justifyContent="space-around"
     >
-      <TitleText large={x > 45 && y > 16} title="INKLE" />
+      <TitleText
+        large={x > 45 && y > 16}
+        title="INKLE"
+        titleColors={gameState.titleColors}
+      />
 
       <Box borderStyle="round" borderColor="green">
         <GameBoard gameState={gameState} />

@@ -16,6 +16,7 @@ than you should probably go check out
 
 ## Future
 
+- Display keyboard
 - Fancier win/loss screens
 - Bundled build published to NPM
 - Hard mode
