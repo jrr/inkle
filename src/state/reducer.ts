@@ -1,8 +1,8 @@
-import { KEY_NEW_GAME } from "./constants";
-import { colorGuess, isValidWord } from "./game-logic";
+import { KEY_NEW_GAME } from "../constants";
+import { colorGuess, isValidWord } from "../game-logic";
 import { newGame } from "./game-states";
-import { GameState, GuessedRow } from "./types";
-import { GameAction } from "./ui";
+import { GameState, GuessedRow } from "../types";
+import { GameAction } from "../ui";
 
 const rowIsFull = (state: GameState & { status: "guessing" }) =>
   state.currentRow.length == 5;

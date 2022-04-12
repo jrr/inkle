@@ -1,5 +1,5 @@
-import { GameState } from "./types";
-import { pickSolution } from "./game-logic";
+import { GameState } from "../types";
+import { pickSolution } from "../game-logic";
 
 export function newGame(): GameState {
   return {

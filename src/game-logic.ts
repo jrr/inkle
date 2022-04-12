@@ -1,7 +1,7 @@
 import itiriri from "itiriri";
-import { possibleSolutions } from "./possible-solutions";
+import { possibleSolutions } from "./words/possible-solutions";
 import { GuessedLetter, GuessedRow } from "./types";
-import { validWords } from "./valid-words";
+import { validWords } from "./words/valid-words";
 
 // https://stackoverflow.com/a/46700791
 function notEmpty<TValue>(value: TValue | null | undefined): value is TValue {
