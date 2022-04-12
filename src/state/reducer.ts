@@ -1,13 +1,13 @@
-import { KEY_NEW_GAME } from "../constants";
+import { KEY_NEW_GAME, NUM_GUESSES, WORD_LEN } from "../constants";
 import { colorGuess, isValidWord } from "../game-logic";
 import { newGame } from "./game-states";
 import { GameState, GuessedRow } from "../types";
 import { GameAction } from "../ui";
 
 const rowIsFull = (state: GameState & { status: "guessing" }) =>
-  state.currentRow.length == 5;
+  state.currentRow.length == WORD_LEN;
 export const onFinalGuess = (state: GameState) =>
-  state.guessedRows.length == 6 - 1;
+  state.guessedRows.length == NUM_GUESSES - 1;
 
 export function reducer(state: GameState, action: GameAction): GameState {
   if (state.status == "guessing") {

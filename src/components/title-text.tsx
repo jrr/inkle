@@ -8,6 +8,9 @@ export const TitleText: FC<{
   title: string;
   colors: GameColors;
 }> = ({ large, title, colors }) =>
+  /*
+todo: is there a better way to make this adaptive to the available space? (rather than the parent deciding whether it's in 'large' or 'small' mode)
+*/
   large ? (
     <BigText colors={colors.largeTitle} text={title} font="block" />
   ) : (

@@ -4,13 +4,16 @@ import { BoardRow } from "./board-row";
 import { GameState } from "../types";
 import { spaceString } from "../util";
 import { onFinalGuess } from "../state/reducer";
+import { NUM_GUESSES } from "../constants";
 
 const rows = ["ASDFG", "QWERT", "ZXCVB", "ASD  ", "     ", "     "];
 export const GameBoard: React.FC<{ gameState: GameState }> = ({
   gameState,
 }) => {
   const numBlankRows =
-    6 - gameState.guessedRows.length - (gameState.status == "guessing" ? 1 : 0);
+    NUM_GUESSES -
+    gameState.guessedRows.length -
+    (gameState.status == "guessing" ? 1 : 0);
   return (
     <Text>
       {gameState.guessedRows.map((row, i) => (

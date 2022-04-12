@@ -2,6 +2,7 @@ import itiriri from "itiriri";
 import { possibleSolutions } from "./words/possible-solutions";
 import { GuessedLetter, GuessedRow } from "./types";
 import { validWords } from "./words/valid-words";
+import { WORD_LEN } from "./constants";
 
 // https://stackoverflow.com/a/46700791
 function notEmpty<TValue>(value: TValue | null | undefined): value is TValue {
@@ -37,7 +38,7 @@ export function colorGuess(solution: string, currentRow: string): GuessedRow {
 
   const values = answer.filter(notEmpty);
 
-  if (values.length != 5) {
+  if (values.length != WORD_LEN) {
     throw new Error("Error coloring guess");
   }
   return { letters: values };
@@ -49,7 +50,7 @@ export const isValidWord = (s: string) =>
 
 export const pickSolution = () => {
   const word = itiriri(possibleSolutions).shuffle().take(1).toArray()[0];
-  if (typeof word == "string" && word.length == 5) {
+  if (typeof word == "string" && word.length == WORD_LEN) {
     return word.toUpperCase();
   }
   throw new Error("Problem selecting word.");

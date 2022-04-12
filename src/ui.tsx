@@ -51,7 +51,9 @@ const App: FC = () => {
         <GameBoard gameState={gameState} />
       </Box>
 
-      <Text>{gameState.note || " "}</Text>
+      <Box minHeight={1}>
+        <Text>{gameState.note}</Text>
+      </Box>
     </Box>
   );
 };

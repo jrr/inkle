@@ -23,6 +23,3 @@ export type GameState = {
       status: "loss";
     }
 );
-
-export const NUM_TRIES = 6;
-export const WORD_LEN = 5;
