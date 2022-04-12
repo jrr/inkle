@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "tsc && chmod +x dist/cli.js",
-    "start": "yarn build && dist/cli.js"
+    "start": "yarn build && dist/cli.js",
+    "test": "jest"
   },
   "files": [
     "dist/cli.js"
@@ -21,14 +22,20 @@
     "react": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
     "@sindresorhus/tsconfig": "^2.0.0",
     "@types/ink-big-text": "^1.2.1",
+    "@types/jest": "^27.4.1",
     "@types/react": "^18.0.1",
+    "babel-jest": "^27.5.1",
     "chalk": "^4.1.2",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "ink-testing-library": "^2.1.0",
     "itiriri": "^2.0.1",
+    "jest": "^27.5.1",
     "typescript": "^4.6.3"
   },
   "packageManager": "yarn@3.2.0"
