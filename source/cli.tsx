@@ -10,19 +10,23 @@ const cli = meow(
 	  $ inkle
 
 	Options
-		--name  Your name
+		--test midgame|win|lose
 
 	Examples
-	  $ inkle --name=Jane
-	  Hello, Jane
+	  $ inkle --test-screen-midgame
 `,
   {
     flags: {
-      name: {
+      test: {
         type: "string",
       },
     },
   }
 );
+
+if (cli.flags.test) {
+  console.log('"--test" not implemented yet.');
+  process.exit(0);
+}
 
 render(<App />);
