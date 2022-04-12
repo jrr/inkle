@@ -6,12 +6,6 @@ This is a work-in-progress. If you just want to play Wordle in your Terminal,
 than you should probably go check out
 [clidle](https://github.com/ajeetdsouza/clidle) instead.
 
-Current status:
-
-- there's a single hardcoded solution
-- you can make guesses, but they aren't yet required to be valid words
-- nothing special happens when you win or lose
-
 ## Running it
 
 - Clone the repo.
@@ -22,13 +16,11 @@ Current status:
 
 ## Future
 
-- Solution is random instead of hardcoded
-- Guesses must be valid words
-- Win/Loss screens
+- Fancier win/loss screens
 - Bundled build published to NPM
 - Hard mode
 
-## Further Future
+## Distant Future
 
 - Daily vs. Practice mode. (deterministic, but not attempting to use Wordle's
   exact word for a given day)

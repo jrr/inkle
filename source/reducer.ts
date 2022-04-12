@@ -1,4 +1,4 @@
-import { colorGuess } from "./game-logic";
+import { colorGuess, isValidWord } from "./game-logic";
 import { GameState, GuessedRow } from "./types";
 import { GameAction } from "./ui";
 
@@ -33,6 +33,14 @@ export function reducer(state: GameState, action: GameAction): GameState {
                 ...state.guessedRows,
                 colorGuess(state.solution, state.currentRow),
               ],
+              note: "You win!",
+            };
+          }
+          if (!isValidWord(state.currentRow)) {
+            return {
+              ...state,
+              currentRow: "",
+              note: `'${state.currentRow.toLowerCase()}' is not a valid word.`,
             };
           }
           if (onFinalGuess(state)) {
@@ -43,6 +51,7 @@ export function reducer(state: GameState, action: GameAction): GameState {
                 ...state.guessedRows,
                 colorGuess(state.solution, state.currentRow),
               ],
+              note: "Better luck next time.",
             };
           }
           {

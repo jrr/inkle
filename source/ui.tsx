@@ -1,16 +1,17 @@
 import React, { FC, useReducer, useState } from "react";
-import { Box, Newline, Spacer, useApp, useInput } from "ink";
+import { Box, Newline, Spacer, useApp, useInput, Text } from "ink";
 import { GameBoard } from "./game-board";
 import { GameState } from "./types";
 import { reducer } from "./reducer";
 import useStdoutDimensions from "ink-use-stdout-dimensions";
 import { TitleText } from "./title-text";
+import { pickSolution } from "./game-logic";
 
 const initialState: GameState = {
   status: "guessing",
   guessedRows: [],
   currentRow: "",
-  solution: "BONKS",
+  solution: pickSolution(),
 };
 
 // todo: make this accessible behind command-line flag?
@@ -82,6 +83,8 @@ const App: FC = () => {
       <Box borderStyle="round" borderColor="green">
         <GameBoard gameState={gameState} />
       </Box>
+
+      <Text>{gameState.note || " "}</Text>
     </Box>
   );
 };

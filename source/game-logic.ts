@@ -1,5 +1,7 @@
 import itiriri from "itiriri";
+import { possibleSolutions } from "./possible-solutions";
 import { GuessedLetter, GuessedRow } from "./types";
+import { validWords } from "./valid-words";
 
 // https://stackoverflow.com/a/46700791
 function notEmpty<TValue>(value: TValue | null | undefined): value is TValue {
@@ -40,3 +42,15 @@ export function colorGuess(solution: string, currentRow: string): GuessedRow {
   }
   return { letters: values };
 }
+
+export const isValidWord = (s: string) =>
+  validWords.includes(s.toLowerCase()) ||
+  possibleSolutions.includes(s.toLowerCase());
+
+export const pickSolution = () => {
+  const word = itiriri(possibleSolutions).shuffle().take(1).toArray()[0];
+  if (typeof word == "string" && word.length == 5) {
+    return word.toUpperCase();
+  }
+  throw new Error("Problem selecting word.");
+};
