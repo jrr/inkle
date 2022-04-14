@@ -7,8 +7,9 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "tsc && chmod +x dist/cli.js",
-    "start": "yarn build && dist/cli.js",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "node dist/cli.js",
     "test": "jest",
     "format": "prettier --write .",
     "lint": "eslint ."
