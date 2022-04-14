@@ -10,7 +10,8 @@
     "build": "tsc && chmod +x dist/cli.js",
     "start": "yarn build && dist/cli.js",
     "test": "jest",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "lint": "eslint ."
   },
   "files": [
     "dist/cli.js"
@@ -30,8 +31,11 @@
     "@types/ink-big-text": "^1.2.1",
     "@types/jest": "^27.4.1",
     "@types/react": "^18.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
     "babel-jest": "^27.5.1",
     "chalk": "^4.1.2",
+    "eslint": "^8.13.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "ink-testing-library": "^2.1.0",

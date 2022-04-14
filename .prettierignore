@@ -1,2 +1,4 @@
 .yarn/plugins
 .yarn/releases
+
+*.js
