@@ -1,10 +1,10 @@
+import { Newline, Text } from "ink";
 import React from "react";
-import { Box, Newline, Spacer, Text, Transform } from "ink";
-import { BoardRow } from "./board-row";
+import { NUM_GUESSES } from "../constants";
+import { onFinalGuess } from "../state/reducer";
 import { GameState } from "../types";
 import { spaceString } from "../util";
-import { onFinalGuess } from "../state/reducer";
-import { NUM_GUESSES } from "../constants";
+import { BoardRow } from "./board-row";
 
 const rows = ["ASDFG", "QWERT", "ZXCVB", "ASD  ", "     ", "     "];
 export const GameBoard: React.FC<{ gameState: GameState }> = ({

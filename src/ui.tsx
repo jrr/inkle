@@ -1,11 +1,11 @@
-import React, { FC, useReducer, useState } from "react";
-import { Box, Newline, Spacer, useApp, useInput, Text } from "ink";
-import { reducer } from "./state/reducer";
+import { Box, Text, useApp, useInput } from "ink";
 import useStdoutDimensions from "ink-use-stdout-dimensions";
+import React, { FC, useReducer } from "react";
+import { GameBoard } from "./components/game-board";
+import { TitleText } from "./components/title-text";
 import { deriveGameColors } from "./game-colors";
 import { newGame } from "./state/game-states";
-import { TitleText } from "./components/title-text";
-import { GameBoard } from "./components/game-board";
+import { reducer } from "./state/reducer";
 
 export type GameAction =
   | { action: "input-letter"; letter: string }

@@ -1,8 +1,8 @@
 import itiriri from "itiriri";
-import { possibleSolutions } from "./words/possible-solutions";
-import { GuessedLetter, GuessedRow } from "./types";
-import { validWords } from "./words/valid-words";
 import { WORD_LEN } from "./constants";
+import { GuessedLetter, GuessedRow } from "./types";
+import { possibleSolutions } from "./words/possible-solutions";
+import { validWords } from "./words/valid-words";
 
 // https://stackoverflow.com/a/46700791
 function notEmpty<TValue>(value: TValue | null | undefined): value is TValue {
