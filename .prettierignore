@@ -1,7 +1,6 @@
 .yarn/plugins
 .yarn/releases
-
-*.js
+.yarn/sdks
 
 .pnp.*
 dist

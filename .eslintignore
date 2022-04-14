@@ -1,1 +1,8 @@
-.prettierignore
+.yarn/plugins
+.yarn/releases
+.yarn/sdks
+
+*.js
+
+.pnp.*
+dist
