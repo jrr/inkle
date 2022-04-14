@@ -1784,6 +1784,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^16":
+  version: 16.11.26
+  resolution: "@types/node@npm:16.11.26"
+  checksum: 57757caaba3f0d95de82198cb276a1002c49b710108c932a1d02d7c91ff2fa57cfe2dd19fde60853b6dd90b0964b3cf35557981d2628e20aed6a909057aedfe6
+  languageName: node
+  linkType: hard
+
 "@types/normalize-package-data@npm:^2.4.0":
   version: 2.4.1
   resolution: "@types/normalize-package-data@npm:2.4.1"
@@ -3860,6 +3867,7 @@ __metadata:
     "@sindresorhus/tsconfig": ^2.0.0
     "@types/ink-big-text": ^1.2.1
     "@types/jest": ^27.4.1
+    "@types/node": ^16
     "@types/react": ^18.0.1
     "@typescript-eslint/eslint-plugin": ^5.19.0
     "@typescript-eslint/parser": ^5.19.0
