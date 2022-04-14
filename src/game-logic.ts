@@ -13,7 +13,7 @@ function notEmpty<TValue>(value: TValue | null | undefined): value is TValue {
 export function colorGuess(solution: string, currentRow: string): GuessedRow {
   const remainingSolution = Array.from(solution);
 
-  let answer: (GuessedLetter | null)[] = [null, null, null, null, null];
+  const answer: (GuessedLetter | null)[] = [null, null, null, null, null];
 
   [...currentRow].map((c, i) => {
     if (remainingSolution[i] == c) {

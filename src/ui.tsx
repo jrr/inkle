@@ -24,7 +24,7 @@ const App: FC = () => {
       exit();
     }
     if (input.length == 1) {
-      let c = input.toUpperCase();
+      const c = input.toUpperCase();
       if (c >= "A" && c <= "Z") {
         dispatch({ action: "input-letter", letter: c });
       }
