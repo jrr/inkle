@@ -1,43 +1,37 @@
 import itiriri from "itiriri";
 import { WORD_LEN } from "./constants";
-import { GuessedLetter, GuessedRow } from "./types";
-import { notEmpty } from "./util";
+import { GuessedRow } from "./types";
 import { possibleSolutions } from "./words/possible-solutions";
 import { validWords } from "./words/valid-words";
 
-// todo: reimplement better version. recursion? reduce?
-export function colorGuess(solution: string, currentRow: string): GuessedRow {
+export function colorGuess(solution: string, _guess: string): GuessedRow {
   const remainingSolution = Array.from(solution);
 
-  const answer: (GuessedLetter | null)[] = [null, null, null, null, null];
-
-  [...currentRow].map((c, i) => {
-    if (remainingSolution[i] == c) {
-      answer[i] = { color: "green", letter: c };
-      remainingSolution[i] = "_";
-    }
-  });
-  [...currentRow].map((c, i) => {
-    if (answer[i] == null) {
-      const n = remainingSolution.indexOf(c);
-      if (n != -1) {
-        answer[i] = { color: "yellow", letter: c };
-        remainingSolution[n] = "_";
+  const letters = Array.from(_guess)
+    .map((c, i) => {
+      if (remainingSolution[i] == c) {
+        remainingSolution[i] = "_";
+        return { color: "green" as const, letter: c };
+      } else {
+        return { color: "not-green" as const, letter: c };
       }
-    }
-  });
-  [...currentRow].map((c, i) => {
-    if (answer[i] == null) {
-      answer[i] = { color: "gray", letter: c };
-    }
-  });
+    })
+    .map((c) => {
+      if (c.color == "green") {
+        return c;
+      } else {
+        const n = remainingSolution.indexOf(c.letter);
+        if (n == -1) {
+          remainingSolution[n] = "_";
+          return { color: "gray" as const, letter: c.letter };
+        } else {
+          remainingSolution[n] = "_";
+          return { color: "yellow" as const, letter: c.letter };
+        }
+      }
+    });
 
-  const values = answer.filter(notEmpty);
-
-  if (values.length != WORD_LEN) {
-    throw new Error("Error coloring guess");
-  }
-  return { letters: values };
+  return { letters };
 }
 
 export const isValidWord = (s: string) =>
