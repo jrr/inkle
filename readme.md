@@ -12,8 +12,7 @@ than you should probably go check out
 
 - Clone the repo.
 - Use Node.js 16. (`nvm use`)
-- `yarn install`
-- `yarn start`
+- `yarn build-start`
 - quit with esc or ctrl+C
 
 ## Future
