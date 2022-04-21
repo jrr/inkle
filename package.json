@@ -1,10 +1,14 @@
 {
   "name": "inkle",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "license": "MIT",
   "bin": "dist/cli.js",
   "engines": {
-    "node": ">=10"
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com:jrr/inkle.git"
   },
   "scripts": {
     "build": "tsc",
@@ -16,12 +20,13 @@
     "lint": "eslint ."
   },
   "files": [
-    "dist/cli.js"
+    "dist"
   ],
   "dependencies": {
     "ink": "^3.2.0",
     "ink-big-text": "^1.2.0",
     "ink-use-stdout-dimensions": "^1.0.5",
+    "itiriri": "^2.0.1",
     "meow": "^9.0.0",
     "react": "^17.0.2"
   },
@@ -42,7 +47,6 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "ink-testing-library": "^2.1.0",
-    "itiriri": "^2.0.1",
     "jest": "^27.5.1",
     "prettier": "^2.6.2",
     "prettier-plugin-organize-imports": "^2.3.4",
