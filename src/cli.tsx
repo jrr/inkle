@@ -13,7 +13,7 @@ const cli = meow(
 		--test midgame|win|lose
 
 	Examples
-	  $ inkle --test-screen-midgame
+	  $ inkle --test midgame
 `,
   {
     flags: {

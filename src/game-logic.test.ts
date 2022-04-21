@@ -70,7 +70,7 @@ describe("colorGuess", () => {
     });
   });
 
-  it("two-letter case - yellow+yellow", () => {
+  it("two-letter case: yellow+yellow", () => {
     const result = colorGuess("TWIST", "OTTER");
     expectEqual(result, {
       letters: [
@@ -83,7 +83,7 @@ describe("colorGuess", () => {
     });
   });
 
-  it("two-letter case - yellow+gray", () => {
+  it("two-letter case: yellow+gray", () => {
     // https://nerdschalk.com/wordle-same-letter-twice-rules-explained-how-does-it-work/
     const result = colorGuess("ABBEY", "KEEPS");
     expectEqual(result, {
@@ -97,7 +97,7 @@ describe("colorGuess", () => {
     });
   });
 
-  it("two-letter case - green+gray", () => {
+  it("two-letter case: green+gray", () => {
     const result = colorGuess("BONKS", "BAMBI");
     expectEqual(result, {
       letters: [

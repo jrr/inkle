@@ -6,7 +6,6 @@ import { GameState } from "../types";
 import { spaceString } from "../util";
 import { BoardRow } from "./board-row";
 
-const rows = ["ASDFG", "QWERT", "ZXCVB", "ASD  ", "     ", "     "];
 export const GameBoard: React.FC<{ gameState: GameState }> = ({
   gameState,
 }) => {
@@ -20,7 +19,7 @@ export const GameBoard: React.FC<{ gameState: GameState }> = ({
         <BoardRow
           key={`guess-${i}`}
           guessedRow={row}
-          isLastRow={i == rows.length - 1}
+          isLastRow={i == NUM_GUESSES - 1}
         />
       ))}
       {gameState.status == "guessing" && (

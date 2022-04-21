@@ -6,6 +6,7 @@ import { newGame } from "./game-states";
 
 const rowIsFull = (state: GameState & { status: "guessing" }) =>
   state.currentRow.length == WORD_LEN;
+
 export const onFinalGuess = (state: GameState) =>
   state.guessedRows.length == NUM_GUESSES - 1;
 
