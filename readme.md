@@ -10,16 +10,16 @@ than you should probably go check out
 
 ## Running it
 
-- Clone the repo.
-- Use Node.js 16. (`nvm use`)
-- `yarn build-start`
-- quit with esc or ctrl+C
+Using Node.js 14+:
+
+- From NPM: `npx inkle`
+- From git: clone the repo and `yarn build-start`
+- Quit with esc or ctrl+C
 
 ## Future
 
 - Display keyboard
 - Fancier win/loss screens
-- Bundled build published to NPM
 - Hard mode
 
 ## Distant Future
