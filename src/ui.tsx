@@ -2,6 +2,7 @@ import { Box, Text, useApp, useInput } from "ink";
 import useStdoutDimensions from "ink-use-stdout-dimensions";
 import React, { FC, useEffect, useReducer } from "react";
 import { GameBoard } from "./components/game-board";
+import { StatusText } from "./components/status-text";
 import { TitleText } from "./components/title-text";
 import { deriveGameColors } from "./game-colors";
 import { newGame } from "./state/game-states";
@@ -58,10 +59,7 @@ const App: FC<{ initialState?: GameState }> = ({ initialState }) => {
         <GameBoard gameState={gameState} />
       </Box>
 
-      <Box minHeight={2} alignItems="center" flexDirection="column">
-        <Text>{gameState.note1}</Text>
-        <Text color="gray">{gameState.note2}</Text>
-      </Box>
+      <StatusText gameState={gameState} />
     </Box>
   );
 };

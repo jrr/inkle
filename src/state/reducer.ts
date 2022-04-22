@@ -36,15 +36,13 @@ export function reducer(state: GameState, action: GameAction): GameState {
                 ...state.guessedRows,
                 colorGuess(state.solution, state.currentRow),
               ],
-              note1: `🏆 You win! 🏆`,
-              note2: `Press '${KEY_NEW_GAME}' for a new game, or '${KEY_QUIT}' to quit.`,
             };
           }
           if (!isValidWord(state.currentRow)) {
             return {
               ...state,
               currentRow: "",
-              note1: `'${state.currentRow.toLowerCase()}' is not a valid word.`,
+              note: `'${state.currentRow.toLowerCase()}' is not a valid word.`,
             };
           }
           if (onFinalGuess(state)) {
@@ -55,8 +53,6 @@ export function reducer(state: GameState, action: GameAction): GameState {
                 ...state.guessedRows,
                 colorGuess(state.solution, state.currentRow),
               ],
-              note1: `The word was ${state.solution}. Better luck next time.`,
-              note2: `Press '${KEY_NEW_GAME}' for a new game, or '${KEY_QUIT}' to quit.`,
             };
           }
           {
@@ -67,8 +63,7 @@ export function reducer(state: GameState, action: GameAction): GameState {
                 ...state.guessedRows,
                 colorGuess(state.solution, state.currentRow),
               ],
-              note1: undefined,
-              note2: undefined,
+              note: undefined,
             };
           }
         }
