@@ -1,4 +1,4 @@
-import { KEY_NEW_GAME, NUM_GUESSES, WORD_LEN } from "../constants";
+import { KEY_NEW_GAME, KEY_QUIT, NUM_GUESSES, WORD_LEN } from "../constants";
 import { colorGuess, isValidWord } from "../game-logic";
 import { GameState } from "../types";
 import { GameAction } from "../ui";
@@ -36,14 +36,15 @@ export function reducer(state: GameState, action: GameAction): GameState {
                 ...state.guessedRows,
                 colorGuess(state.solution, state.currentRow),
               ],
-              note: `You win! Press '${KEY_NEW_GAME}' for a new game.`,
+              note1: `🏆 You win! 🏆`,
+              note2: `Press '${KEY_NEW_GAME}' for a new game, or '${KEY_QUIT}' to quit.`,
             };
           }
           if (!isValidWord(state.currentRow)) {
             return {
               ...state,
               currentRow: "",
-              note: `'${state.currentRow.toLowerCase()}' is not a valid word.`,
+              note1: `'${state.currentRow.toLowerCase()}' is not a valid word.`,
             };
           }
           if (onFinalGuess(state)) {
@@ -54,7 +55,8 @@ export function reducer(state: GameState, action: GameAction): GameState {
                 ...state.guessedRows,
                 colorGuess(state.solution, state.currentRow),
               ],
-              note: `The word was ${state.solution}. Better luck next time. Press '${KEY_NEW_GAME}' for a new game.`,
+              note1: `The word was ${state.solution}. Better luck next time.`,
+              note2: `Press '${KEY_NEW_GAME}' for a new game, or '${KEY_QUIT}' to quit.`,
             };
           }
           {
@@ -72,6 +74,9 @@ export function reducer(state: GameState, action: GameAction): GameState {
   } else {
     if (action.action == "input-letter" && action.letter == KEY_NEW_GAME) {
       return newGame();
+    }
+    if (action.action == "input-letter" && action.letter == KEY_QUIT) {
+      return { ...state, exitPlease: true };
     }
   }
   return state;

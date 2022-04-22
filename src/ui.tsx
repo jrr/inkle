@@ -1,6 +1,6 @@
 import { Box, Text, useApp, useInput } from "ink";
 import useStdoutDimensions from "ink-use-stdout-dimensions";
-import React, { FC, useReducer } from "react";
+import React, { FC, useEffect, useReducer } from "react";
 import { GameBoard } from "./components/game-board";
 import { TitleText } from "./components/title-text";
 import { deriveGameColors } from "./game-colors";
@@ -18,6 +18,12 @@ const App: FC = () => {
   const [x, y] = useStdoutDimensions();
 
   const [gameState, dispatch] = useReducer(reducer, newGame());
+
+  useEffect(() => {
+    if (gameState.exitPlease) {
+      exit();
+    }
+  }, [gameState.exitPlease]);
 
   useInput((input, key) => {
     if (key.escape) {
@@ -51,8 +57,9 @@ const App: FC = () => {
         <GameBoard gameState={gameState} />
       </Box>
 
-      <Box minHeight={1}>
-        <Text>{gameState.note}</Text>
+      <Box minHeight={2} alignItems="center" flexDirection="column">
+        <Text>{gameState.note1}</Text>
+        <Text color="gray">{gameState.note2}</Text>
       </Box>
     </Box>
   );
