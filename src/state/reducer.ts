@@ -67,6 +67,8 @@ export function reducer(state: GameState, action: GameAction): GameState {
                 ...state.guessedRows,
                 colorGuess(state.solution, state.currentRow),
               ],
+              note1: undefined,
+              note2: undefined,
             };
           }
         }

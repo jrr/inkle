@@ -2,6 +2,7 @@
 import { render } from "ink";
 import meow from "meow";
 import React from "react";
+import { testStates } from "./state/game-states";
 import App from "./ui";
 
 const cli = meow(
@@ -10,7 +11,7 @@ const cli = meow(
 	  $ inkle
 
 	Options
-		--test midgame|win|lose
+		--test ${Object.keys(testStates).join("|")}
 
 	Examples
 	  $ inkle --test midgame
@@ -24,9 +25,16 @@ const cli = meow(
   }
 );
 
-if (cli.flags.test) {
-  console.log('"--test" not implemented yet.');
-  process.exit(0);
+function chooseState(stateName?: string) {
+  if (stateName == undefined) {
+    return undefined;
+  }
+  const state = testStates[stateName];
+  if (state === undefined) {
+    console.log(`Unknown test state '${stateName}'`);
+    process.exit(1);
+  }
+  return state;
 }
 
-render(<App />);
+render(<App initialState={chooseState(cli.flags.test)} />);

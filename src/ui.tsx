@@ -6,18 +6,19 @@ import { TitleText } from "./components/title-text";
 import { deriveGameColors } from "./game-colors";
 import { newGame } from "./state/game-states";
 import { reducer } from "./state/reducer";
+import { GameState } from "./types";
 
 export type GameAction =
   | { action: "input-letter"; letter: string }
   | { action: "submit-guess" }
   | { action: "backspace" };
 
-const App: FC = () => {
+const App: FC<{ initialState?: GameState }> = ({ initialState }) => {
   const { exit } = useApp();
 
   const [x, y] = useStdoutDimensions();
 
-  const [gameState, dispatch] = useReducer(reducer, newGame());
+  const [gameState, dispatch] = useReducer(reducer, initialState ?? newGame());
 
   useEffect(() => {
     if (gameState.exitPlease) {
