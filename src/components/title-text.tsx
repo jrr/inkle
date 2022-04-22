@@ -12,9 +12,12 @@ export const TitleText: FC<{
 todo: is there a better way to make this adaptive to the available space? (rather than the parent deciding whether it's in 'large' or 'small' mode)
 */
   large ? (
-    <BigText colors={colors.largeTitle} text={title} font="block" />
+    <BigText
+      colors={colors.largeTitle}
+      text={title}
+      font="block"
+      space={false}
+    />
   ) : (
-    <Box>
-      <Text color={colors.smallTitle}>I N K L E</Text>
-    </Box>
+    <Text color={colors.smallTitle}>I N K L E</Text>
   );

@@ -53,7 +53,7 @@ const App: FC<{ initialState?: GameState }> = ({ initialState }) => {
       height={y}
       justifyContent="space-around"
     >
-      <TitleText large={x > 45 && y > 16} title="INKLE" colors={colors} />
+      <TitleText large={x > 45 && y > 20} title="INKLE" colors={colors} />
 
       <Box borderStyle="round" borderColor={colors.boardBorder}>
         <GameBoard gameState={gameState} />
