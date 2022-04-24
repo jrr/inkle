@@ -1,8 +1,6 @@
-import React, { FC, useEffect, useReducer } from "react";
-import { Box, Newline, Text, useApp, useInput, useStdout } from "ink";
-import { spaceString } from "../util";
-import { GameState } from "../types";
-import { stringify } from "querystring";
+import React from "react";
+import { Box, Text } from "ink";
+import { GameState, GuessedLetter } from "../types";
 const keyboardRows = ["QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"];
 type Props = {
   gameState: GameState;
@@ -16,7 +14,7 @@ export const Keyboard: React.FC<Props> = (props) => {
       justifyContent="space-around"
     >
       {keyboardRows.map((row) => (
-        <KeyboardRow row={row} keyColors={keyColors} />
+        <KeyboardRow key={row} row={row} keyColors={keyColors} />
       ))}
     </Box>
   );
@@ -28,42 +26,42 @@ const KeyboardRow: React.FC<{ row: string; keyColors: KeyColors }> = ({
 }) => {
   return (
     <Box>
-      {[...row].map((c, i) => {
+      {[...row].map((c) => {
         return (
-          <Box marginX={0.5}>
+          <Box marginX={0.5} key={c}>
             <Text color={colorFor(keyColors, c)}>{c}</Text>
           </Box>
         );
       })}
-      {/* <Text>{spaceString(row)}</Text> */}
     </Box>
   );
 };
+
 type KeyColor = "green" | "yellow" | "gray";
-type KeyColors = { green: string; yellow: string; gray: string };
+type KeyColors = Record<KeyColor, string>;
+
 function computeKeyColors(gameState: GameState): KeyColors {
-  const x = gameState.guessedRows.flatMap((gr) => gr.letters);
-  const gray = x // todo: groupBy
-    .filter((f) => f.color == "gray")
-    .map((f) => f.letter)
-    .join();
-  const green = x
-    .filter((f) => f.color == "green")
-    .map((f) => f.letter)
-    .join();
-  const yellow = x
-    .filter((f) => f.color == "yellow")
-    .map((f) => f.letter)
-    .join();
-  return { gray, green, yellow };
+  const allGuesses = gameState.guessedRows.flatMap((gr) => gr.letters);
+  return {
+    gray: lettersForColor(allGuesses, "gray"),
+    green: lettersForColor(allGuesses, "green"),
+    yellow: lettersForColor(allGuesses, "yellow"),
+  };
 }
+
 function colorFor(keyColors: KeyColors, c: string): string {
-  const theColors = ["green", "yellow", "gray"];
+  const theColors: KeyColor[] = ["green", "yellow", "gray"];
 
   for (const color of theColors) {
-    if (keyColors[color as KeyColor]?.includes(c)) {
+    if (keyColors[color].includes(c)) {
       return color;
     }
   }
   return "white";
 }
+
+const lettersForColor = (allGuesses: GuessedLetter[], color: string) =>
+  allGuesses
+    .filter((g) => g.color == color)
+    .map((g) => g.letter)
+    .join();

@@ -24,9 +24,12 @@ function numbersFromGameState(state: GameState): [number, number] {
 const TITLE_COLORS = ["yellow", "green", "gray", "white"];
 
 function colorN([n1, n2]: [number, number]): [string, string] {
-  const color1 = TITLE_COLORS[n1 % TITLE_COLORS.length]!;
+  const color1 = TITLE_COLORS[n1 % TITLE_COLORS.length];
   const remainingColors = TITLE_COLORS.filter((c) => c != color1);
-  const color2 = remainingColors[n2 % remainingColors.length]!;
+  const color2 = remainingColors[n2 % remainingColors.length];
+  if (color1 == undefined || color2 == undefined) {
+    throw new Error("Color selection error");
+  }
   return [color1, color2];
 }
 
