@@ -57,7 +57,7 @@ function colorFor(keyColors: KeyColors, c: string): string {
       return color;
     }
   }
-  return "white";
+  return "whiteBright";
 }
 
 const lettersForColor = (allGuesses: GuessedLetter[], color: string) =>
