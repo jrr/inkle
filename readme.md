@@ -18,7 +18,6 @@ Using Node.js 14+:
 
 ## Future
 
-- Display keyboard
 - Fancier win/loss screens
 - Hard mode
 

@@ -1,7 +1,8 @@
-import { Box, Text, useApp, useInput } from "ink";
+import { Box, useApp, useInput } from "ink";
 import useStdoutDimensions from "ink-use-stdout-dimensions";
 import React, { FC, useEffect, useReducer } from "react";
 import { GameBoard } from "./components/game-board";
+import { Keyboard } from "./components/keyboard";
 import { StatusText } from "./components/status-text";
 import { TitleText } from "./components/title-text";
 import { deriveGameColors } from "./game-colors";
@@ -58,6 +59,8 @@ const App: FC<{ initialState?: GameState }> = ({ initialState }) => {
       <Box borderStyle="round" borderColor={colors.boardBorder}>
         <GameBoard gameState={gameState} />
       </Box>
+
+      <Keyboard gameState={gameState}></Keyboard>
 
       <StatusText gameState={gameState} />
     </Box>
