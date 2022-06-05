@@ -1,14 +1,14 @@
 import { Box, useApp, useInput } from "ink";
 import useStdoutDimensions from "ink-use-stdout-dimensions";
 import React, { FC, useEffect, useReducer } from "react";
-import { GameBoard } from "./components/game-board";
-import { Keyboard } from "./components/keyboard";
-import { StatusText } from "./components/status-text";
-import { TitleText } from "./components/title-text";
-import { deriveGameColors } from "./game-colors";
-import { newGame } from "./state/game-states";
-import { reducer } from "./state/reducer";
-import { GameState } from "./types";
+import { GameBoard } from "./components/game-board.js";
+import { Keyboard } from "./components/keyboard.js";
+import { StatusText } from "./components/status-text.js";
+import { TitleText } from "./components/title-text.js";
+import { deriveGameColors } from "./game-colors.js";
+import { newGame } from "./state/game-states.js";
+import { reducer } from "./state/reducer.js";
+import { GameState } from "./types.js";
 
 export type GameAction =
   | { action: "input-letter"; letter: string }

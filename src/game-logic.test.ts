@@ -1,4 +1,4 @@
-import { colorGuess } from "./game-logic";
+import { colorGuess } from "./game-logic.js";
 
 function expectEqual<T>(actual: T, expected: T) {
   expect(expected).toStrictEqual(actual);

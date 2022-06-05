@@ -2,8 +2,8 @@
 import { render } from "ink";
 import meow from "meow";
 import React from "react";
-import { testStates } from "./state/game-states";
-import App from "./ui";
+import { testStates } from "./state/game-states.js";
+import App from "./ui.js";
 
 const cli = meow(
   `
