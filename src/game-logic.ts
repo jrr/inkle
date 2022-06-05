@@ -1,7 +1,7 @@
-import { WORD_LEN } from "./constants";
-import { GuessedRow } from "./types";
-import { possibleSolutions } from "./words/possible-solutions";
-import { validWords } from "./words/valid-words";
+import { WORD_LEN } from "./constants.js";
+import { GuessedRow } from "./types.js";
+import { possibleSolutions } from "./words/possible-solutions.js";
+import { validWords } from "./words/valid-words.js";
 import { sample } from "lodash-es";
 
 export function colorGuess(solution: string, _guess: string): GuessedRow {
