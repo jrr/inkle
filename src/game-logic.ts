@@ -2,7 +2,6 @@ import { WORD_LEN } from "./constants.js";
 import { GuessedRow } from "./types.js";
 import { possibleSolutions } from "./words/possible-solutions.js";
 import { validWords } from "./words/valid-words.js";
-import { sample } from "lodash-es";
 
 export function colorGuess(solution: string, _guess: string): GuessedRow {
   const remainingSolution = Array.from(solution);
@@ -37,6 +36,11 @@ export function colorGuess(solution: string, _guess: string): GuessedRow {
 export const isValidWord = (s: string) =>
   validWords.includes(s.toLowerCase()) ||
   possibleSolutions.includes(s.toLowerCase());
+
+function sample<T>(input: T[]): T {
+  const pos = Math.floor(Math.random() * input.length);
+  return input[pos];
+}
 
 export const pickSolution = () => {
   const word = sample(possibleSolutions);
