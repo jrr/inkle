@@ -1833,6 +1833,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash-es@npm:^4.17.6":
+  version: 4.17.6
+  resolution: "@types/lodash-es@npm:4.17.6"
+  dependencies:
+    "@types/lodash": "*"
+  checksum: 9bd239dd525086e278821949ce12fbdd4f100a060fed9323fc7ad5661113e1641f28a7ebab617230ed3474680d8f4de705c1928b48252bb684be6ec9eed715db
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:*":
+  version: 4.14.182
+  resolution: "@types/lodash@npm:4.14.182"
+  checksum: 7dd137aa9dbabd632408bd37009d984655164fa1ecc3f2b6eb94afe35bf0a5852cbab6183148d883e9c73a958b7fec9a9bcf7c8e45d41195add6a18c34958209
+  languageName: node
+  linkType: hard
+
 "@types/minimist@npm:^1.2.0":
   version: 1.2.2
   resolution: "@types/minimist@npm:1.2.2"
@@ -3828,6 +3844,7 @@ __metadata:
     "@babel/preset-typescript": ^7.17.12
     "@types/ink-big-text": ^1.2.1
     "@types/jest": ^28.1.1
+    "@types/lodash-es": ^4.17.6
     "@types/node": ^16.11.38
     "@types/react": ^18.0.11
     "@typescript-eslint/eslint-plugin": ^5.27.0
@@ -3840,8 +3857,8 @@ __metadata:
     ink-big-text: ^1.2.0
     ink-testing-library: ^2.1.0
     ink-use-stdout-dimensions: ^1.0.5
-    itiriri: ^2.0.1
     jest: ^28.1.0
+    lodash-es: ^4.17.21
     meow: ^9.0.0
     prettier: ^2.6.2
     prettier-plugin-organize-imports: ^2.3.4
@@ -4153,13 +4170,6 @@ __metadata:
     html-escaper: ^2.0.0
     istanbul-lib-report: ^3.0.0
   checksum: 2132983355710c522f6b26808015cab9a0ee8b9f5ae0db0d3edeff40b886dd83cb670fb123cb7b32dbe59473d7c00cdde2ba6136bc0acdb20a865fccea64dfe1
-  languageName: node
-  linkType: hard
-
-"itiriri@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "itiriri@npm:2.0.1"
-  checksum: 3fc7b25b1b9479b4b23e47db6eaeca3b6d6df7f149b8938c5ff66c4d7bfbdbeea660d9a9faa8874ea7510f1a481c033a22a6cf83caea6e526fd2c71f90f28ade
   languageName: node
   linkType: hard
 
@@ -4773,6 +4783,13 @@ __metadata:
   dependencies:
     p-locate: ^4.1.0
   checksum: 83e51725e67517287d73e1ded92b28602e3ae5580b301fe54bfb76c0c723e3f285b19252e375712316774cf52006cb236aed5704692c32db0d5d089b69696e30
+  languageName: node
+  linkType: hard
+
+"lodash-es@npm:^4.17.21":
+  version: 4.17.21
+  resolution: "lodash-es@npm:4.17.21"
+  checksum: 05cbffad6e2adbb331a4e16fbd826e7faee403a1a04873b82b42c0f22090f280839f85b95393f487c1303c8a3d2a010048bf06151a6cbe03eee4d388fb0a12d2
   languageName: node
   linkType: hard
 
