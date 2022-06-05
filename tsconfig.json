@@ -1,12 +1,14 @@
 {
-  "extends": "@sindresorhus/tsconfig",
   "compilerOptions": {
+    "target": "ES2020", // Node.js 14
+    "strict": true,
+    "noEmitOnError": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "module": "commonjs",
     "jsx": "react",
     "esModuleInterop": true,
-    "outDir": "dist",
-    "noUnusedLocals": false,
-    "noUnusedParameters": false
+    "outDir": "dist"
   },
   "include": ["src"]
 }
