@@ -34,7 +34,6 @@
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
     "@babel/preset-typescript": "^7.17.12",
-    "@sindresorhus/tsconfig": "^2.0.0",
     "@types/ink-big-text": "^1.2.1",
     "@types/jest": "^28.1.1",
     "@types/node": "^16.11.38",

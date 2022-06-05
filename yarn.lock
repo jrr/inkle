@@ -1898,13 +1898,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sindresorhus/tsconfig@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@sindresorhus/tsconfig@npm:2.0.0"
-  checksum: fea48f9b1e139e532b400c9efd8db10ac1c9fd6d750edce04b3f7f17c1f9ae868afe496d9937ebcf8bc5ecbeb83263166b5b5fa1ad699249424f2e2704d5bfe0
-  languageName: node
-  linkType: hard
-
 "@sinonjs/commons@npm:^1.7.0":
   version: 1.8.3
   resolution: "@sinonjs/commons@npm:1.8.3"
@@ -4109,7 +4102,6 @@ __metadata:
     "@babel/core": ^7.18.2
     "@babel/preset-env": ^7.18.2
     "@babel/preset-typescript": ^7.17.12
-    "@sindresorhus/tsconfig": ^2.0.0
     "@types/ink-big-text": ^1.2.1
     "@types/jest": ^28.1.1
     "@types/node": ^16.11.38

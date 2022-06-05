@@ -36,7 +36,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.18.2"],\
             ["@babel/preset-env", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:7.18.2"],\
             ["@babel/preset-typescript", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:7.17.12"],\
-            ["@sindresorhus/tsconfig", "npm:2.0.0"],\
             ["@types/ink-big-text", "npm:1.2.1"],\
             ["@types/jest", "npm:28.1.1"],\
             ["@types/node", "npm:16.11.38"],\
@@ -3162,15 +3161,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["@sindresorhus/tsconfig", [\
-        ["npm:2.0.0", {\
-          "packageLocation": "./.yarn/cache/@sindresorhus-tsconfig-npm-2.0.0-61b5b9d584-fea48f9b1e.zip/node_modules/@sindresorhus/tsconfig/",\
-          "packageDependencies": [\
-            ["@sindresorhus/tsconfig", "npm:2.0.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["@sinonjs/commons", [\
         ["npm:1.8.3", {\
           "packageLocation": "./.yarn/cache/@sinonjs-commons-npm-1.8.3-30cf78d93f-6159726db5.zip/node_modules/@sinonjs/commons/",\
@@ -5888,7 +5878,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.18.2"],\
             ["@babel/preset-env", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:7.18.2"],\
             ["@babel/preset-typescript", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:7.17.12"],\
-            ["@sindresorhus/tsconfig", "npm:2.0.0"],\
             ["@types/ink-big-text", "npm:1.2.1"],\
             ["@types/jest", "npm:28.1.1"],\
             ["@types/node", "npm:16.11.38"],\
