@@ -58,7 +58,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.6.2"],\
             ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:2.3.4"],\
             ["react", "npm:17.0.2"],\
-            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=7ad353"]\
+            ["typescript", "patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -3461,7 +3461,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["regexpp", "npm:3.2.0"],\
             ["semver", "npm:7.3.7"],\
             ["tsutils", "virtual:9e7f0a7ede66b37c15938916023ffb1ef79a86fa2ef66472029d62e2dba881f17523b8bc84926fec44c6c019a8d3ac3ee7e0cc6a25d340d7f39036c1da56f79d#npm:3.21.0"],\
-            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=7ad353"]\
+            ["typescript", "patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -3493,7 +3493,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/typescript-estree", "virtual:4e6ded30623ecb93cd8e9bf4e0fd28e84017c6c9e2acc05dbb37f70303b3f6b4533d1eec29e2385276299d43dd54137bf280fb00afe9f227d2fa9c1259e24410#npm:5.27.0"],\
             ["debug", "virtual:e9768252e43aa6de65fb854961d56a022a412f93016571f7cfd339a91f5a5fc7545f1bcf4252cbdf5b29e03fc6994a47e8fc72f12f0404c4b962ba5757f205c9#npm:4.3.4"],\
             ["eslint", "npm:8.17.0"],\
-            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=7ad353"]\
+            ["typescript", "patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -3533,7 +3533,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:e9768252e43aa6de65fb854961d56a022a412f93016571f7cfd339a91f5a5fc7545f1bcf4252cbdf5b29e03fc6994a47e8fc72f12f0404c4b962ba5757f205c9#npm:4.3.4"],\
             ["eslint", "npm:8.17.0"],\
             ["tsutils", "virtual:9e7f0a7ede66b37c15938916023ffb1ef79a86fa2ef66472029d62e2dba881f17523b8bc84926fec44c6c019a8d3ac3ee7e0cc6a25d340d7f39036c1da56f79d#npm:3.21.0"],\
-            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=7ad353"]\
+            ["typescript", "patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353"]\
           ],\
           "packagePeers": [\
             "@types/eslint",\
@@ -3593,7 +3593,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-glob", "npm:4.0.3"],\
             ["semver", "npm:7.3.7"],\
             ["tsutils", "virtual:9e7f0a7ede66b37c15938916023ffb1ef79a86fa2ef66472029d62e2dba881f17523b8bc84926fec44c6c019a8d3ac3ee7e0cc6a25d340d7f39036c1da56f79d#npm:3.21.0"],\
-            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=7ad353"]\
+            ["typescript", "patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353"]\
           ],\
           "packagePeers": [\
             "@types/typescript",\
@@ -5911,7 +5911,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.6.2"],\
             ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:2.3.4"],\
             ["react", "npm:17.0.2"],\
-            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=7ad353"]\
+            ["typescript", "patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -7727,7 +7727,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prettier", null],\
             ["@types/typescript", null],\
             ["prettier", "npm:2.6.2"],\
-            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=7ad353"]\
+            ["typescript", "patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353"]\
           ],\
           "packagePeers": [\
             "@types/prettier",\
@@ -8784,7 +8784,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tsutils", "virtual:9e7f0a7ede66b37c15938916023ffb1ef79a86fa2ef66472029d62e2dba881f17523b8bc84926fec44c6c019a8d3ac3ee7e0cc6a25d340d7f39036c1da56f79d#npm:3.21.0"],\
             ["@types/typescript", null],\
             ["tslib", "npm:1.14.1"],\
-            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=7ad353"]\
+            ["typescript", "patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353"]\
           ],\
           "packagePeers": [\
             "@types/typescript",\
@@ -8857,10 +8857,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["typescript", [\
-        ["patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=7ad353", {\
-          "packageLocation": "./.yarn/cache/typescript-patch-572cbe385b-6bf45caf84.zip/node_modules/typescript/",\
+        ["patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-e8f1acd78e-137d18a77f.zip/node_modules/typescript/",\
           "packageDependencies": [\
-            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=7ad353"]\
+            ["typescript", "patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=7ad353"]\
           ],\
           "linkType": "HARD"\
         }]\
