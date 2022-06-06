@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [14, 16, 18]
 
     steps:
       - uses: actions/checkout@v3
@@ -21,3 +21,4 @@ jobs:
       - run: yarn lint
       - run: yarn prettier --check .
       - run: yarn start --test midgame --quit
+      - run: make test-npx-node-${{ matrix.node-version }}

@@ -1,4 +1,4 @@
-import { Text, Box, Static, useApp, useInput } from "ink";
+import { Box, useApp, useInput } from "ink";
 import useStdoutDimensions from "ink-use-stdout-dimensions";
 import React, { FC, useEffect, useReducer } from "react";
 import { GameBoard } from "./components/game-board";
