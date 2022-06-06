@@ -43,4 +43,8 @@ function chooseState(
   return { ...state, testQuit };
 }
 
-render(<App initialState={chooseState(cli.flags.test, cli.flags.quit)} />);
+const app = render(
+  <App initialState={chooseState(cli.flags.test, cli.flags.quit)} />
+);
+
+await app.waitUntilExit();
