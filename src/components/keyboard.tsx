@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Text } from "ink";
-import { GameState, GuessedLetter } from "../types";
+import { GameState, GuessedLetter } from "../types.js";
 const keyboardRows = ["QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"];
 type Props = {
   gameState: GameState;

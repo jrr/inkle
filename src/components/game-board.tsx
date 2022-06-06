@@ -1,10 +1,10 @@
 import { Newline, Text } from "ink";
 import React from "react";
-import { NUM_GUESSES } from "../constants";
-import { onFinalGuess } from "../state/reducer";
-import { GameState } from "../types";
-import { spaceString } from "../util";
-import { BoardRow } from "./board-row";
+import { NUM_GUESSES } from "../constants.js";
+import { onFinalGuess } from "../state/reducer.js";
+import { GameState } from "../types.js";
+import { spaceString } from "../util.js";
+import { BoardRow } from "./board-row.js";
 
 export const GameBoard: React.FC<{ gameState: GameState }> = ({
   gameState,

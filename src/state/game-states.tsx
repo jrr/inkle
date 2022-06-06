@@ -1,5 +1,5 @@
-import { pickSolution } from "../game-logic";
-import { GameState, GuessedRow } from "../types";
+import { pickSolution } from "../game-logic.js";
+import { GameState, GuessedRow } from "../types.js";
 
 export function newGame(): GameState {
   return {

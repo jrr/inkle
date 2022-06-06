@@ -3,7 +3,7 @@
  * https://jestjs.io/docs/configuration
  */
 
-module.exports = {
+export default {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
@@ -188,4 +188,13 @@ module.exports = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
+  preset: "ts-jest/presets/default-esm", // or other ESM presets
+  globals: {
+    "ts-jest": {
+      useESM: true,
+    },
+  },
+  moduleNameMapper: {
+    "^(\\.{1,2}/.*)\\.js$": "$1",
+  },
 };
