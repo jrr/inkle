@@ -14,18 +14,24 @@ const cli = meow(
 		--test ${Object.keys(testStates).join("|")}
 
 	Examples
-	  $ inkle --test midgame
+	  $ inkle --test midgame --quit
 `,
   {
     flags: {
       test: {
         type: "string",
       },
+      quit: {
+        type: "boolean",
+      },
     },
   }
 );
 
-function chooseState(stateName?: string) {
+function chooseState(
+  stateName: string | undefined,
+  testQuit: boolean | undefined
+) {
   if (stateName == undefined) {
     return undefined;
   }
@@ -34,7 +40,7 @@ function chooseState(stateName?: string) {
     console.log(`Unknown test state '${stateName}'`);
     process.exit(1);
   }
-  return state;
+  return { ...state, testQuit };
 }
 
-render(<App initialState={chooseState(cli.flags.test)} />);
+render(<App initialState={chooseState(cli.flags.test, cli.flags.quit)} />);

@@ -1,4 +1,4 @@
-import { Box, useApp, useInput } from "ink";
+import { Text, Box, Static, useApp, useInput } from "ink";
 import useStdoutDimensions from "ink-use-stdout-dimensions";
 import React, { FC, useEffect, useReducer } from "react";
 import { GameBoard } from "./components/game-board";
@@ -23,28 +23,31 @@ const App: FC<{ initialState?: GameState }> = ({ initialState }) => {
   const [gameState, dispatch] = useReducer(reducer, initialState ?? newGame());
 
   useEffect(() => {
-    if (gameState.exitPlease) {
+    if (gameState.exitPlease || gameState.testQuit) {
       exit();
     }
-  }, [gameState.exitPlease]);
+  }, [gameState.exitPlease, gameState.testQuit]);
 
-  useInput((input, key) => {
-    if (key.escape) {
-      exit();
-    }
-    if (input.length == 1) {
-      const c = input.toUpperCase();
-      if (c >= "A" && c <= "Z") {
-        dispatch({ action: "input-letter", letter: c });
+  useInput(
+    (input, key) => {
+      if (key.escape) {
+        exit();
       }
-    }
-    if (key.return) {
-      dispatch({ action: "submit-guess" });
-    }
-    if (key.backspace || key.delete) {
-      dispatch({ action: "backspace" });
-    }
-  });
+      if (input.length == 1) {
+        const c = input.toUpperCase();
+        if (c >= "A" && c <= "Z") {
+          dispatch({ action: "input-letter", letter: c });
+        }
+      }
+      if (key.return) {
+        dispatch({ action: "submit-guess" });
+      }
+      if (key.backspace || key.delete) {
+        dispatch({ action: "backspace" });
+      }
+    },
+    { isActive: gameState.testQuit != true }
+  );
   const colors = deriveGameColors(gameState);
 
   return (
