@@ -3878,7 +3878,6 @@ __metadata:
     ink-big-text: ^1.2.0
     ink-testing-library: ^2.1.0
     ink-use-stdout-dimensions: ^1.0.5
-    itiriri: ^2.0.1
     jest: ^28.1.0
     meow: ^10.1.2
     prettier: ^2.6.2
@@ -4192,13 +4191,6 @@ __metadata:
     html-escaper: ^2.0.0
     istanbul-lib-report: ^3.0.0
   checksum: 2132983355710c522f6b26808015cab9a0ee8b9f5ae0db0d3edeff40b886dd83cb670fb123cb7b32dbe59473d7c00cdde2ba6136bc0acdb20a865fccea64dfe1
-  languageName: node
-  linkType: hard
-
-"itiriri@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "itiriri@npm:2.0.1"
-  checksum: 3fc7b25b1b9479b4b23e47db6eaeca3b6d6df7f149b8938c5ff66c4d7bfbdbeea660d9a9faa8874ea7510f1a481c033a22a6cf83caea6e526fd2c71f90f28ade
   languageName: node
   linkType: hard
 
