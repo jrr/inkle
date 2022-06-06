@@ -25,6 +25,7 @@ const cli = meow(
         type: "boolean",
       },
     },
+    importMeta: import.meta,
   }
 );
 
