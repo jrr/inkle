@@ -29,7 +29,7 @@
     "ink-use-stdout-dimensions": "^1.0.5",
     "itiriri": "^2.0.1",
     "meow": "^10.1.2",
-    "react": "^17.0.2"
+    "react": "^18.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
@@ -38,7 +38,7 @@
     "@types/ink-big-text": "^1.2.1",
     "@types/jest": "^28.1.1",
     "@types/node": "^16.11.38",
-    "@types/react": "^17",
+    "@types/react": "^18.0.12",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
     "babel-jest": "^28.1.0",
