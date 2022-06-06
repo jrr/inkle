@@ -1,7 +1,7 @@
 import { Text } from "ink";
 import BigText from "ink-big-text";
 import React, { FC } from "react";
-import { GameColors } from "../game-colors";
+import { GameColors } from "../game-colors.js";
 
 export const TitleText: FC<{
   large: boolean;

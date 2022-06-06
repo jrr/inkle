@@ -1,6 +1,6 @@
 import { Newline, Text } from "ink";
 import React from "react";
-import { GuessedRow } from "../types";
+import { GuessedRow } from "../types.js";
 
 export const BoardRow: React.FC<{
   guessedRow: GuessedRow;

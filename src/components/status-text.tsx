@@ -1,7 +1,7 @@
 import { Box, Text } from "ink";
 import React from "react";
 import { KEY_NEW_GAME, KEY_QUIT } from "../constants.js";
-import { GameState } from "../types";
+import { GameState } from "../types.js";
 
 function notesForState(gameState: GameState): [string, string] {
   switch (gameState.status) {
