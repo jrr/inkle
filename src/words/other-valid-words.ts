@@ -1,4 +1,4 @@
-export const validWords = [
+export const otherValidWords = [
   "aahed",
   "aalii",
   "aargh",
