@@ -16,16 +16,17 @@ export function colorGuess(solution: string, _guess: string): GuessedRow {
       }
     })
     .map((c) => {
-      if (c.color == "green") {
-        return c;
-      } else {
-        const n = remainingSolution.indexOf(c.letter);
-        if (n == -1) {
-          remainingSolution[n] = "_";
-          return { color: "gray" as const, letter: c.letter };
-        } else {
-          remainingSolution[n] = "_";
-          return { color: "yellow" as const, letter: c.letter };
+      switch (c.color) {
+        case "green":
+          return c;
+        case "not-green": {
+          const n = remainingSolution.indexOf(c.letter);
+          if (n == -1) {
+            return { color: "gray" as const, letter: c.letter };
+          } else {
+            remainingSolution[n] = "_";
+            return { color: "yellow" as const, letter: c.letter };
+          }
         }
       }
     });
