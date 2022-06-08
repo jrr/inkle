@@ -6,6 +6,27 @@ import { GameState } from "../types.js";
 import { spaceString } from "../util.js";
 import { BoardRow } from "./board-row.js";
 
+/*
+
+ */
+type DisplayRow =
+  | { rowType: "guessed" }
+  | { rowType: "guessing" }
+  | { rowType: "blank" };
+
+export function computeDisplayRows(gameState: GameState): DisplayRow[] {
+  if (
+    gameState.status == "guessing" &&
+    gameState.guessedRows.length == 0 &&
+    gameState.currentRow == ""
+  ) {
+    return Array.from({ length: NUM_GUESSES }).map((_) => ({
+      rowType: "blank",
+    }));
+  }
+
+  return [];
+}
 export const GameBoard: React.FC<{ gameState: GameState }> = ({
   gameState,
 }) => {

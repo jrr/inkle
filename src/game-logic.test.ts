@@ -1,8 +1,5 @@
+import { expectEqual } from "./test-util";
 import { colorGuess } from "./game-logic.js";
-
-function expectEqual<T>(actual: T, expected: T) {
-  expect(expected).toStrictEqual(actual);
-}
 
 describe("colorGuess", () => {
   it("colors green", () => {
