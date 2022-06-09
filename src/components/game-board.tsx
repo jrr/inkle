@@ -1,40 +1,37 @@
 import { Newline, Text } from "ink";
-import React from "react";
-import { NUM_GUESSES } from "../constants.js";
-import { onFinalGuess } from "../state/reducer.js";
+import React, { Fragment } from "react";
 import { GameState } from "../types.js";
 import { spaceString } from "../util.js";
 import { BoardRow } from "./board-row.js";
+import { computeDisplayRows, DisplayRow } from "./display-rows.js";
 
 export const GameBoard: React.FC<{ gameState: GameState }> = ({
   gameState,
 }) => {
-  const numBlankRows =
-    NUM_GUESSES -
-    gameState.guessedRows.length -
-    (gameState.status == "guessing" ? 1 : 0);
+  const rows = computeDisplayRows(gameState);
+
   return (
     <Text>
-      {gameState.guessedRows.map((row, i) => (
-        <BoardRow
-          key={`guess-${i}`}
-          guessedRow={row}
-          isLastRow={i == NUM_GUESSES - 1}
-        />
-      ))}
-      {gameState.status == "guessing" && (
-        <React.Fragment key="current-row">
-          <Text>{spaceString(gameState.currentRow)}</Text>
-          {!onFinalGuess(gameState) && <Newline />}
-        </React.Fragment>
-      )}
-      {numBlankRows > 0 &&
-        [...Array(numBlankRows)].map((_, i) => (
-          <React.Fragment key={`blank-${i}`}>
-            <Text>{"         "}</Text>
-            {i != numBlankRows - 1 && <Newline />}
-          </React.Fragment>
-        ))}
+      {rows.map((row, i) => {
+        const isLastRow = i == rows.length - 1;
+        return (
+          <Fragment key={i}>
+            <GameBoardRow row={row} />
+            {!isLastRow && <Newline />}
+          </Fragment>
+        );
+      })}
     </Text>
   );
+};
+
+const GameBoardRow: React.FC<{ row: DisplayRow }> = ({ row }): JSX.Element => {
+  switch (row.rowType) {
+    case "guessed":
+      return <BoardRow guessedRow={row} />;
+    case "guessing":
+      return <Text>{spaceString(row.currentRow)}</Text>;
+    case "blank":
+      return <Text>{spaceString("     ")}</Text>;
+  }
 };

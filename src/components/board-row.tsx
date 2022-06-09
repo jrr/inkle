@@ -1,11 +1,10 @@
-import { Newline, Text } from "ink";
+import { Text } from "ink";
 import React from "react";
 import { GuessedRow } from "../types.js";
 
 export const BoardRow: React.FC<{
   guessedRow: GuessedRow;
-  isLastRow: boolean;
-}> = ({ guessedRow, isLastRow }) => {
+}> = ({ guessedRow }) => {
   return (
     <>
       {guessedRow.letters.map((l, i) => (
@@ -14,7 +13,6 @@ export const BoardRow: React.FC<{
           {i != guessedRow.letters.length - 1 && <Text> </Text>}
         </React.Fragment>
       ))}
-      {!isLastRow && <Newline key={`newline`} />}
     </>
   );
 };

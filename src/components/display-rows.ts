@@ -1,12 +1,9 @@
 import { NUM_GUESSES } from "../constants.js";
-import { GameState } from "../types.js";
+import { GameState, GuessedLetter } from "../types.js";
 
-/*
-
- */
-type DisplayRow =
-  | { rowType: "guessed" }
-  | { rowType: "guessing" }
+export type DisplayRow =
+  | { rowType: "guessed"; letters: GuessedLetter[] }
+  | { rowType: "guessing"; currentRow: string }
   | { rowType: "blank" };
 
 export function computeDisplayRows(gameState: GameState): DisplayRow[] {
@@ -17,11 +14,14 @@ export function computeDisplayRows(gameState: GameState): DisplayRow[] {
 
   const guesses = gameState.guessedRows.map((row, i) => ({
     rowType: "guessed" as const,
+    letters: row.letters,
   }));
   const guessing =
-    gameState.status == "guessing" ? [{ rowType: "guessing" as const }] : [];
+    gameState.status == "guessing"
+      ? [{ rowType: "guessing" as const, currentRow: gameState.currentRow }]
+      : [];
 
-  const blanks = [...Array(numBlankRows)].map((_, i) => ({
+  const blanks = [...Array(numBlankRows)].map(() => ({
     rowType: "blank" as const,
   }));
 
