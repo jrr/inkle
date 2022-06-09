@@ -16,233 +16,33 @@ describe("computeDisplayRows", () => {
   });
 
   it("midgame", () => {
-    const result = computeDisplayRows(testStates["midgame"]);
+    const result = computeDisplayRows(testStates.midgame);
 
-    expect(result).toMatchInlineSnapshot(`
-      Array [
-        Object {
-          "letters": Array [
-            Object {
-              "color": "gray",
-              "letter": "F",
-            },
-            Object {
-              "color": "gray",
-              "letter": "L",
-            },
-            Object {
-              "color": "gray",
-              "letter": "O",
-            },
-            Object {
-              "color": "yellow",
-              "letter": "A",
-            },
-            Object {
-              "color": "yellow",
-              "letter": "T",
-            },
-          ],
-          "rowType": "guessed",
-        },
-        Object {
-          "letters": Array [
-            Object {
-              "color": "green",
-              "letter": "S",
-            },
-            Object {
-              "color": "green",
-              "letter": "T",
-            },
-            Object {
-              "color": "green",
-              "letter": "A",
-            },
-            Object {
-              "color": "yellow",
-              "letter": "R",
-            },
-            Object {
-              "color": "gray",
-              "letter": "R",
-            },
-          ],
-          "rowType": "guessed",
-        },
-        Object {
-          "currentRow": "JKL",
-          "rowType": "guessing",
-        },
-        Object {
-          "rowType": "blank",
-        },
-        Object {
-          "rowType": "blank",
-        },
-        Object {
-          "rowType": "blank",
-        },
-      ]
-    `);
+    expectEqual(result, [
+      {
+        rowType: "guessed",
+        letters: testStates.midgame.guessedRows[0].letters,
+      },
+      {
+        rowType: "guessed",
+        letters: testStates.midgame.guessedRows[1].letters,
+      },
+      { currentRow: "JKL", rowType: "guessing" },
+      { rowType: "blank" },
+      { rowType: "blank" },
+      { rowType: "blank" },
+    ]);
   });
 
   it("loss", () => {
-    const result = computeDisplayRows(testStates["lose"]);
+    const result = computeDisplayRows(testStates.lose);
 
-    expect(result).toMatchInlineSnapshot(`
-      Array [
-        Object {
-          "letters": Array [
-            Object {
-              "color": "gray",
-              "letter": "B",
-            },
-            Object {
-              "color": "gray",
-              "letter": "O",
-            },
-            Object {
-              "color": "gray",
-              "letter": "N",
-            },
-            Object {
-              "color": "gray",
-              "letter": "K",
-            },
-            Object {
-              "color": "gray",
-              "letter": "S",
-            },
-          ],
-          "rowType": "guessed",
-        },
-        Object {
-          "letters": Array [
-            Object {
-              "color": "gray",
-              "letter": "B",
-            },
-            Object {
-              "color": "gray",
-              "letter": "O",
-            },
-            Object {
-              "color": "gray",
-              "letter": "N",
-            },
-            Object {
-              "color": "gray",
-              "letter": "K",
-            },
-            Object {
-              "color": "gray",
-              "letter": "S",
-            },
-          ],
-          "rowType": "guessed",
-        },
-        Object {
-          "letters": Array [
-            Object {
-              "color": "gray",
-              "letter": "B",
-            },
-            Object {
-              "color": "gray",
-              "letter": "O",
-            },
-            Object {
-              "color": "gray",
-              "letter": "N",
-            },
-            Object {
-              "color": "gray",
-              "letter": "K",
-            },
-            Object {
-              "color": "gray",
-              "letter": "S",
-            },
-          ],
-          "rowType": "guessed",
-        },
-        Object {
-          "letters": Array [
-            Object {
-              "color": "gray",
-              "letter": "B",
-            },
-            Object {
-              "color": "gray",
-              "letter": "O",
-            },
-            Object {
-              "color": "gray",
-              "letter": "N",
-            },
-            Object {
-              "color": "gray",
-              "letter": "K",
-            },
-            Object {
-              "color": "gray",
-              "letter": "S",
-            },
-          ],
-          "rowType": "guessed",
-        },
-        Object {
-          "letters": Array [
-            Object {
-              "color": "gray",
-              "letter": "B",
-            },
-            Object {
-              "color": "gray",
-              "letter": "O",
-            },
-            Object {
-              "color": "gray",
-              "letter": "N",
-            },
-            Object {
-              "color": "gray",
-              "letter": "K",
-            },
-            Object {
-              "color": "gray",
-              "letter": "S",
-            },
-          ],
-          "rowType": "guessed",
-        },
-        Object {
-          "letters": Array [
-            Object {
-              "color": "gray",
-              "letter": "B",
-            },
-            Object {
-              "color": "gray",
-              "letter": "O",
-            },
-            Object {
-              "color": "gray",
-              "letter": "N",
-            },
-            Object {
-              "color": "gray",
-              "letter": "K",
-            },
-            Object {
-              "color": "gray",
-              "letter": "S",
-            },
-          ],
-          "rowType": "guessed",
-        },
-      ]
-    `);
+    expectEqual(
+      result,
+      testStates.lose.guessedRows.map((r) => ({
+        rowType: "guessed" as const,
+        letters: r.letters,
+      }))
+    );
   });
 });

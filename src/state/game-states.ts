@@ -20,7 +20,9 @@ const badGuess: GuessedRow = {
   ],
 };
 
-export const testStates: Record<string, GameState> = {
+const stateNames = ["midgame", "win", "lose"] as const;
+
+export const testStates: Record<typeof stateNames[number], GameState> = {
   midgame: {
     status: "guessing",
     guessedRows: [
