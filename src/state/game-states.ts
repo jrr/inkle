@@ -20,7 +20,12 @@ const badGuess: GuessedRow = {
   ],
 };
 
-const stateNames = ["midgame", "win", "lose"] as const;
+export const stateNames = ["midgame", "win", "lose"] as const;
+
+type TestState = typeof stateNames[number];
+export function isKnownState(input: string): input is TestState {
+  return (stateNames as readonly string[]).includes(input);
+}
 
 export const testStates: Record<typeof stateNames[number], GameState> = {
   midgame: {

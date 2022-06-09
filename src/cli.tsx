@@ -2,8 +2,10 @@
 import { render } from "ink";
 import meow from "meow";
 import React from "react";
-import { testStates } from "./state/game-states.js";
+import { isKnownState, testStates } from "./state/game-states.js";
 import App from "./ui.js";
+
+const knownStateNames = Object.keys(testStates).join("|");
 
 const cli = meow(
   `
@@ -11,7 +13,7 @@ const cli = meow(
 	  $ inkle
 
 	Options
-		--test ${Object.keys(testStates).join("|")}
+		--test ${knownStateNames}
 
 	Examples
 	  $ inkle --test midgame --quit
@@ -36,11 +38,15 @@ function chooseState(
   if (stateName == undefined) {
     return undefined;
   }
-  const state = testStates[stateName];
-  if (state === undefined) {
-    console.log(`Unknown test state '${stateName}'`);
+  if (!isKnownState(stateName)) {
+    console.log(
+      `Unknown test state '${stateName}'. Valid states are ${knownStateNames}`
+    );
     process.exit(1);
   }
+
+  const state = testStates[stateName];
+
   return { ...state, testQuit };
 }
 
