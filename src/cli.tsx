@@ -33,7 +33,7 @@ const cli = meow(
 
 function chooseState(
   stateName: string | undefined,
-  testQuit: boolean | undefined
+  exitPlease: boolean | undefined
 ) {
   if (stateName == undefined) {
     return undefined;
@@ -47,7 +47,7 @@ function chooseState(
 
   const state = testStates[stateName];
 
-  return { ...state, testQuit };
+  return { ...state, exitPlease };
 }
 
 const app = render(

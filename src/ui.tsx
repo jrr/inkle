@@ -23,10 +23,10 @@ const App: FC<{ initialState?: GameState }> = ({ initialState }) => {
   const [gameState, dispatch] = useReducer(reducer, initialState ?? newGame());
 
   useEffect(() => {
-    if (gameState.exitPlease || gameState.testQuit) {
+    if (gameState.exitPlease) {
       exit();
     }
-  }, [gameState.exitPlease, gameState.testQuit]);
+  }, [gameState.exitPlease]);
 
   useInput(
     (input, key) => {
@@ -46,7 +46,7 @@ const App: FC<{ initialState?: GameState }> = ({ initialState }) => {
         dispatch({ action: "backspace" });
       }
     },
-    { isActive: gameState.testQuit != true }
+    { isActive: gameState.exitPlease != true }
   );
   const colors = deriveGameColors(gameState);
 

@@ -12,7 +12,6 @@ export type GameState = {
   solution: string;
   exitPlease?: boolean;
   note?: string;
-  testQuit?: boolean;
 } & (
   | {
       status: "guessing";
