@@ -25,5 +25,8 @@ interactive-node-14: $(tarball)
 interactive-node-16: $(tarball)
 	docker run -it --entrypoint bash -v $(PWD)/out:/out node:16-buster
 
+interactive-node-18: $(tarball)
+	docker run -it --entrypoint bash -v $(PWD)/out:/out node:18-buster
+
 clean:
 	rm -rf dist
