@@ -13,8 +13,9 @@ $(tarball): dist/cli.js
 test-npx-node-14: $(tarball)
 	docker run --entrypoint bash -v $(PWD)/out:/out node:14-buster -c 'npx file:///out/inkle-0.0.0-testing.tgz --test midgame --quit'
 
+# explicitly installing npm 8.11.0 because newer versions fail (related to npm exec file:// URLs?)
 test-npx-node-16: $(tarball)
-	docker run --entrypoint bash -v $(PWD)/out:/out node:16-buster -c 'npm exec -y file:///out/inkle-0.0.0-testing.tgz -- --test midgame --quit'
+	docker run --entrypoint bash -v $(PWD)/out:/out node:16-buster -c 'npm i -g npm@8.11.0 && npm exec -y file:///out/inkle-0.0.0-testing.tgz -- --test midgame --quit'
 
 # explicitly installing npm 8.11.0 because newer versions fail (related to npm exec file:// URLs?)
 test-npx-node-18: $(tarball)
