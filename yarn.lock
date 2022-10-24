@@ -2052,10 +2052,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.11.59":
-  version: 16.11.59
-  resolution: "@types/node@npm:16.11.59"
-  checksum: b3a2986ef8f8216bb7fd1187dcf2e69aca3e6b6b5fdfd6abf4cf11c44e3cdd587fae875a28dc4ef257e2b369e2c5290642aff6a0a9d702f3385a78f561293259
+"@types/node@npm:^18.11.4":
+  version: 18.11.4
+  resolution: "@types/node@npm:18.11.4"
+  checksum: 1de782b4eef4a5115396ae62137f248390ee5d1d9e9eeb49599714554cce1328af43da31bc28e7bab5a0ef859538a584a907b26163a59b42bc87b8317dc00bb8
   languageName: node
   linkType: hard
 
@@ -4140,7 +4140,7 @@ __metadata:
     "@babel/preset-typescript": ^7.18.6
     "@types/ink-big-text": ^1.2.1
     "@types/jest": ^28.1.8
-    "@types/node": ^16.11.59
+    "@types/node": ^18.11.4
     "@types/react": ^17.0.50
     "@typescript-eslint/eslint-plugin": ^5.40.1
     "@typescript-eslint/parser": ^5.37.0
