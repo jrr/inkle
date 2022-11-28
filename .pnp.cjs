@@ -48,7 +48,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:29.2.2"],\
             ["meow", "npm:11.0.0"],\
             ["prettier", "npm:2.7.1"],\
-            ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.1.1"],\
+            ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.2.1"],\
             ["react", "npm:17.0.2"],\
             ["ts-jest", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:29.0.3"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"]\
@@ -6271,7 +6271,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:29.2.2"],\
             ["meow", "npm:11.0.0"],\
             ["prettier", "npm:2.7.1"],\
-            ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.1.1"],\
+            ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.2.1"],\
             ["react", "npm:17.0.2"],\
             ["ts-jest", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:29.0.3"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"]\
@@ -8143,20 +8143,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["prettier-plugin-organize-imports", [\
-        ["npm:3.1.1", {\
-          "packageLocation": "./.yarn/cache/prettier-plugin-organize-imports-npm-3.1.1-567d5f658a-a5776ddf70.zip/node_modules/prettier-plugin-organize-imports/",\
+        ["npm:3.2.1", {\
+          "packageLocation": "./.yarn/cache/prettier-plugin-organize-imports-npm-3.2.1-dac156fd04-57d0539e26.zip/node_modules/prettier-plugin-organize-imports/",\
           "packageDependencies": [\
-            ["prettier-plugin-organize-imports", "npm:3.1.1"]\
+            ["prettier-plugin-organize-imports", "npm:3.2.1"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.1.1", {\
-          "packageLocation": "./.yarn/__virtual__/prettier-plugin-organize-imports-virtual-6ca5c9a792/0/cache/prettier-plugin-organize-imports-npm-3.1.1-567d5f658a-a5776ddf70.zip/node_modules/prettier-plugin-organize-imports/",\
+        ["virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.2.1", {\
+          "packageLocation": "./.yarn/__virtual__/prettier-plugin-organize-imports-virtual-ea717d698d/0/cache/prettier-plugin-organize-imports-npm-3.2.1-dac156fd04-57d0539e26.zip/node_modules/prettier-plugin-organize-imports/",\
           "packageDependencies": [\
-            ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.1.1"],\
+            ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.2.1"],\
             ["@types/prettier", null],\
             ["@types/typescript", null],\
+            ["@types/volar__vue-language-plugin-pug", null],\
             ["@types/volar__vue-typescript", null],\
+            ["@volar/vue-language-plugin-pug", null],\
             ["@volar/vue-typescript", null],\
             ["prettier", "npm:2.7.1"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"]\
@@ -8164,7 +8166,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/prettier",\
             "@types/typescript",\
+            "@types/volar__vue-language-plugin-pug",\
             "@types/volar__vue-typescript",\
+            "@volar/vue-language-plugin-pug",\
             "@volar/vue-typescript",\
             "prettier",\
             "typescript"\
