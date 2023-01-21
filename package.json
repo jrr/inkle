@@ -37,7 +37,7 @@
     "@types/ink-big-text": "^1.2.1",
     "@types/jest": "^29.2.6",
     "@types/node": "^18.11.18",
-    "@types/react": "^17.0.52",
+    "@types/react": "^17.0.53",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
     "babel-jest": "^29.3.1",
