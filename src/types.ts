@@ -7,9 +7,15 @@ export type GuessedRow = {
   letters: GuessedLetter[];
 };
 
-export type GameState = {
+export type GameBoardState = {
   guessedRows: GuessedRow[];
   solution: string;
+};
+
+export type GameState = {
+  // guessedRows: GuessedRow[];
+  // solution: string;
+  gameBoard: GameBoardState;
   exitPlease?: boolean;
   note?: string;
 } & (

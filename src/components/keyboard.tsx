@@ -41,7 +41,9 @@ type KeyColor = "green" | "yellow" | "gray";
 type KeyColors = Record<KeyColor, string>;
 
 function computeKeyColors(gameState: GameState): KeyColors {
-  const allGuesses = gameState.guessedRows.flatMap((gr) => gr.letters);
+  const allGuesses = gameState.gameBoard.guessedRows.flatMap(
+    (gr) => gr.letters
+  );
   return {
     gray: lettersForColor(allGuesses, "gray"),
     green: lettersForColor(allGuesses, "green"),

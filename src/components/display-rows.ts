@@ -7,7 +7,7 @@ export type DisplayRow =
   | { rowType: "blank" };
 
 export function computeDisplayRows(gameState: GameState): DisplayRow[] {
-  const guesses = gameState.guessedRows.map((row) => ({
+  const guesses = gameState.gameBoard.guessedRows.map((row) => ({
     rowType: "guessed" as const,
     letters: row.letters,
   }));
