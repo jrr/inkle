@@ -10,6 +10,7 @@ export type GuessedRow = {
 export type GameBoardState = {
   guessedRows: GuessedRow[];
   solution: string;
+  boardStatus: "in-play" | "won";
 };
 
 export type GameState = {

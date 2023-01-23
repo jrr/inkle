@@ -4,7 +4,8 @@ import { computeDisplayRows } from "./display-rows";
 
 describe("computeDisplayRows", () => {
   it("new game", () => {
-    const result = computeDisplayRows(newGame());
+    const game = newGame();
+    const result = computeDisplayRows(game.gameBoards[0], game);
     expectEqual(result, [
       { rowType: "guessing", currentRow: "" },
       { rowType: "blank" },
@@ -16,7 +17,10 @@ describe("computeDisplayRows", () => {
   });
 
   it("midgame", () => {
-    const result = computeDisplayRows(testStates.midgame);
+    const result = computeDisplayRows(
+      testStates.midgame.gameBoards[0],
+      testStates.midgame
+    );
 
     expectEqual(result, [
       {
@@ -35,7 +39,10 @@ describe("computeDisplayRows", () => {
   });
 
   it("loss", () => {
-    const result = computeDisplayRows(testStates.lose);
+    const result = computeDisplayRows(
+      testStates.lose.gameBoards[0],
+      testStates.lose
+    );
 
     expectEqual(
       result,

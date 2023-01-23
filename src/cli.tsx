@@ -14,6 +14,7 @@ const cli = meow(
 
 	Options
 		--test ${knownStateNames}
+    --num-boards 3
 
 	Examples
 	  $ inkle --test midgame --quit
@@ -25,6 +26,11 @@ const cli = meow(
       },
       quit: {
         type: "boolean",
+      },
+      numBoards: {
+        type: "number",
+        alias: "n",
+        default: 1,
       },
     },
     importMeta: import.meta,
@@ -51,7 +57,10 @@ function chooseState(
 }
 
 const app = render(
-  <App initialState={chooseState(cli.flags.test, cli.flags.quit)} />
+  <App
+    initialState={chooseState(cli.flags.test, cli.flags.quit)}
+    numBoards={cli.flags.numBoards}
+  />
 );
 
 await app.waitUntilExit();

@@ -1,15 +1,15 @@
 import { pickSolution } from "../game-logic.js";
 import { GameState, GuessedRow } from "../types.js";
 
-export function newGame(): GameState {
+export function newGame(numGames = 1): GameState {
+  numGames;
   return {
     status: "guessing",
-    gameBoards: [
-      {
-        guessedRows: [],
-        solution: pickSolution(),
-      },
-    ],
+    gameBoards: Array.from({ length: numGames }).map(() => ({
+      guessedRows: [],
+      solution: pickSolution(),
+      boardStatus: "in-play",
+    })),
     currentRow: "",
   };
 }
@@ -57,6 +57,7 @@ export const testStates: Record<(typeof stateNames)[number], GameState> = {
           },
         ],
         solution: "OATER",
+        boardStatus: "in-play",
       },
     ],
     currentRow: "JKL",
@@ -77,6 +78,7 @@ export const testStates: Record<(typeof stateNames)[number], GameState> = {
           },
         ],
         solution: "BONKS",
+        boardStatus: "won",
       },
     ],
   },
@@ -93,6 +95,7 @@ export const testStates: Record<(typeof stateNames)[number], GameState> = {
           badGuess,
         ],
         solution: "PLACE",
+        boardStatus: "in-play",
       },
     ],
   },

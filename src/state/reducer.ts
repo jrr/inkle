@@ -1,6 +1,6 @@
 import { KEY_NEW_GAME, KEY_QUIT, NUM_GUESSES, WORD_LEN } from "../constants.js";
 import { colorGuess, isValidWord } from "../game-logic.js";
-import { GameState } from "../types.js";
+import { GameBoardState, GameState } from "../types.js";
 import { GameAction } from "../ui.js";
 import { newGame } from "./game-states.js";
 
@@ -28,68 +28,74 @@ export function reducer(state: GameState, action: GameAction): GameState {
         break;
       case "submit-guess":
         if (rowIsFull(state)) {
-          if (state.currentRow == state.gameBoards[0].solution) {
-            return {
-              ...state,
-              status: "win",
-              gameBoards: [
-                {
-                  ...state.gameBoards[0],
-                  guessedRows: [
-                    ...state.gameBoards[0].guessedRows,
-                    colorGuess(state.gameBoards[0].solution, state.currentRow),
-                  ],
-                },
-              ],
-            };
-          }
-          if (!isValidWord(state.currentRow)) {
-            return {
-              ...state,
-              currentRow: "",
-              note: `'${state.currentRow.toLowerCase()}' is not a valid word.`,
-            };
-          }
-          if (onFinalGuess(state)) {
-            return {
-              ...state,
-              status: "loss",
-              gameBoards: [
-                {
-                  ...state.gameBoards[0],
-                  guessedRows: [
-                    ...state.gameBoards[0].guessedRows,
-                    colorGuess(state.gameBoards[0].solution, state.currentRow),
-                  ],
-                },
-              ],
-            };
-          }
-          {
-            return {
-              ...state,
-              currentRow: "",
-              gameBoards: [
-                {
-                  ...state.gameBoards[0],
-                  guessedRows: [
-                    ...state.gameBoards[0].guessedRows,
-                    colorGuess(state.gameBoards[0].solution, state.currentRow),
-                  ],
-                },
-              ],
-              note: undefined,
-            };
-          }
+          return handleSubmission(state);
         }
     }
   } else {
     if (action.action == "input-letter" && action.letter == KEY_NEW_GAME) {
-      return newGame();
+      return newGame(state.gameBoards.length);
     }
     if (action.action == "input-letter" && action.letter == KEY_QUIT) {
       return { ...state, exitPlease: true };
     }
   }
   return state;
+}
+
+function handleSubmission(
+  state: GameState & { status: "guessing" }
+): GameState {
+  if (!isValidWord(state.currentRow)) {
+    return {
+      ...state,
+      currentRow: "",
+      note: `'${state.currentRow.toLowerCase()}' is not a valid word.`,
+    };
+  }
+
+  //  =======
+  const updatedBoards: GameBoardState[] = state.gameBoards.map((board) => {
+    if (state.currentRow == board.solution) {
+      return {
+        ...board,
+        boardStatus: "won",
+        guessedRows: [
+          ...board.guessedRows,
+          colorGuess(board.solution, state.currentRow),
+        ],
+      };
+    }
+    return {
+      ...board,
+      guessedRows: [
+        ...board.guessedRows,
+        colorGuess(board.solution, state.currentRow),
+      ],
+    };
+  });
+
+  // look at all boards
+  // if all won -> game won
+  if (allBoardsWon(updatedBoards)) {
+    return { ...state, status: "win", gameBoards: updatedBoards };
+  }
+  // if not and on final guess -> loss
+  if (onFinalGuess(state)) {
+    return {
+      ...state,
+      status: "loss",
+      gameBoards: updatedBoards,
+    };
+  }
+  return {
+    ...state,
+    currentRow: "",
+    gameBoards: updatedBoards,
+    note: undefined,
+  };
+}
+
+function allBoardsWon(updatedBoards: GameBoardState[]) {
+  const s = [...new Set(updatedBoards.map((b) => b.boardStatus))];
+  return s.length == 1 && s[0] == "won";
 }
