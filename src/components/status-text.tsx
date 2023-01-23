@@ -12,7 +12,7 @@ function notesForState(gameState: GameState): [string, string] {
       ];
     case "loss":
       return [
-        `The word was ${gameState.gameBoard.solution}. Better luck next time.`,
+        `The word was ${gameState.gameBoard[0].solution}. Better luck next time.`,
         `Press '${KEY_NEW_GAME}' for a new game, or '${KEY_QUIT}' to quit.`,
       ];
   }

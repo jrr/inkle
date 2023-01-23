@@ -8,7 +8,7 @@ const rowIsFull = (state: GameState & { status: "guessing" }) =>
   state.currentRow.length == WORD_LEN;
 
 export const onFinalGuess = (state: GameState) =>
-  state.gameBoard.guessedRows.length == NUM_GUESSES - 1;
+  state.gameBoard[0].guessedRows.length == NUM_GUESSES - 1;
 
 export function reducer(state: GameState, action: GameAction): GameState {
   if (state.status == "guessing") {
@@ -28,17 +28,19 @@ export function reducer(state: GameState, action: GameAction): GameState {
         break;
       case "submit-guess":
         if (rowIsFull(state)) {
-          if (state.currentRow == state.gameBoard.solution) {
+          if (state.currentRow == state.gameBoard[0].solution) {
             return {
               ...state,
               status: "win",
-              gameBoard: {
-                ...state.gameBoard,
-                guessedRows: [
-                  ...state.gameBoard.guessedRows,
-                  colorGuess(state.gameBoard.solution, state.currentRow),
-                ],
-              },
+              gameBoard: [
+                {
+                  ...state.gameBoard[0],
+                  guessedRows: [
+                    ...state.gameBoard[0].guessedRows,
+                    colorGuess(state.gameBoard[0].solution, state.currentRow),
+                  ],
+                },
+              ],
             };
           }
           if (!isValidWord(state.currentRow)) {
@@ -52,26 +54,30 @@ export function reducer(state: GameState, action: GameAction): GameState {
             return {
               ...state,
               status: "loss",
-              gameBoard: {
-                ...state.gameBoard,
-                guessedRows: [
-                  ...state.gameBoard.guessedRows,
-                  colorGuess(state.gameBoard.solution, state.currentRow),
-                ],
-              },
+              gameBoard: [
+                {
+                  ...state.gameBoard[0],
+                  guessedRows: [
+                    ...state.gameBoard[0].guessedRows,
+                    colorGuess(state.gameBoard[0].solution, state.currentRow),
+                  ],
+                },
+              ],
             };
           }
           {
             return {
               ...state,
               currentRow: "",
-              gameBoard: {
-                ...state.gameBoard,
-                guessedRows: [
-                  ...state.gameBoard.guessedRows,
-                  colorGuess(state.gameBoard.solution, state.currentRow),
-                ],
-              },
+              gameBoard: [
+                {
+                  ...state.gameBoard[0],
+                  guessedRows: [
+                    ...state.gameBoard[0].guessedRows,
+                    colorGuess(state.gameBoard[0].solution, state.currentRow),
+                  ],
+                },
+              ],
               note: undefined,
             };
           }
