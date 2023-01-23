@@ -21,11 +21,11 @@ describe("computeDisplayRows", () => {
     expectEqual(result, [
       {
         rowType: "guessed",
-        letters: testStates.midgame.gameBoard[0].guessedRows[0].letters,
+        letters: testStates.midgame.gameBoards[0].guessedRows[0].letters,
       },
       {
         rowType: "guessed",
-        letters: testStates.midgame.gameBoard[0].guessedRows[1].letters,
+        letters: testStates.midgame.gameBoards[0].guessedRows[1].letters,
       },
       { currentRow: "JKL", rowType: "guessing" },
       { rowType: "blank" },
@@ -39,7 +39,7 @@ describe("computeDisplayRows", () => {
 
     expectEqual(
       result,
-      testStates.lose.gameBoard[0].guessedRows.map((r) => ({
+      testStates.lose.gameBoards[0].guessedRows.map((r) => ({
         rowType: "guessed" as const,
         letters: r.letters,
       }))

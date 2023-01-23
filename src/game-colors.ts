@@ -35,9 +35,9 @@ function colorN([n1, n2]: [number, number]): [string, string] {
 
 export function deriveGameColors(state: GameState): GameColors {
   const [c1, c2] =
-    state.gameBoard[0].guessedRows.length == 0
+    state.gameBoards[0].guessedRows.length == 0
       ? ["green", "yellow"]
-      : colorN(numbersFromGameBoardState(state.gameBoard[0]));
+      : colorN(numbersFromGameBoardState(state.gameBoards[0]));
   return {
     boardBorder: { guessing: "white", loss: "red", win: "green" }[state.status],
     largeTitle: state.status == "loss" ? ["black", "red"] : [c1, c2],

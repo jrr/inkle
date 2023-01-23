@@ -4,7 +4,7 @@ import { GameState, GuessedRow } from "../types.js";
 export function newGame(): GameState {
   return {
     status: "guessing",
-    gameBoard: [
+    gameBoards: [
       {
         guessedRows: [],
         solution: pickSolution(),
@@ -34,7 +34,7 @@ export function isKnownState(input: string): input is TestState {
 export const testStates: Record<(typeof stateNames)[number], GameState> = {
   midgame: {
     status: "guessing",
-    gameBoard: [
+    gameBoards: [
       {
         guessedRows: [
           {
@@ -63,7 +63,7 @@ export const testStates: Record<(typeof stateNames)[number], GameState> = {
   },
   win: {
     status: "win",
-    gameBoard: [
+    gameBoards: [
       {
         guessedRows: [
           {
@@ -82,7 +82,7 @@ export const testStates: Record<(typeof stateNames)[number], GameState> = {
   },
   lose: {
     status: "loss",
-    gameBoard: [
+    gameBoards: [
       {
         guessedRows: [
           badGuess,

@@ -15,7 +15,7 @@ export type GameBoardState = {
 export type GameState = {
   // guessedRows: GuessedRow[];
   // solution: string;
-  gameBoard: GameBoardState[];
+  gameBoards: GameBoardState[];
   exitPlease?: boolean;
   note?: string;
 } & (
