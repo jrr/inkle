@@ -1,12 +1,12 @@
-import React from "react";
 import { Box, Text } from "ink";
-import { GameState, GuessedLetter } from "../types.js";
+import React from "react";
+import { GameBoardState, GuessedLetter } from "../types.js";
 const keyboardRows = ["QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"];
 type Props = {
-  gameState: GameState;
+  gameBoard: GameBoardState;
 };
-export const Keyboard: React.FC<Props> = (props) => {
-  const keyColors = computeKeyColors(props.gameState);
+export const Keyboard: React.FC<Props> = ({ gameBoard }) => {
+  const keyColors = computeKeyColors(gameBoard);
   return (
     <Box
       alignItems="center"
@@ -40,10 +40,8 @@ const KeyboardRow: React.FC<{ row: string; keyColors: KeyColors }> = ({
 type KeyColor = "green" | "yellow" | "gray";
 type KeyColors = Record<KeyColor, string>;
 
-function computeKeyColors(gameState: GameState): KeyColors {
-  const allGuesses = gameState.gameBoards[0].guessedRows.flatMap(
-    (gr) => gr.letters
-  );
+function computeKeyColors(gameBoard: GameBoardState): KeyColors {
+  const allGuesses = gameBoard.guessedRows.flatMap((gr) => gr.letters);
   return {
     gray: lettersForColor(allGuesses, "gray"),
     green: lettersForColor(allGuesses, "green"),

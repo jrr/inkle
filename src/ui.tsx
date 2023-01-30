@@ -65,21 +65,23 @@ const App: FC<{ initialState?: GameState; numBoards?: number }> = ({
     >
       <TitleText large={x > 45 && y > 20} title="INKLE" colors={colors} />
 
-      <Box>
+      <Box flexDirection="row">
         {gameState.gameBoards.map((board, i) => {
           return (
-            <Box
-              borderStyle="round"
-              borderColor={colors.boardBorder}
-              key={`${i}-${board.solution}`}
-            >
-              <GameBoard gameBoardState={board} gameState={gameState} />
+            <Box flexDirection="column" marginX={1} alignItems={"center"}>
+              <Box
+                borderStyle="round"
+                borderColor={colors.boardBorder}
+                key={`${i}-${board.solution}`}
+                flexShrink={2}
+              >
+                <GameBoard gameBoardState={board} gameState={gameState} />
+              </Box>
+              <Keyboard gameBoard={board}></Keyboard>
             </Box>
           );
         })}
       </Box>
-
-      <Keyboard gameState={gameState}></Keyboard>
 
       <StatusText gameState={gameState} />
     </Box>
