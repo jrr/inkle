@@ -1,4 +1,4 @@
-import { KEY_NEW_GAME, KEY_QUIT, NUM_GUESSES, WORD_LEN } from "../constants.js";
+import { KEY_NEW_GAME, KEY_QUIT, WORD_LEN } from "../constants.js";
 import { colorGuess, isValidWord } from "../game-logic.js";
 import { GameBoardState, GameState } from "../types.js";
 import { GameAction } from "../ui.js";
@@ -8,7 +8,7 @@ const rowIsFull = (state: GameState & { status: "guessing" }) =>
   state.currentRow.length == WORD_LEN;
 
 export const onFinalGuess = (state: GameState) =>
-  state.gameBoards[0].guessedRows.length == NUM_GUESSES - 1;
+  state.gameBoards[0].guessedRows.length == state.numGuessesAllowed - 1;
 
 export function reducer(state: GameState, action: GameAction): GameState {
   if (state.status == "guessing") {
@@ -33,7 +33,10 @@ export function reducer(state: GameState, action: GameAction): GameState {
     }
   } else {
     if (action.action == "input-letter" && action.letter == KEY_NEW_GAME) {
-      return newGame(state.gameBoards.length);
+      return newGame({
+        numBoards: state.gameBoards.length,
+        numGuesses: state.numGuessesAllowed,
+      });
     }
     if (action.action == "input-letter" && action.letter == KEY_QUIT) {
       return { ...state, exitPlease: true };
@@ -55,6 +58,9 @@ function handleSubmission(
 
   //  =======
   const updatedBoards: GameBoardState[] = state.gameBoards.map((board) => {
+    if (board.boardStatus == "won") {
+      return board;
+    }
     if (state.currentRow == board.solution) {
       return {
         ...board,

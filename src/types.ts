@@ -14,8 +14,7 @@ export type GameBoardState = {
 };
 
 export type GameState = {
-  // guessedRows: GuessedRow[];
-  // solution: string;
+  numGuessesAllowed: number;
   gameBoards: GameBoardState[];
   exitPlease?: boolean;
   note?: string;

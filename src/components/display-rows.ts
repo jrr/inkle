@@ -1,4 +1,3 @@
-import { NUM_GUESSES } from "../constants.js";
 import { GameBoardState, GameState, GuessedLetter } from "../types.js";
 
 export type DisplayRow =
@@ -16,11 +15,12 @@ export function computeDisplayRows(
   }));
 
   const guessing =
-    gameState.status == "guessing"
+    gameState.status == "guessing" && gameBoardState.boardStatus == "in-play"
       ? [{ rowType: "guessing" as const, currentRow: gameState.currentRow }]
       : [];
 
-  const numBlankRows = NUM_GUESSES - guesses.length - guessing.length;
+  const numBlankRows =
+    gameState.numGuessesAllowed - guesses.length - guessing.length;
 
   const blanks = [...Array(numBlankRows)].map(() => ({
     rowType: "blank" as const,

@@ -15,17 +15,18 @@ export type GameAction =
   | { action: "submit-guess" }
   | { action: "backspace" };
 
-const App: FC<{ initialState?: GameState; numBoards?: number }> = ({
-  initialState,
-  numBoards,
-}) => {
+const App: FC<{
+  initialState?: GameState;
+  numBoards?: number;
+  numGuesses?: number;
+}> = ({ initialState, numBoards, numGuesses }) => {
   const { exit } = useApp();
 
   const [x, y] = useStdoutDimensions();
 
   const [gameState, dispatch] = useReducer(
     reducer,
-    initialState ?? newGame(numBoards || 1)
+    initialState ?? newGame({ numBoards, numGuesses })
   );
 
   useEffect(() => {
@@ -68,11 +69,15 @@ const App: FC<{ initialState?: GameState; numBoards?: number }> = ({
       <Box flexDirection="row">
         {gameState.gameBoards.map((board, i) => {
           return (
-            <Box flexDirection="column" marginX={1} alignItems={"center"}>
+            <Box
+              flexDirection="column"
+              marginX={1}
+              alignItems={"center"}
+              key={`${i}-${board.solution}`}
+            >
               <Box
                 borderStyle="round"
                 borderColor={colors.boardBorder}
-                key={`${i}-${board.solution}`}
                 flexShrink={2}
               >
                 <GameBoard gameBoardState={board} gameState={gameState} />
