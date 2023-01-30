@@ -13,7 +13,7 @@ const cli = meow(
 	  $ inkle
 
 	Options
-		--test ${knownStateNames}
+    --test ${knownStateNames}
     --num-boards 3
     --num-guesses 10
 
