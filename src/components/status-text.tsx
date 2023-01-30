@@ -11,8 +11,16 @@ function notesForState(gameState: GameState): [string, string] {
         `Press '${KEY_NEW_GAME}' for a new game, or '${KEY_QUIT}' to quit.`,
       ];
     case "loss":
+      if (gameState.gameBoards.length == 1) {
+        return [
+          `The word was ${gameState.gameBoards[0].solution}. Better luck next time.`,
+          `Press '${KEY_NEW_GAME}' for a new game, or '${KEY_QUIT}' to quit.`,
+        ];
+      }
       return [
-        `The word was ${gameState.solution}. Better luck next time.`,
+        `The words were ${gameState.gameBoards
+          .map((b) => b.solution)
+          .join(",")}. Better luck next time.`,
         `Press '${KEY_NEW_GAME}' for a new game, or '${KEY_QUIT}' to quit.`,
       ];
   }

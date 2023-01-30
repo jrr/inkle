@@ -4,7 +4,8 @@ import { computeDisplayRows } from "./display-rows";
 
 describe("computeDisplayRows", () => {
   it("new game", () => {
-    const result = computeDisplayRows(newGame());
+    const game = newGame();
+    const result = computeDisplayRows(game.gameBoards[0], game);
     expectEqual(result, [
       { rowType: "guessing", currentRow: "" },
       { rowType: "blank" },
@@ -16,16 +17,19 @@ describe("computeDisplayRows", () => {
   });
 
   it("midgame", () => {
-    const result = computeDisplayRows(testStates.midgame);
+    const result = computeDisplayRows(
+      testStates.midgame.gameBoards[0],
+      testStates.midgame
+    );
 
     expectEqual(result, [
       {
         rowType: "guessed",
-        letters: testStates.midgame.guessedRows[0].letters,
+        letters: testStates.midgame.gameBoards[0].guessedRows[0].letters,
       },
       {
         rowType: "guessed",
-        letters: testStates.midgame.guessedRows[1].letters,
+        letters: testStates.midgame.gameBoards[0].guessedRows[1].letters,
       },
       { currentRow: "JKL", rowType: "guessing" },
       { rowType: "blank" },
@@ -35,11 +39,14 @@ describe("computeDisplayRows", () => {
   });
 
   it("loss", () => {
-    const result = computeDisplayRows(testStates.lose);
+    const result = computeDisplayRows(
+      testStates.lose.gameBoards[0],
+      testStates.lose
+    );
 
     expectEqual(
       result,
-      testStates.lose.guessedRows.map((r) => ({
+      testStates.lose.gameBoards[0].guessedRows.map((r) => ({
         rowType: "guessed" as const,
         letters: r.letters,
       }))

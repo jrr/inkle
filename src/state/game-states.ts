@@ -1,12 +1,22 @@
 import { pickSolution } from "../game-logic.js";
 import { GameState, GuessedRow } from "../types.js";
 
-export function newGame(): GameState {
+type NewGameParams = {
+  numBoards?: number;
+  numGuesses?: number;
+};
+export function newGame(opts?: NewGameParams): GameState {
+  const numBoards = opts?.numBoards || 1;
+  const numGuesses = opts?.numGuesses || numBoards + 5;
   return {
+    numGuessesAllowed: numGuesses,
     status: "guessing",
-    guessedRows: [],
+    gameBoards: Array.from({ length: numBoards }).map(() => ({
+      guessedRows: [],
+      solution: pickSolution(),
+      boardStatus: "in-play",
+    })),
     currentRow: "",
-    solution: pickSolution(),
   };
 }
 
@@ -29,48 +39,73 @@ export function isKnownState(input: string): input is TestState {
 
 export const testStates: Record<(typeof stateNames)[number], GameState> = {
   midgame: {
+    numGuessesAllowed: 6,
     status: "guessing",
-    guessedRows: [
+    gameBoards: [
       {
-        letters: [
-          { color: "gray", letter: "F" },
-          { color: "gray", letter: "L" },
-          { color: "gray", letter: "O" },
-          { color: "yellow", letter: "A" },
-          { color: "yellow", letter: "T" },
+        guessedRows: [
+          {
+            letters: [
+              { color: "gray", letter: "F" },
+              { color: "gray", letter: "L" },
+              { color: "gray", letter: "O" },
+              { color: "yellow", letter: "A" },
+              { color: "yellow", letter: "T" },
+            ],
+          },
+          {
+            letters: [
+              { color: "green", letter: "S" },
+              { color: "green", letter: "T" },
+              { color: "green", letter: "A" },
+              { color: "yellow", letter: "R" },
+              { color: "gray", letter: "R" },
+            ],
+          },
         ],
-      },
-      {
-        letters: [
-          { color: "green", letter: "S" },
-          { color: "green", letter: "T" },
-          { color: "green", letter: "A" },
-          { color: "yellow", letter: "R" },
-          { color: "gray", letter: "R" },
-        ],
+        solution: "OATER",
+        boardStatus: "in-play",
       },
     ],
     currentRow: "JKL",
-    solution: "OATER",
   },
   win: {
+    numGuessesAllowed: 6,
     status: "win",
-    guessedRows: [
+    gameBoards: [
       {
-        letters: [
-          { color: "green", letter: "B" },
-          { color: "green", letter: "O" },
-          { color: "green", letter: "N" },
-          { color: "green", letter: "K" },
-          { color: "green", letter: "S" },
+        guessedRows: [
+          {
+            letters: [
+              { color: "green", letter: "B" },
+              { color: "green", letter: "O" },
+              { color: "green", letter: "N" },
+              { color: "green", letter: "K" },
+              { color: "green", letter: "S" },
+            ],
+          },
         ],
+        solution: "BONKS",
+        boardStatus: "won",
       },
     ],
-    solution: "BONKS",
   },
   lose: {
+    numGuessesAllowed: 6,
     status: "loss",
-    guessedRows: [badGuess, badGuess, badGuess, badGuess, badGuess, badGuess],
-    solution: "PLACE",
+    gameBoards: [
+      {
+        guessedRows: [
+          badGuess,
+          badGuess,
+          badGuess,
+          badGuess,
+          badGuess,
+          badGuess,
+        ],
+        solution: "PLACE",
+        boardStatus: "in-play",
+      },
+    ],
   },
 };

@@ -7,9 +7,15 @@ export type GuessedRow = {
   letters: GuessedLetter[];
 };
 
-export type GameState = {
+export type GameBoardState = {
   guessedRows: GuessedRow[];
   solution: string;
+  boardStatus: "in-play" | "won";
+};
+
+export type GameState = {
+  numGuessesAllowed: number;
+  gameBoards: GameBoardState[];
   exitPlease?: boolean;
   note?: string;
 } & (

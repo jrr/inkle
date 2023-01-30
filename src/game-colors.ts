@@ -1,4 +1,4 @@
-import { GameState } from "./types";
+import { GameBoardState, GameState } from "./types";
 
 export type GameColors = {
   largeTitle: string[];
@@ -12,7 +12,7 @@ const stringSum = (s: string) =>
     .map((c) => c.charCodeAt(0))
     .reduce((a, b) => a + b);
 
-function numbersFromGameState(state: GameState): [number, number] {
+function numbersFromGameBoardState(state: GameBoardState): [number, number] {
   const s =
     state.solution +
     state.guessedRows.flatMap((r) => r.letters.flatMap((l) => l.letter));
@@ -35,9 +35,9 @@ function colorN([n1, n2]: [number, number]): [string, string] {
 
 export function deriveGameColors(state: GameState): GameColors {
   const [c1, c2] =
-    state.guessedRows.length == 0
+    state.gameBoards[0].guessedRows.length == 0
       ? ["green", "yellow"]
-      : colorN(numbersFromGameState(state));
+      : colorN(numbersFromGameBoardState(state.gameBoards[0]));
   return {
     boardBorder: { guessing: "white", loss: "red", win: "green" }[state.status],
     largeTitle: state.status == "loss" ? ["black", "red"] : [c1, c2],
