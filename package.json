@@ -26,7 +26,6 @@
   "dependencies": {
     "ink": "^3.2.0",
     "ink-big-text": "^1.2.0",
-    "ink-use-stdout-dimensions": "^1.0.5",
     "meow": "^11.0.0",
     "react": "^17.0.2"
   },

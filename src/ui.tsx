@@ -1,5 +1,4 @@
 import { Box, useApp, useInput } from "ink";
-import useStdoutDimensions from "ink-use-stdout-dimensions";
 import React, { FC, useEffect, useReducer } from "react";
 import { GameBoard } from "./components/game-board.js";
 import { Keyboard } from "./components/keyboard.js";
@@ -9,6 +8,7 @@ import { deriveGameColors } from "./game-colors.js";
 import { newGame } from "./state/game-states.js";
 import { reducer } from "./state/reducer.js";
 import { GameState } from "./types.js";
+import { useStdoutDimensions } from "./use-stdout-dimensions.js";
 
 export type GameAction =
   | { action: "input-letter"; letter: string }
