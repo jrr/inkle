@@ -1,4 +1,4 @@
-import { expectEqual } from "./test-util";
+import { expectEqual } from "./test-util.js";
 import { colorGuess } from "./game-logic.js";
 
 describe("colorGuess", () => {

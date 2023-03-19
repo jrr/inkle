@@ -1,6 +1,6 @@
 import { newGame, testStates } from "../state/game-states.js";
 import { expectEqual } from "../test-util.js";
-import { computeDisplayRows } from "./display-rows";
+import { computeDisplayRows } from "./display-rows.js";
 
 describe("computeDisplayRows", () => {
   it("new game", () => {
