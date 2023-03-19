@@ -5,8 +5,8 @@
     "noEmitOnError": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "module": "ES2022",
-    "moduleResolution": "node",
+    "module": "node16",
+    "moduleResolution": "nodenext",
     "jsx": "react",
     "esModuleInterop": true,
     "outDir": "dist"

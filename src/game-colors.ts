@@ -1,4 +1,4 @@
-import { GameBoardState, GameState } from "./types";
+import { GameBoardState, GameState } from "./types.js";
 
 export type GameColors = {
   largeTitle: string[];
