@@ -47,7 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ink-use-stdout-dimensions", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:1.0.5"],\
             ["jest", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:29.5.0"],\
             ["meow", "npm:11.0.0"],\
-            ["prettier", "npm:2.8.4"],\
+            ["prettier", "npm:2.8.5"],\
             ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.2.2"],\
             ["react", "npm:17.0.2"],\
             ["ts-jest", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:29.0.5"],\
@@ -5807,7 +5807,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ink-use-stdout-dimensions", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:1.0.5"],\
             ["jest", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:29.5.0"],\
             ["meow", "npm:11.0.0"],\
-            ["prettier", "npm:2.8.4"],\
+            ["prettier", "npm:2.8.5"],\
             ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.2.2"],\
             ["react", "npm:17.0.2"],\
             ["ts-jest", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:29.0.5"],\
@@ -7712,10 +7712,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["prettier", [\
-        ["npm:2.8.4", {\
-          "packageLocation": "./.yarn/cache/prettier-npm-2.8.4-ba64a351d1-c173064bf3.zip/node_modules/prettier/",\
+        ["npm:2.8.5", {\
+          "packageLocation": "./.yarn/cache/prettier-npm-2.8.5-3f60833fcb-b7f8d30e14.zip/node_modules/prettier/",\
           "packageDependencies": [\
-            ["prettier", "npm:2.8.4"]\
+            ["prettier", "npm:2.8.5"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7738,7 +7738,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/volar__vue-typescript", null],\
             ["@volar/vue-language-plugin-pug", null],\
             ["@volar/vue-typescript", null],\
-            ["prettier", "npm:2.8.4"],\
+            ["prettier", "npm:2.8.5"],\
             ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"]\
           ],\
           "packagePeers": [\
