@@ -38,7 +38,7 @@
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.32",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
-    "@typescript-eslint/parser": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.1",
     "babel-jest": "^29.5.0",
     "eslint": "^8.37.0",
     "eslint-plugin-react": "^7.32.2",
