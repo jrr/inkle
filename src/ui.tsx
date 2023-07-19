@@ -26,7 +26,7 @@ const App: FC<{
 
   const [gameState, dispatch] = useReducer(
     reducer,
-    initialState ?? newGame({ numBoards, numGuesses })
+    initialState ?? newGame({ numBoards, numGuesses }),
   );
 
   useEffect(() => {
@@ -53,7 +53,7 @@ const App: FC<{
         dispatch({ action: "backspace" });
       }
     },
-    { isActive: gameState.exitPlease != true }
+    { isActive: gameState.exitPlease != true },
   );
   const colors = deriveGameColors(gameState);
 

@@ -19,7 +19,7 @@ describe("computeDisplayRows", () => {
   it("midgame", () => {
     const result = computeDisplayRows(
       testStates.midgame.gameBoards[0],
-      testStates.midgame
+      testStates.midgame,
     );
 
     expectEqual(result, [
@@ -41,7 +41,7 @@ describe("computeDisplayRows", () => {
   it("loss", () => {
     const result = computeDisplayRows(
       testStates.lose.gameBoards[0],
-      testStates.lose
+      testStates.lose,
     );
 
     expectEqual(
@@ -49,7 +49,7 @@ describe("computeDisplayRows", () => {
       testStates.lose.gameBoards[0].guessedRows.map((r) => ({
         rowType: "guessed" as const,
         letters: r.letters,
-      }))
+      })),
     );
   });
 });

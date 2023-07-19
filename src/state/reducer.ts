@@ -46,7 +46,7 @@ export function reducer(state: GameState, action: GameAction): GameState {
 }
 
 function handleSubmission(
-  state: GameState & { status: "guessing" }
+  state: GameState & { status: "guessing" },
 ): GameState {
   if (!isValidWord(state.currentRow)) {
     return {
