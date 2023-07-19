@@ -3,7 +3,7 @@ tarball=out/inkle-0.0.0-testing.tgz
 dist/cli.js:
 	yarn build
 
-# todo: after dropping node 14, use '--pack-destination out' instead of moving file
+# todo: try '--pack-destination out' instead of moving file
 $(tarball): dist/cli.js
 	mkdir -p out
 	npm version --allow-same-version --no-git-tag-version 0.0.0-testing
