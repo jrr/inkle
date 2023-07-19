@@ -10,9 +10,6 @@ $(tarball): dist/cli.js
 	npm pack
 	mv inkle-0.0.0-testing.tgz out/
 
-test-npx-node-14: $(tarball)
-	docker run --entrypoint bash -v $(PWD)/out:/out node:14-buster -c 'npx file:///out/inkle-0.0.0-testing.tgz --test midgame --quit'
-
 # installing latest version of npm because certain old versions fail
 test-npx-node-16: $(tarball)
 	docker run --entrypoint bash -v $(PWD)/out:/out node:16-buster -c 'npm i -g npm && npm exec -y file:///out/inkle-0.0.0-testing.tgz -- --test midgame --quit'
@@ -22,9 +19,6 @@ test-npx-node-18: $(tarball)
 
 test-npx-node-20: $(tarball)
 	docker run --entrypoint bash -v $(PWD)/out:/out node:20-buster -c 'npm i -g npm && npm exec -y file:///out/inkle-0.0.0-testing.tgz -- --test midgame --quit'
-
-interactive-node-14: $(tarball)
-	docker run -it --entrypoint bash -v $(PWD)/out:/out node:14-buster
 
 interactive-node-16: $(tarball)
 	docker run -it --entrypoint bash -v $(PWD)/out:/out node:16-buster
