@@ -20,6 +20,9 @@ test-npx-node-16: $(tarball)
 test-npx-node-18: $(tarball)
 	docker run --entrypoint bash -v $(PWD)/out:/out node:18-buster -c 'npm i -g npm && npm exec -y file:///out/inkle-0.0.0-testing.tgz -- --test midgame --quit'
 
+test-npx-node-20: $(tarball)
+	docker run --entrypoint bash -v $(PWD)/out:/out node:20-buster -c 'npm i -g npm && npm exec -y file:///out/inkle-0.0.0-testing.tgz -- --test midgame --quit'
+
 interactive-node-14: $(tarball)
 	docker run -it --entrypoint bash -v $(PWD)/out:/out node:14-buster
 
