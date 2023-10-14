@@ -12,7 +12,7 @@ than you should probably go check out
 
 ## Running it
 
-Using Node.js 16+:
+Using Node.js 18+:
 
 - From NPM: `npx inkle`
 - From git: clone the repo and `yarn build-start`
