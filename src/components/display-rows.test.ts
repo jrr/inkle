@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest";
+import { describe, it } from "vitest";
 import { newGame, testStates } from "../state/game-states.js";
 import { expectEqual } from "../test-util.js";
 import { computeDisplayRows } from "./display-rows.js";
