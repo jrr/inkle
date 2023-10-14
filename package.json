@@ -16,7 +16,7 @@
     "watch": "tsc -w",
     "start": "node dist/cli.js",
     "build-start": "yarn build && yarn start",
-    "test": "jest",
+    "test": "vitest",
     "format": "prettier --write .",
     "lint": "eslint ."
   },
@@ -48,7 +48,8 @@
     "prettier": "^3.0.2",
     "prettier-plugin-organize-imports": "^3.2.3",
     "ts-jest": "^29.1.1",
-    "typescript": "5.1.6"
+    "typescript": "5.1.6",
+    "vitest": "^0.34.6"
   },
   "packageManager": "yarn@3.6.4"
 }
