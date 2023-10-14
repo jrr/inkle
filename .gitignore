@@ -1,6 +1,8 @@
 dist
 out
 
+node_modules
+
 .yarn/*
 !.yarn/cache
 !.yarn/patches
