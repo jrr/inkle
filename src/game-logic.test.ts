@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest";
+import { describe, it } from "vitest";
 import { expectEqual } from "./test-util.js";
 import { colorGuess } from "./game-logic.js";
 
