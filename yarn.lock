@@ -12,13 +12,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@alcalzone/ansi-tokenize@npm:^0.1.2":
-  version: 0.1.2
-  resolution: "@alcalzone/ansi-tokenize@npm:0.1.2"
+"@alcalzone/ansi-tokenize@npm:^0.1.3":
+  version: 0.1.3
+  resolution: "@alcalzone/ansi-tokenize@npm:0.1.3"
   dependencies:
     ansi-styles: ^6.2.1
     is-fullwidth-code-point: ^4.0.0
-  checksum: bca8222102a50095aa1dcbb0c9351b422c173e27180263bdf5c76ac8ec5d3770854e39838ce973251163a9d76f4405a6916405911ffc7bc34d0675bc76c426f2
+  checksum: 41240c3024cf7b049f4d9ccf187b5f02cf8d64be5bab75762f2461abd5a4cfdb27d8bb6d699308a461b1b5f2b85a4031c96e184de28e968b442d848c179473c3
   languageName: node
   linkType: hard
 
@@ -2293,11 +2293,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ink@npm:^4.3.1":
-  version: 4.3.1
-  resolution: "ink@npm:4.3.1"
+"ink@npm:^4.4.1":
+  version: 4.4.1
+  resolution: "ink@npm:4.4.1"
   dependencies:
-    "@alcalzone/ansi-tokenize": ^0.1.2
+    "@alcalzone/ansi-tokenize": ^0.1.3
     ansi-escapes: ^6.0.0
     auto-bind: ^5.0.1
     chalk: ^5.2.0
@@ -2331,7 +2331,7 @@ __metadata:
       optional: true
     react-devtools-core:
       optional: true
-  checksum: 8484398d73f6fa538c7d0f2b4fc8cd247da0dd477d4b7de97cbe3cbf064f84ad502cd1afbc91abc6f5d274dd8034f6a3e07b17241ccb8d48250660b68356188c
+  checksum: 6af24a6f143a5690b07001a2dfff8a9be87b880765283291353ba8fe1e26307cd4519f275a6253474ad9292cda323de62fe134e5935da366d80a586f83a245f0
   languageName: node
   linkType: hard
 
@@ -2347,7 +2347,7 @@ __metadata:
     eslint: ^8.51.0
     eslint-plugin-react: ^7.33.2
     eslint-plugin-react-hooks: ^4.6.0
-    ink: ^4.3.1
+    ink: ^4.4.1
     ink-big-text: ^2.0.0
     ink-testing-library: ^3.0.0
     meow: ^11.0.0

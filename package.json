@@ -24,7 +24,7 @@
     "dist"
   ],
   "dependencies": {
-    "ink": "^4.3.1",
+    "ink": "^4.4.1",
     "ink-big-text": "^2.0.0",
     "meow": "^11.0.0",
     "react": "^18.2.0"
