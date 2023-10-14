@@ -30,28 +30,28 @@ const cli = meow(
       },
       numBoards: {
         type: "number",
-        alias: "n",
+        shortFlag: "n",
         default: 1,
       },
       numGuesses: {
         type: "number",
-        alias: "g",
+        shortFlag: "g",
       },
     },
     importMeta: import.meta,
-  },
+  }
 );
 
 function chooseState(
   stateName: string | undefined,
-  exitPlease: boolean | undefined,
+  exitPlease: boolean | undefined
 ) {
   if (stateName == undefined) {
     return undefined;
   }
   if (!isKnownState(stateName)) {
     console.log(
-      `Unknown test state '${stateName}'. Valid states are ${knownStateNames}`,
+      `Unknown test state '${stateName}'. Valid states are ${knownStateNames}`
     );
     process.exit(1);
   }
@@ -66,7 +66,7 @@ const app = render(
     initialState={chooseState(cli.flags.test, cli.flags.quit)}
     numBoards={cli.flags.numBoards}
     numGuesses={cli.flags.numGuesses}
-  />,
+  />
 );
 
 await app.waitUntilExit();
