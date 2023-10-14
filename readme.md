@@ -15,7 +15,7 @@ than you should probably go check out
 Using Node.js 18+:
 
 - From NPM: `npx inkle`
-- From git: clone the repo and `yarn build-start`
+- From git: clone the repo, `yarn`, `yarn build-start`
 - Quit with esc or ctrl+C
 
 You can also play multiple boards (a la
