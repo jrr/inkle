@@ -28,9 +28,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@types/ink-big-text", "npm:1.2.1"],\
+            ["@types/ink-big-text", "npm:1.2.2"],\
             ["@types/node", "npm:20.8.6"],\
-            ["@types/react", "npm:18.2.20"],\
+            ["@types/react", "npm:18.2.28"],\
             ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:6.7.5"],\
             ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:6.7.5"],\
             ["eslint", "npm:8.51.0"],\
@@ -525,10 +525,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/ink-big-text", [\
-        ["npm:1.2.1", {\
-          "packageLocation": "./.yarn/cache/@types-ink-big-text-npm-1.2.1-fdeef70228-33f0974dab.zip/node_modules/@types/ink-big-text/",\
+        ["npm:1.2.2", {\
+          "packageLocation": "./.yarn/cache/@types-ink-big-text-npm-1.2.2-1ec9e49fda-a2ce6eb5e2.zip/node_modules/@types/ink-big-text/",\
           "packageDependencies": [\
-            ["@types/ink-big-text", "npm:1.2.1"],\
+            ["@types/ink-big-text", "npm:1.2.2"],\
             ["@types/react", "npm:18.2.15"]\
           ],\
           "linkType": "HARD"\
@@ -598,10 +598,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:18.2.20", {\
-          "packageLocation": "./.yarn/cache/@types-react-npm-18.2.20-c3e301ef67-30f699c60e.zip/node_modules/@types/react/",\
+        ["npm:18.2.28", {\
+          "packageLocation": "./.yarn/cache/@types-react-npm-18.2.28-8e8cf3938c-81381bedeb.zip/node_modules/@types/react/",\
           "packageDependencies": [\
-            ["@types/react", "npm:18.2.20"],\
+            ["@types/react", "npm:18.2.28"],\
             ["@types/prop-types", "npm:15.7.5"],\
             ["@types/scheduler", "npm:0.16.3"],\
             ["csstype", "npm:3.1.2"]\
@@ -2702,7 +2702,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["ink", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.3.1"],\
             ["@alcalzone/ansi-tokenize", "npm:0.1.2"],\
-            ["@types/react", "npm:18.2.20"],\
+            ["@types/react", "npm:18.2.28"],\
             ["@types/react-devtools-core", null],\
             ["ansi-escapes", "npm:6.2.0"],\
             ["auto-bind", "npm:5.0.1"],\
@@ -2753,7 +2753,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["ink-big-text", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:2.0.0"],\
             ["@types/ink", null],\
-            ["@types/react", "npm:18.2.20"],\
+            ["@types/react", "npm:18.2.28"],\
             ["cfonts", "npm:3.2.0"],\
             ["ink", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.3.1"],\
             ["prop-types", "npm:15.8.1"],\
@@ -2780,7 +2780,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/ink-testing-library-virtual-973a78f867/0/cache/ink-testing-library-npm-3.0.0-c20aad0bd9-8fe9c42203.zip/node_modules/ink-testing-library/",\
           "packageDependencies": [\
             ["ink-testing-library", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.0.0"],\
-            ["@types/react", "npm:18.2.20"]\
+            ["@types/react", "npm:18.2.28"]\
           ],\
           "packagePeers": [\
             "@types/react"\
@@ -2793,9 +2793,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["inkle", "workspace:."],\
-            ["@types/ink-big-text", "npm:1.2.1"],\
+            ["@types/ink-big-text", "npm:1.2.2"],\
             ["@types/node", "npm:20.8.6"],\
-            ["@types/react", "npm:18.2.20"],\
+            ["@types/react", "npm:18.2.28"],\
             ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:6.7.5"],\
             ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:6.7.5"],\
             ["eslint", "npm:8.51.0"],\
@@ -4275,7 +4275,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/react-reconciler-virtual-8f5d41d938/0/cache/react-reconciler-npm-0.29.0-57f1460fdd-730db9cf45.zip/node_modules/react-reconciler/",\
           "packageDependencies": [\
             ["react-reconciler", "virtual:8b658a70475cea433bd0dd9f185070de769d60513f7ca3814c27f2338063f4c366a6c2270cb81864f7bde485b830aac82d99c842fcd2f8c39caeb143b85c1503#npm:0.29.0"],\
-            ["@types/react", "npm:18.2.20"],\
+            ["@types/react", "npm:18.2.28"],\
             ["loose-envify", "npm:1.4.0"],\
             ["react", "npm:18.2.0"],\
             ["scheduler", "npm:0.23.0"]\
