@@ -2046,12 +2046,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ink-big-text@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "@types/ink-big-text@npm:1.2.1"
+"@types/ink-big-text@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "@types/ink-big-text@npm:1.2.2"
   dependencies:
     "@types/react": "*"
-  checksum: 33f0974dab7f9988027db6e7e26610d9d3f007aa64df5fea5fbb7441541222e9d1292edb4772b710a0ab2cf40801cbac70246cedce1dde209314f7e367684b56
+  checksum: a2ce6eb5e2dca1ec274e5184391ac39b9f7f78d58e539d1adbcbfa1b65eaafb857690d3a0c12c8533ea5cd7b5e2df31466bc6cff558eaa4790d3e0f2edd06f61
   languageName: node
   linkType: hard
 
@@ -2080,13 +2080,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^29.5.3":
-  version: 29.5.3
-  resolution: "@types/jest@npm:29.5.3"
+"@types/jest@npm:^29.5.5":
+  version: 29.5.5
+  resolution: "@types/jest@npm:29.5.5"
   dependencies:
     expect: ^29.0.0
     pretty-format: ^29.0.0
-  checksum: e36bb92e0b9e5ea7d6f8832baa42f087fc1697f6cd30ec309a07ea4c268e06ec460f1f0cfd2581daf5eff5763475190ec1ad8ac6520c49ccfe4f5c0a48bfa676
+  checksum: 56e55cde9949bcc0ee2fa34ce5b7c32c2bfb20e53424aa4ff3a210859eeaaa3fdf6f42f81a3f655238039cdaaaf108b054b7a8602f394e6c52b903659338d8c6
   languageName: node
   linkType: hard
 
@@ -2111,10 +2111,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.5.1":
-  version: 20.5.1
-  resolution: "@types/node@npm:20.5.1"
-  checksum: 3dbe611cd67afa987102c8558ee70f848949c5dcfee5f60abc073e55c0d7b048e391bf06bb1e0dc052cb7210ca97136ac496cbaf6e89123c989de6bd125fde82
+"@types/node@npm:^20.8.6":
+  version: 20.8.6
+  resolution: "@types/node@npm:20.8.6"
+  dependencies:
+    undici-types: ~5.25.1
+  checksum: ccfb7ac482c5a96edeb239893c5c099f5257fcc2ed9ae62fefdfbc782b79e16dbc2af9a85b379665237bf759904b44ca2be68e75d239e0297882aad42f61905c
   languageName: node
   linkType: hard
 
@@ -2143,14 +2145,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.2.20":
-  version: 18.2.20
-  resolution: "@types/react@npm:18.2.20"
+"@types/react@npm:^18.2.28":
+  version: 18.2.28
+  resolution: "@types/react@npm:18.2.28"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 30f699c60e5e4bfef273ce64d320651cdd60f5c6a08361c6c7eca8cebcccda1ac953d2ee57c9f321b5ae87f8a62c72b6d35ca42df0e261d337849952daab2141
+  checksum: 81381bedeba83278f4c9febb0b83e0bd3f42a25897a50b9cb36ef53651d34b3d50f87ebf11211ea57ea575131f85d31e93e496ce46478a00b0f9bf7b26b5917a
   languageName: node
   linkType: hard
 
@@ -4324,10 +4326,10 @@ __metadata:
     "@babel/core": ^7.22.10
     "@babel/preset-env": ^7.22.10
     "@babel/preset-typescript": ^7.22.5
-    "@types/ink-big-text": ^1.2.1
-    "@types/jest": ^29.5.3
-    "@types/node": ^20.5.1
-    "@types/react": ^18.2.20
+    "@types/ink-big-text": ^1.2.2
+    "@types/jest": ^29.5.5
+    "@types/node": ^20.8.6
+    "@types/react": ^18.2.28
     "@typescript-eslint/eslint-plugin": ^6.7.5
     "@typescript-eslint/parser": ^6.7.5
     babel-jest: ^29.6.2
@@ -7251,6 +7253,13 @@ __metadata:
     has-symbols: ^1.0.3
     which-boxed-primitive: ^1.0.2
   checksum: b7a1cf5862b5e4b5deb091672ffa579aa274f648410009c81cca63fed3b62b610c4f3b773f912ce545bb4e31edc3138975b5bc777fc6e4817dca51affb6380e9
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~5.25.1":
+  version: 5.25.3
+  resolution: "undici-types@npm:5.25.3"
+  checksum: ec9d2cc36520cbd9fbe3b3b6c682a87fe5be214699e1f57d1e3d9a2cb5be422e62735f06e0067dc325fd3dd7404c697e4d479f9147dc8a804e049e29f357f2ff
   languageName: node
   linkType: hard
 
