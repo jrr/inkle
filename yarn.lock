@@ -346,12 +346,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ink-big-text@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "@types/ink-big-text@npm:1.2.2"
+"@types/ink-big-text@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "@types/ink-big-text@npm:1.2.3"
   dependencies:
     "@types/react": "*"
-  checksum: a2ce6eb5e2dca1ec274e5184391ac39b9f7f78d58e539d1adbcbfa1b65eaafb857690d3a0c12c8533ea5cd7b5e2df31466bc6cff558eaa4790d3e0f2edd06f61
+  checksum: dae044a3ab982785f240f6418fb20a0c381b2e2b897f76491be239b32e6eb725b02cb6be77fb61ee81d12a5b16f267a1eece7480b8f8b78ff71b9249b5495297
   languageName: node
   linkType: hard
 
@@ -2125,7 +2125,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "inkle@workspace:."
   dependencies:
-    "@types/ink-big-text": ^1.2.2
+    "@types/ink-big-text": ^1.2.3
     "@types/node": ^20.8.6
     "@types/react": ^18.2.28
     "@typescript-eslint/eslint-plugin": ^6.7.5
