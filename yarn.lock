@@ -2333,7 +2333,7 @@ __metadata:
     ink: ^4.4.1
     ink-big-text: ^2.0.0
     ink-testing-library: ^3.0.0
-    meow: ^12.1.1
+    meow: ^13.2.0
     prettier: ^3.2.2
     prettier-plugin-organize-imports: ^3.2.3
     react: ^18.2.0
@@ -2926,10 +2926,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"meow@npm:^12.1.1":
-  version: 12.1.1
-  resolution: "meow@npm:12.1.1"
-  checksum: a6f3be85fbe53430ef53ab933dd790c39216eb4dbaabdbef593aa59efb40ecaa417897000175476bc33eed09e4cbce01df7ba53ba91e9a4bd84ec07024cb8914
+"meow@npm:^13.2.0":
+  version: 13.2.0
+  resolution: "meow@npm:13.2.0"
+  checksum: 79c61dc02ad448ff5c29bbaf1ef42181f1eae9947112c0e23db93e84cbc2708ecda53e54bfc6689f1e55255b2cea26840ec76e57a5773a16ca45f4fe2163ec1c
   languageName: node
   linkType: hard
 
