@@ -26,7 +26,7 @@
   "dependencies": {
     "ink": "^4.4.1",
     "ink-big-text": "^2.0.0",
-    "meow": "^12.1.1",
+    "meow": "^13.2.0",
     "react": "^18.2.0"
   },
   "devDependencies": {

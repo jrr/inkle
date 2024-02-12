@@ -39,7 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ink", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.4.1"],\
             ["ink-big-text", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:2.0.0"],\
             ["ink-testing-library", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.0.0"],\
-            ["meow", "npm:12.1.1"],\
+            ["meow", "npm:13.2.0"],\
             ["prettier", "npm:3.2.2"],\
             ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.2.3"],\
             ["react", "npm:18.2.0"],\
@@ -2638,7 +2638,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ink", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.4.1"],\
             ["ink-big-text", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:2.0.0"],\
             ["ink-testing-library", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.0.0"],\
-            ["meow", "npm:12.1.1"],\
+            ["meow", "npm:13.2.0"],\
             ["prettier", "npm:3.2.2"],\
             ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.2.3"],\
             ["react", "npm:18.2.0"],\
@@ -3285,10 +3285,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["meow", [\
-        ["npm:12.1.1", {\
-          "packageLocation": "./.yarn/cache/meow-npm-12.1.1-bd7858d088-a6f3be85fb.zip/node_modules/meow/",\
+        ["npm:13.2.0", {\
+          "packageLocation": "./.yarn/cache/meow-npm-13.2.0-9907f89171-79c61dc02a.zip/node_modules/meow/",\
           "packageDependencies": [\
-            ["meow", "npm:12.1.1"]\
+            ["meow", "npm:13.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
