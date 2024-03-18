@@ -473,7 +473,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^18.2.62":
+"@types/react@npm:*":
   version: 18.2.62
   resolution: "@types/react@npm:18.2.62"
   dependencies:
@@ -481,6 +481,17 @@ __metadata:
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
   checksum: 10/ebc85019000fc21a53cd13dfa4863503c651dca19fc991b82c088f092422a992829c6d5c113d199db2a8e0df975320b45b93f3b5cee09a96ed012042d78b9720
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^18.2.67":
+  version: 18.2.67
+  resolution: "@types/react@npm:18.2.67"
+  dependencies:
+    "@types/prop-types": "npm:*"
+    "@types/scheduler": "npm:*"
+    csstype: "npm:^3.0.2"
+  checksum: 10/d7e248dbe8d9d3b05f0d8e128d615fc9c85aa2c5d15634271d20cb9b343dbeffb0875f31a44e7ac63b42afc25949bd4c3633b7ebee45ee4666591ca934a8dffb
   languageName: node
   linkType: hard
 
@@ -2249,7 +2260,7 @@ __metadata:
   dependencies:
     "@types/ink-big-text": "npm:^1.2.4"
     "@types/node": "npm:^20.11.24"
-    "@types/react": "npm:^18.2.62"
+    "@types/react": "npm:^18.2.67"
     "@typescript-eslint/eslint-plugin": "npm:^7.1.1"
     "@typescript-eslint/parser": "npm:^7.1.1"
     eslint: "npm:^8.57.0"
