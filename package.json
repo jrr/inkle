@@ -32,7 +32,7 @@
   "devDependencies": {
     "@types/ink-big-text": "^1.2.4",
     "@types/node": "^20.11.24",
-    "@types/react": "^18.2.62",
+    "@types/react": "^18.2.73",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
     "eslint": "^8.57.0",
