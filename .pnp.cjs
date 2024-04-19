@@ -41,7 +41,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.2.5"],\
           ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.2.4"],\
           ["react", "npm:18.2.0"],\
-          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
+          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"],\
           ["vitest", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:1.3.1"]\
         ],\
         "linkType": "SOFT"\
@@ -710,7 +710,7 @@ const RAW_RUNTIME_STATE =
           ["natural-compare", "npm:1.4.0"],\
           ["semver", "npm:7.6.0"],\
           ["ts-api-utils", "virtual:dbe296079c78b021a28841b91b0c0e6787d381c7854c98fbad925ee6d8244cb27581ae569fedcd7f00a6a52d2153ca3d57492a9628c353906b3e2c8ee76fddff#npm:1.2.1"],\
-          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
         ],\
         "packagePeers": [\
           "@types/eslint",\
@@ -743,7 +743,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/visitor-keys", "npm:7.7.0"],\
           ["debug", "virtual:1ff4b5f90832ba0a9c93ba1223af226e44ba70c1126a3740d93562b97bc36544e896a5e95908196f7458713e6a6089a34bfc67362fc6df7fa093bd06c878be47#npm:4.3.4"],\
           ["eslint", "npm:8.57.0"],\
-          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
         ],\
         "packagePeers": [\
           "@types/eslint",\
@@ -793,7 +793,7 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:1ff4b5f90832ba0a9c93ba1223af226e44ba70c1126a3740d93562b97bc36544e896a5e95908196f7458713e6a6089a34bfc67362fc6df7fa093bd06c878be47#npm:4.3.4"],\
           ["eslint", "npm:8.57.0"],\
           ["ts-api-utils", "virtual:dbe296079c78b021a28841b91b0c0e6787d381c7854c98fbad925ee6d8244cb27581ae569fedcd7f00a6a52d2153ca3d57492a9628c353906b3e2c8ee76fddff#npm:1.2.1"],\
-          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
         ],\
         "packagePeers": [\
           "@types/eslint",\
@@ -848,7 +848,7 @@ const RAW_RUNTIME_STATE =
           ["minimatch", "npm:9.0.3"],\
           ["semver", "npm:7.6.0"],\
           ["ts-api-utils", "virtual:dbe296079c78b021a28841b91b0c0e6787d381c7854c98fbad925ee6d8244cb27581ae569fedcd7f00a6a52d2153ca3d57492a9628c353906b3e2c8ee76fddff#npm:1.2.1"],\
-          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
         ],\
         "packagePeers": [\
           "@types/typescript",\
@@ -2786,7 +2786,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.2.5"],\
           ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.2.4"],\
           ["react", "npm:18.2.0"],\
-          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
+          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"],\
           ["vitest", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:1.3.1"]\
         ],\
         "linkType": "SOFT"\
@@ -4065,7 +4065,7 @@ const RAW_RUNTIME_STATE =
           ["@volar/vue-language-plugin-pug", null],\
           ["@volar/vue-typescript", null],\
           ["prettier", "npm:3.2.5"],\
-          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
         ],\
         "packagePeers": [\
           "@types/prettier",\
@@ -4834,7 +4834,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["ts-api-utils", "virtual:dbe296079c78b021a28841b91b0c0e6787d381c7854c98fbad925ee6d8244cb27581ae569fedcd7f00a6a52d2153ca3d57492a9628c353906b3e2c8ee76fddff#npm:1.2.1"],\
           ["@types/typescript", null],\
-          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
         ],\
         "packagePeers": [\
           "@types/typescript",\
@@ -4951,10 +4951,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["typescript", [\
-      ["patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7", {\
-        "packageLocation": "./.yarn/cache/typescript-patch-4778c7998b-c93786fcc9.zip/node_modules/typescript/",\
+      ["patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c", {\
+        "packageLocation": "./.yarn/cache/typescript-patch-6e159bfddb-760f7d92fb.zip/node_modules/typescript/",\
         "packageDependencies": [\
-          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
         ],\
         "linkType": "HARD"\
       }]\
