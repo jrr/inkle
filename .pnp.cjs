@@ -28,7 +28,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/ink-big-text", "npm:1.2.4"],\
           ["@types/node", "npm:20.12.7"],\
-          ["@types/react", "npm:18.2.78"],\
+          ["@types/react", "npm:18.2.79"],\
           ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:7.1.1"],\
           ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:7.7.0"],\
           ["eslint", "npm:8.57.0"],\
@@ -654,10 +654,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:18.2.78", {\
-        "packageLocation": "./.yarn/cache/@types-react-npm-18.2.78-5875a63d7c-a4bf8104c5.zip/node_modules/@types/react/",\
+      ["npm:18.2.79", {\
+        "packageLocation": "./.yarn/cache/@types-react-npm-18.2.79-89aa23fe00-2ef833e7d0.zip/node_modules/@types/react/",\
         "packageDependencies": [\
-          ["@types/react", "npm:18.2.78"],\
+          ["@types/react", "npm:18.2.79"],\
           ["@types/prop-types", "npm:15.7.11"],\
           ["csstype", "npm:3.1.3"]\
         ],\
@@ -869,7 +869,7 @@ const RAW_RUNTIME_STATE =
           ["minimatch", "npm:9.0.4"],\
           ["semver", "npm:7.6.0"],\
           ["ts-api-utils", "virtual:b8f9c4b5fb904802b405bf9892b370e291d26de9bbfb0a037613b1714ee3e733a4b8614dcd562597353a2a6bbcd9cfd86156a85787a6246c136537d68b0f1191#npm:1.3.0"],\
-          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
         ],\
         "packagePeers": [\
           "@types/typescript",\
@@ -2680,7 +2680,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["ink", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.4.1"],\
           ["@alcalzone/ansi-tokenize", "npm:0.1.3"],\
-          ["@types/react", "npm:18.2.78"],\
+          ["@types/react", "npm:18.2.79"],\
           ["@types/react-devtools-core", null],\
           ["ansi-escapes", "npm:6.2.0"],\
           ["auto-bind", "npm:5.0.1"],\
@@ -2731,7 +2731,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["ink-big-text", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:2.0.0"],\
           ["@types/ink", null],\
-          ["@types/react", "npm:18.2.78"],\
+          ["@types/react", "npm:18.2.79"],\
           ["cfonts", "npm:3.2.0"],\
           ["ink", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.4.1"],\
           ["prop-types", "npm:15.8.1"],\
@@ -2758,7 +2758,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/ink-testing-library-virtual-973a78f867/0/cache/ink-testing-library-npm-3.0.0-c20aad0bd9-fd9bfde51e.zip/node_modules/ink-testing-library/",\
         "packageDependencies": [\
           ["ink-testing-library", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.0.0"],\
-          ["@types/react", "npm:18.2.78"]\
+          ["@types/react", "npm:18.2.79"]\
         ],\
         "packagePeers": [\
           "@types/react"\
@@ -2773,7 +2773,7 @@ const RAW_RUNTIME_STATE =
           ["inkle", "workspace:."],\
           ["@types/ink-big-text", "npm:1.2.4"],\
           ["@types/node", "npm:20.12.7"],\
-          ["@types/react", "npm:18.2.78"],\
+          ["@types/react", "npm:18.2.79"],\
           ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:7.1.1"],\
           ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:7.7.0"],\
           ["eslint", "npm:8.57.0"],\
@@ -4180,7 +4180,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/react-reconciler-virtual-c6f0fd0a17/0/cache/react-reconciler-npm-0.29.0-57f1460fdd-71f6939915.zip/node_modules/react-reconciler/",\
         "packageDependencies": [\
           ["react-reconciler", "virtual:2c18c9e15919eb43d8c8c56c37d1753c2a909379149c4c70dcbfad29cc86def30422b410b4dc0307a4b9d4ed523645078f4a7c7edceafa1ccbc710f08e74af4e#npm:0.29.0"],\
-          ["@types/react", "npm:18.2.78"],\
+          ["@types/react", "npm:18.2.79"],\
           ["loose-envify", "npm:1.4.0"],\
           ["react", "npm:18.2.0"],\
           ["scheduler", "npm:0.23.0"]\
@@ -4821,7 +4821,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["ts-api-utils", "virtual:b8f9c4b5fb904802b405bf9892b370e291d26de9bbfb0a037613b1714ee3e733a4b8614dcd562597353a2a6bbcd9cfd86156a85787a6246c136537d68b0f1191#npm:1.3.0"],\
           ["@types/typescript", null],\
-          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
         ],\
         "packagePeers": [\
           "@types/typescript",\
