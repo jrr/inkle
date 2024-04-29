@@ -27,12 +27,12 @@
     "ink": "^4.4.1",
     "ink-big-text": "^2.0.0",
     "meow": "^13.2.0",
-    "react": "^18.2.0"
+    "react": "^18.3.1"
   },
   "devDependencies": {
     "@types/ink-big-text": "^1.2.4",
     "@types/node": "^20.12.7",
-    "@types/react": "^18.2.78",
+    "@types/react": "^18.3.1",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.7.0",
     "eslint": "^8.57.0",
