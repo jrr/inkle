@@ -869,7 +869,7 @@ const RAW_RUNTIME_STATE =
           ["minimatch", "npm:9.0.4"],\
           ["semver", "npm:7.6.0"],\
           ["ts-api-utils", "virtual:b8f9c4b5fb904802b405bf9892b370e291d26de9bbfb0a037613b1714ee3e733a4b8614dcd562597353a2a6bbcd9cfd86156a85787a6246c136537d68b0f1191#npm:1.3.0"],\
-          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
         ],\
         "packagePeers": [\
           "@types/typescript",\
@@ -4821,7 +4821,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["ts-api-utils", "virtual:b8f9c4b5fb904802b405bf9892b370e291d26de9bbfb0a037613b1714ee3e733a4b8614dcd562597353a2a6bbcd9cfd86156a85787a6246c136537d68b0f1191#npm:1.3.0"],\
           ["@types/typescript", null],\
-          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+          ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"]\
         ],\
         "packagePeers": [\
           "@types/typescript",\
