@@ -12,16 +12,22 @@ $(tarball): dist/cli.js
 
 # installing latest version of npm because certain old versions fail
 test-npx-node-18: $(tarball)
-	docker run --entrypoint bash -v $(PWD)/out:/out node:18-buster -c 'npm i -g npm && npm exec -y file:///out/inkle-0.0.0-testing.tgz -- --test midgame --quit'
+	docker run --entrypoint bash -v $(PWD)/out:/out node:18-bookworm -c 'npm i -g npm && npm exec -y file:///out/inkle-0.0.0-testing.tgz -- --test midgame --quit'
 
 test-npx-node-20: $(tarball)
-	docker run --entrypoint bash -v $(PWD)/out:/out node:20-buster -c 'npm i -g npm && npm exec -y file:///out/inkle-0.0.0-testing.tgz -- --test midgame --quit'
+	docker run --entrypoint bash -v $(PWD)/out:/out node:20-bookworm -c 'npm i -g npm && npm exec -y file:///out/inkle-0.0.0-testing.tgz -- --test midgame --quit'
+
+test-npx-node-22: $(tarball)
+	docker run --entrypoint bash -v $(PWD)/out:/out node:22-bookworm -c 'npm i -g npm && npm exec -y file:///out/inkle-0.0.0-testing.tgz -- --test midgame --quit'
 
 interactive-node-18: $(tarball)
-	docker run -it --entrypoint bash -v $(PWD)/out:/out node:18-buster
+	docker run -it --entrypoint bash -v $(PWD)/out:/out node:18-bookworm
 
 interactive-node-20: $(tarball)
-	docker run -it --entrypoint bash -v $(PWD)/out:/out node:20-buster
+	docker run -it --entrypoint bash -v $(PWD)/out:/out node:20-bookworm
+
+interactive-node-22: $(tarball)
+	docker run -it --entrypoint bash -v $(PWD)/out:/out node:22-bookworm
 
 clean:
 	rm -rf dist
