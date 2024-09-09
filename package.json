@@ -38,7 +38,7 @@
     "@typescript-eslint/eslint-plugin": "^8.4.0",
     "@typescript-eslint/parser": "^8.4.0",
     "eslint": "^9.9.1",
-    "eslint-plugin-react": "^7.35.1",
+    "eslint-plugin-react": "^7.35.2",
     "eslint-plugin-react-hooks": "^4.6.2",
     "ink-testing-library": "^4.0.0",
     "prettier": "^3.3.3",
