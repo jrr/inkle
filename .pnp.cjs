@@ -28,7 +28,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@eslint/eslintrc", "npm:3.1.0"],\
-          ["@eslint/js", "npm:9.9.1"],\
+          ["@eslint/js", "npm:9.13.0"],\
           ["@types/ink-big-text", "npm:1.2.4"],\
           ["@types/node", "npm:22.7.7"],\
           ["@types/react", "npm:18.3.5"],\
@@ -356,6 +356,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@eslint/js", [\
+      ["npm:9.13.0", {\
+        "packageLocation": "./.yarn/cache/@eslint-js-npm-9.13.0-2ac1161c0b-aa7a4c4504.zip/node_modules/@eslint/js/",\
+        "packageDependencies": [\
+          ["@eslint/js", "npm:9.13.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:9.9.1", {\
         "packageLocation": "./.yarn/cache/@eslint-js-npm-9.9.1-8b7ff1cbc6-c3fac3389b.zip/node_modules/@eslint/js/",\
         "packageDependencies": [\
@@ -2715,7 +2722,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["inkle", "workspace:."],\
           ["@eslint/eslintrc", "npm:3.1.0"],\
-          ["@eslint/js", "npm:9.9.1"],\
+          ["@eslint/js", "npm:9.13.0"],\
           ["@types/ink-big-text", "npm:1.2.4"],\
           ["@types/node", "npm:22.7.7"],\
           ["@types/react", "npm:18.3.5"],\

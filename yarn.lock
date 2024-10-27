@@ -232,10 +232,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.9.1, @eslint/js@npm:^9.9.1":
+"@eslint/js@npm:9.9.1":
   version: 9.9.1
   resolution: "@eslint/js@npm:9.9.1"
   checksum: 10/c3fac3389bda97e790eea03c0a0be2dc1cfb0eec3863f8c4b88033ca7bad4265e4c48abe40d4dc8f82b456a2617fc8a499b2b90837c8bd39a05ebc8cb34c3a04
+  languageName: node
+  linkType: hard
+
+"@eslint/js@npm:^9.13.0":
+  version: 9.13.0
+  resolution: "@eslint/js@npm:9.13.0"
+  checksum: 10/aa7a4c45044a6cf6e14666ecc0b56ad41c80f022bd4718620b4a7e3d892111312f4e4ac4787fd11b3bf5abdb6ff9a95fdae7e73ef790528f150d86e9be1754a2
   languageName: node
   linkType: hard
 
@@ -2214,7 +2221,7 @@ __metadata:
   resolution: "inkle@workspace:."
   dependencies:
     "@eslint/eslintrc": "npm:^3.1.0"
-    "@eslint/js": "npm:^9.9.1"
+    "@eslint/js": "npm:^9.13.0"
     "@types/ink-big-text": "npm:^1.2.4"
     "@types/node": "npm:^22.7.7"
     "@types/react": "npm:^18.3.5"
