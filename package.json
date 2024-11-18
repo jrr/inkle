@@ -35,7 +35,7 @@
     "@types/ink-big-text": "^1.2.4",
     "@types/node": "^22.7.7",
     "@types/react": "^18.3.5",
-    "@typescript-eslint/eslint-plugin": "^8.4.0",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
     "@typescript-eslint/parser": "^8.4.0",
     "eslint": "^9.9.1",
     "eslint-plugin-react": "^7.35.1",
