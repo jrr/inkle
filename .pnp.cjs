@@ -30,7 +30,7 @@ const RAW_RUNTIME_STATE =
           ["@eslint/eslintrc", "npm:3.1.0"],\
           ["@eslint/js", "npm:9.9.1"],\
           ["@types/ink-big-text", "npm:1.2.4"],\
-          ["@types/node", "npm:22.7.7"],\
+          ["@types/node", "npm:22.9.0"],\
           ["@types/react", "npm:18.3.5"],\
           ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.4.0"],\
           ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.4.0"],\
@@ -666,10 +666,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
-      ["npm:22.7.7", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-22.7.7-4485163f4e-ada6c5f850.zip/node_modules/@types/node/",\
+      ["npm:22.9.0", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-22.9.0-643fcf7450-a7df342689.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:22.7.7"],\
+          ["@types/node", "npm:22.9.0"],\
           ["undici-types", "npm:6.19.8"]\
         ],\
         "linkType": "HARD"\
@@ -2712,7 +2712,7 @@ const RAW_RUNTIME_STATE =
           ["@eslint/eslintrc", "npm:3.1.0"],\
           ["@eslint/js", "npm:9.9.1"],\
           ["@types/ink-big-text", "npm:1.2.4"],\
-          ["@types/node", "npm:22.7.7"],\
+          ["@types/node", "npm:22.9.0"],\
           ["@types/react", "npm:18.3.5"],\
           ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.4.0"],\
           ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.4.0"],\
@@ -4760,7 +4760,7 @@ const RAW_RUNTIME_STATE =
           ["vite", "virtual:f6fe69b49159d6c499d340fa976d547b9256fc9d3d8977e67c13b2e8710c92d6e4a5200c54c16e5b1d7ac397188d5cd0bb462f769fcb85170636e3f2ca26a9d0#npm:5.4.11"],\
           ["@types/less", null],\
           ["@types/lightningcss", null],\
-          ["@types/node", "npm:22.7.7"],\
+          ["@types/node", "npm:22.9.0"],\
           ["@types/sass", null],\
           ["@types/sass-embedded", null],\
           ["@types/stylus", null],\
@@ -4870,7 +4870,7 @@ const RAW_RUNTIME_STATE =
           ["@types/edge-runtime__vm", null],\
           ["@types/happy-dom", null],\
           ["@types/jsdom", null],\
-          ["@types/node", "npm:22.7.7"],\
+          ["@types/node", "npm:22.9.0"],\
           ["@types/vitest__browser", null],\
           ["@types/vitest__ui", null],\
           ["@vitest/browser", null],\
