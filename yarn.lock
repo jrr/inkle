@@ -1575,6 +1575,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"es-toolkit@npm:^1.22.0":
+  version: 1.27.0
+  resolution: "es-toolkit@npm:1.27.0"
+  dependenciesMeta:
+    "@trivago/prettier-plugin-sort-imports@4.3.0":
+      unplugged: true
+    prettier-plugin-sort-re-exports@0.0.1:
+      unplugged: true
+  checksum: 10/637fb282c17614143aa185f20b44a7b113157b103a92e20d7c483da24170710cf01a5f93285737e33364b03f773765bc4276ccbbfc65702387173c34ec7a259b
+  languageName: node
+  linkType: hard
+
 "esbuild@npm:^0.21.3":
   version: 0.21.5
   resolution: "esbuild@npm:0.21.5"
@@ -2299,9 +2311,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ink@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "ink@npm:5.0.1"
+"ink@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "ink@npm:5.1.0"
   dependencies:
     "@alcalzone/ansi-tokenize": "npm:^0.1.3"
     ansi-escapes: "npm:^7.0.0"
@@ -2312,20 +2324,20 @@ __metadata:
     cli-cursor: "npm:^4.0.0"
     cli-truncate: "npm:^4.0.0"
     code-excerpt: "npm:^4.0.0"
+    es-toolkit: "npm:^1.22.0"
     indent-string: "npm:^5.0.0"
-    is-in-ci: "npm:^0.1.0"
-    lodash: "npm:^4.17.21"
+    is-in-ci: "npm:^1.0.0"
     patch-console: "npm:^2.0.0"
     react-reconciler: "npm:^0.29.0"
     scheduler: "npm:^0.23.0"
     signal-exit: "npm:^3.0.7"
     slice-ansi: "npm:^7.1.0"
     stack-utils: "npm:^2.0.6"
-    string-width: "npm:^7.0.0"
-    type-fest: "npm:^4.8.3"
+    string-width: "npm:^7.2.0"
+    type-fest: "npm:^4.27.0"
     widest-line: "npm:^5.0.0"
     wrap-ansi: "npm:^9.0.0"
-    ws: "npm:^8.15.0"
+    ws: "npm:^8.18.0"
     yoga-wasm-web: "npm:~0.3.3"
   peerDependencies:
     "@types/react": ">=18.0.0"
@@ -2336,7 +2348,7 @@ __metadata:
       optional: true
     react-devtools-core:
       optional: true
-  checksum: 10/03eab53468d5e0abc54a322766d112f19615830e19d646629e5e05b23ca77dd7696ce1b3bb848ee26ca620e352267622f8180f83423358abd9d71a0e90202942
+  checksum: 10/aa60256b38095361e25ef2f474569a69e554095da408fb5df242e3e282b36224eb4cc634116e95b3a0ef41228432d4eab82cfbab291bf682d42c9f9ba900b58a
   languageName: node
   linkType: hard
 
@@ -2354,7 +2366,7 @@ __metadata:
     eslint: "npm:^9.15.0"
     eslint-plugin-react: "npm:^7.37.2"
     eslint-plugin-react-hooks: "npm:^4.6.2"
-    ink: "npm:^5.0.1"
+    ink: "npm:^5.1.0"
     ink-big-text: "npm:^2.0.0"
     ink-testing-library: "npm:^4.0.0"
     meow: "npm:^13.2.0"
@@ -2553,12 +2565,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-in-ci@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "is-in-ci@npm:0.1.0"
+"is-in-ci@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "is-in-ci@npm:1.0.0"
   bin:
     is-in-ci: cli.js
-  checksum: 10/0479c03f8255d101aaa71cfcbef4175f9d2634d3f70318ed48f68affd63c54b8d3851573744012a18b367c0fdd132c69bbd24b2580d8ee6e40170e57637da376
+  checksum: 10/a2e82d04aa729008e31e4b3dda56266f02ffa44109525a9cb2f521f44a2538d2f86227a32ca4f855b0ebd24f976561c368105cacb477ca34b16acb0b766e9103
   languageName: node
   linkType: hard
 
@@ -2833,13 +2845,6 @@ __metadata:
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
   checksum: 10/d0ea2dd0097e6201be083865d50c3fb54fbfbdb247d9cc5950e086c991f448b7ab0cdab0d57eacccb43473d3f2acd21e134db39f22dac2d6c9ba6bf26978e3d6
-  languageName: node
-  linkType: hard
-
-"lodash@npm:^4.17.21":
-  version: 4.17.21
-  resolution: "lodash@npm:4.17.21"
-  checksum: 10/c08619c038846ea6ac754abd6dd29d2568aa705feb69339e836dfa8d8b09abbb2f859371e86863eda41848221f9af43714491467b5b0299122431e202bb0c532
   languageName: node
   linkType: hard
 
@@ -3846,7 +3851,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string-width@npm:^7.0.0":
+"string-width@npm:^7.0.0, string-width@npm:^7.2.0":
   version: 7.2.0
   resolution: "string-width@npm:7.2.0"
   dependencies:
@@ -4047,10 +4052,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:^4.8.3":
-  version: 4.26.0
-  resolution: "type-fest@npm:4.26.0"
-  checksum: 10/f5fe86d2c3db693f7154c8ab0d228a89394e4c446f2ed30ea3b61afaea9757c87c4e79475ef8d6f5fafbd7a4efd302e3b0237d9657dd425228f20a27feee3aef
+"type-fest@npm:^4.27.0":
+  version: 4.28.0
+  resolution: "type-fest@npm:4.28.0"
+  checksum: 10/2fc54972af0aff1846786c11beeb2e446a1a6ea19b07ba80db1d3f24894002e0ed3de7f40d2a1007fe2e6e6da264a3790a844d744825dba3d31505d1983df2a5
   languageName: node
   linkType: hard
 
@@ -4432,7 +4437,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ws@npm:^8.15.0":
+"ws@npm:^8.18.0":
   version: 8.18.0
   resolution: "ws@npm:8.18.0"
   peerDependencies:
