@@ -42,7 +42,7 @@ const RAW_RUNTIME_STATE =
           ["ink-testing-library", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.0.0"],\
           ["meow", "npm:13.2.0"],\
           ["prettier", "npm:3.3.3"],\
-          ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.0.0"],\
+          ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.1.0"],\
           ["react", "npm:18.3.1"],\
           ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"],\
           ["vitest", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:2.1.4"]\
@@ -2788,7 +2788,7 @@ const RAW_RUNTIME_STATE =
           ["ink-testing-library", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.0.0"],\
           ["meow", "npm:13.2.0"],\
           ["prettier", "npm:3.3.3"],\
-          ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.0.0"],\
+          ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.1.0"],\
           ["react", "npm:18.3.1"],\
           ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"],\
           ["vitest", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:2.1.4"]\
@@ -3890,22 +3890,20 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["prettier-plugin-organize-imports", [\
-      ["npm:4.0.0", {\
-        "packageLocation": "./.yarn/cache/prettier-plugin-organize-imports-npm-4.0.0-3456d3d04d-444bc34858.zip/node_modules/prettier-plugin-organize-imports/",\
+      ["npm:4.1.0", {\
+        "packageLocation": "./.yarn/cache/prettier-plugin-organize-imports-npm-4.1.0-49b8116ea7-8223af6d42.zip/node_modules/prettier-plugin-organize-imports/",\
         "packageDependencies": [\
-          ["prettier-plugin-organize-imports", "npm:4.0.0"]\
+          ["prettier-plugin-organize-imports", "npm:4.1.0"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.0.0", {\
-        "packageLocation": "./.yarn/__virtual__/prettier-plugin-organize-imports-virtual-6f35967597/0/cache/prettier-plugin-organize-imports-npm-4.0.0-3456d3d04d-444bc34858.zip/node_modules/prettier-plugin-organize-imports/",\
+      ["virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.1.0", {\
+        "packageLocation": "./.yarn/__virtual__/prettier-plugin-organize-imports-virtual-4e646817c2/0/cache/prettier-plugin-organize-imports-npm-4.1.0-49b8116ea7-8223af6d42.zip/node_modules/prettier-plugin-organize-imports/",\
         "packageDependencies": [\
-          ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.0.0"],\
+          ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.1.0"],\
           ["@types/prettier", null],\
           ["@types/typescript", null],\
           ["@types/vue-tsc", null],\
-          ["@types/vue__language-plugin-pug", null],\
-          ["@vue/language-plugin-pug", null],\
           ["prettier", "npm:3.3.3"],\
           ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"],\
           ["vue-tsc", null]\
@@ -3914,8 +3912,6 @@ const RAW_RUNTIME_STATE =
           "@types/prettier",\
           "@types/typescript",\
           "@types/vue-tsc",\
-          "@types/vue__language-plugin-pug",\
-          "@vue/language-plugin-pug",\
           "prettier",\
           "typescript",\
           "vue-tsc"\

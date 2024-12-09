@@ -2308,7 +2308,7 @@ __metadata:
     ink-testing-library: "npm:^4.0.0"
     meow: "npm:^13.2.0"
     prettier: "npm:^3.3.3"
-    prettier-plugin-organize-imports: "npm:^4.0.0"
+    prettier-plugin-organize-imports: "npm:^4.1.0"
     react: "npm:^18.3.1"
     typescript: "npm:5.5.4"
     vitest: "npm:^2.1.4"
@@ -3282,20 +3282,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-organize-imports@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "prettier-plugin-organize-imports@npm:4.0.0"
+"prettier-plugin-organize-imports@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "prettier-plugin-organize-imports@npm:4.1.0"
   peerDependencies:
-    "@vue/language-plugin-pug": ^2.0.24
     prettier: ">=2.0"
     typescript: ">=2.9"
-    vue-tsc: ^2.0.24
+    vue-tsc: ^2.1.0
   peerDependenciesMeta:
-    "@vue/language-plugin-pug":
-      optional: true
     vue-tsc:
       optional: true
-  checksum: 10/444bc34858ddadd9e4c9afa5f45ee80786d539a28f3535af7e341e885eb569b465fc7b27b2738a69cb99cc530c6e15367514a7b97ed52dea8161307d7d55b3ac
+  checksum: 10/8223af6d42d06f6a5140a2724a6c6c2cef4a2e149721ceb25b945af71f4de7499bc63e47ea003b9eee84e6b94728b59d91b4275d3c53b718a747e273fb30cee2
   languageName: node
   linkType: hard
 
