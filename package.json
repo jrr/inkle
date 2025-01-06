@@ -27,14 +27,14 @@
     "ink": "^5.1.0",
     "ink-big-text": "^2.0.0",
     "meow": "^13.2.0",
-    "react": "^18.3.1"
+    "react": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.17.0",
     "@types/ink-big-text": "^1.2.4",
     "@types/node": "^22.10.3",
-    "@types/react": "^18.3.18",
+    "@types/react": "^19.0.3",
     "@typescript-eslint/eslint-plugin": "^8.19.0",
     "@typescript-eslint/parser": "^8.19.0",
     "eslint": "^9.17.0",
