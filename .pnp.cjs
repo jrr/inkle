@@ -17,6 +17,7 @@ const RAW_RUNTIME_STATE =
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
+  "pnpZipBackend": "libzip",\
   "fallbackExclusionList": [\
     ["inkle", ["workspace:."]]\
   ],\
@@ -30,11 +31,11 @@ const RAW_RUNTIME_STATE =
           ["@eslint/eslintrc", "npm:3.3.1"],\
           ["@eslint/js", "npm:9.24.0"],\
           ["@types/ink-big-text", "npm:1.2.4"],\
-          ["@types/node", "npm:22.14.0"],\
-          ["@types/react", "npm:18.3.18"],\
-          ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.26.1"],\
-          ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.29.0"],\
-          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.22.0"],\
+          ["@types/node", "npm:22.14.1"],\
+          ["@types/react", "npm:18.3.20"],\
+          ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.29.1"],\
+          ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.29.1"],\
+          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.24.0"],\
           ["eslint-plugin-react", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:7.37.5"],\
           ["eslint-plugin-react-hooks", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:5.2.0"],\
           ["ink", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:5.2.0"],\
@@ -63,226 +64,226 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@esbuild/aix-ppc64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-aix-ppc64-npm-0.25.1-01938a271f/node_modules/@esbuild/aix-ppc64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-aix-ppc64-npm-0.25.2-d153dee00a/node_modules/@esbuild/aix-ppc64/",\
         "packageDependencies": [\
-          ["@esbuild/aix-ppc64", "npm:0.25.1"]\
+          ["@esbuild/aix-ppc64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/android-arm", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-android-arm-npm-0.25.1-2c0f3da336/node_modules/@esbuild/android-arm/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-android-arm-npm-0.25.2-8a0fb31cf3/node_modules/@esbuild/android-arm/",\
         "packageDependencies": [\
-          ["@esbuild/android-arm", "npm:0.25.1"]\
+          ["@esbuild/android-arm", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/android-arm64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-android-arm64-npm-0.25.1-1b0d76d549/node_modules/@esbuild/android-arm64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-android-arm64-npm-0.25.2-2ee5801450/node_modules/@esbuild/android-arm64/",\
         "packageDependencies": [\
-          ["@esbuild/android-arm64", "npm:0.25.1"]\
+          ["@esbuild/android-arm64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/android-x64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-android-x64-npm-0.25.1-4619626735/node_modules/@esbuild/android-x64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-android-x64-npm-0.25.2-a36f236ae6/node_modules/@esbuild/android-x64/",\
         "packageDependencies": [\
-          ["@esbuild/android-x64", "npm:0.25.1"]\
+          ["@esbuild/android-x64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/darwin-arm64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-darwin-arm64-npm-0.25.1-031a09ef40/node_modules/@esbuild/darwin-arm64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-darwin-arm64-npm-0.25.2-db3ebc4e25/node_modules/@esbuild/darwin-arm64/",\
         "packageDependencies": [\
-          ["@esbuild/darwin-arm64", "npm:0.25.1"]\
+          ["@esbuild/darwin-arm64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/darwin-x64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-darwin-x64-npm-0.25.1-4877d67bbb/node_modules/@esbuild/darwin-x64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-darwin-x64-npm-0.25.2-773ae600e1/node_modules/@esbuild/darwin-x64/",\
         "packageDependencies": [\
-          ["@esbuild/darwin-x64", "npm:0.25.1"]\
+          ["@esbuild/darwin-x64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/freebsd-arm64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-freebsd-arm64-npm-0.25.1-59225ea92d/node_modules/@esbuild/freebsd-arm64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-freebsd-arm64-npm-0.25.2-63abdf60f0/node_modules/@esbuild/freebsd-arm64/",\
         "packageDependencies": [\
-          ["@esbuild/freebsd-arm64", "npm:0.25.1"]\
+          ["@esbuild/freebsd-arm64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/freebsd-x64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-freebsd-x64-npm-0.25.1-e10b86029f/node_modules/@esbuild/freebsd-x64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-freebsd-x64-npm-0.25.2-8e48afe772/node_modules/@esbuild/freebsd-x64/",\
         "packageDependencies": [\
-          ["@esbuild/freebsd-x64", "npm:0.25.1"]\
+          ["@esbuild/freebsd-x64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/linux-arm", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-linux-arm-npm-0.25.1-532ed2cade/node_modules/@esbuild/linux-arm/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-linux-arm-npm-0.25.2-d6b5564deb/node_modules/@esbuild/linux-arm/",\
         "packageDependencies": [\
-          ["@esbuild/linux-arm", "npm:0.25.1"]\
+          ["@esbuild/linux-arm", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/linux-arm64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-linux-arm64-npm-0.25.1-ae0b90ca0a/node_modules/@esbuild/linux-arm64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-linux-arm64-npm-0.25.2-6839dd4fa3/node_modules/@esbuild/linux-arm64/",\
         "packageDependencies": [\
-          ["@esbuild/linux-arm64", "npm:0.25.1"]\
+          ["@esbuild/linux-arm64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/linux-ia32", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-linux-ia32-npm-0.25.1-7fe9d8c448/node_modules/@esbuild/linux-ia32/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-linux-ia32-npm-0.25.2-aafe2f8457/node_modules/@esbuild/linux-ia32/",\
         "packageDependencies": [\
-          ["@esbuild/linux-ia32", "npm:0.25.1"]\
+          ["@esbuild/linux-ia32", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/linux-loong64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-linux-loong64-npm-0.25.1-501784d6b4/node_modules/@esbuild/linux-loong64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-linux-loong64-npm-0.25.2-4e5140f3cb/node_modules/@esbuild/linux-loong64/",\
         "packageDependencies": [\
-          ["@esbuild/linux-loong64", "npm:0.25.1"]\
+          ["@esbuild/linux-loong64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/linux-mips64el", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-linux-mips64el-npm-0.25.1-6109cc04fc/node_modules/@esbuild/linux-mips64el/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-linux-mips64el-npm-0.25.2-8ce6c5e5ce/node_modules/@esbuild/linux-mips64el/",\
         "packageDependencies": [\
-          ["@esbuild/linux-mips64el", "npm:0.25.1"]\
+          ["@esbuild/linux-mips64el", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/linux-ppc64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-linux-ppc64-npm-0.25.1-189189eadc/node_modules/@esbuild/linux-ppc64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-linux-ppc64-npm-0.25.2-9000e68a74/node_modules/@esbuild/linux-ppc64/",\
         "packageDependencies": [\
-          ["@esbuild/linux-ppc64", "npm:0.25.1"]\
+          ["@esbuild/linux-ppc64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/linux-riscv64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-linux-riscv64-npm-0.25.1-33d62c08d2/node_modules/@esbuild/linux-riscv64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-linux-riscv64-npm-0.25.2-32a12e2b8a/node_modules/@esbuild/linux-riscv64/",\
         "packageDependencies": [\
-          ["@esbuild/linux-riscv64", "npm:0.25.1"]\
+          ["@esbuild/linux-riscv64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/linux-s390x", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-linux-s390x-npm-0.25.1-cdc9e0790f/node_modules/@esbuild/linux-s390x/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-linux-s390x-npm-0.25.2-8315809f87/node_modules/@esbuild/linux-s390x/",\
         "packageDependencies": [\
-          ["@esbuild/linux-s390x", "npm:0.25.1"]\
+          ["@esbuild/linux-s390x", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/linux-x64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-linux-x64-npm-0.25.1-fca13db7a3/node_modules/@esbuild/linux-x64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-linux-x64-npm-0.25.2-7713427dc3/node_modules/@esbuild/linux-x64/",\
         "packageDependencies": [\
-          ["@esbuild/linux-x64", "npm:0.25.1"]\
+          ["@esbuild/linux-x64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/netbsd-arm64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-netbsd-arm64-npm-0.25.1-00886d8e42/node_modules/@esbuild/netbsd-arm64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-netbsd-arm64-npm-0.25.2-c749c16372/node_modules/@esbuild/netbsd-arm64/",\
         "packageDependencies": [\
-          ["@esbuild/netbsd-arm64", "npm:0.25.1"]\
+          ["@esbuild/netbsd-arm64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/netbsd-x64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-netbsd-x64-npm-0.25.1-55ae155ee4/node_modules/@esbuild/netbsd-x64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-netbsd-x64-npm-0.25.2-a2662e096b/node_modules/@esbuild/netbsd-x64/",\
         "packageDependencies": [\
-          ["@esbuild/netbsd-x64", "npm:0.25.1"]\
+          ["@esbuild/netbsd-x64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/openbsd-arm64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-openbsd-arm64-npm-0.25.1-92b3e3e42a/node_modules/@esbuild/openbsd-arm64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-openbsd-arm64-npm-0.25.2-c7ef8fb039/node_modules/@esbuild/openbsd-arm64/",\
         "packageDependencies": [\
-          ["@esbuild/openbsd-arm64", "npm:0.25.1"]\
+          ["@esbuild/openbsd-arm64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/openbsd-x64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-openbsd-x64-npm-0.25.1-767612e609/node_modules/@esbuild/openbsd-x64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-openbsd-x64-npm-0.25.2-cb2f9f77b0/node_modules/@esbuild/openbsd-x64/",\
         "packageDependencies": [\
-          ["@esbuild/openbsd-x64", "npm:0.25.1"]\
+          ["@esbuild/openbsd-x64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/sunos-x64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-sunos-x64-npm-0.25.1-1e263dc851/node_modules/@esbuild/sunos-x64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-sunos-x64-npm-0.25.2-d9dd668e48/node_modules/@esbuild/sunos-x64/",\
         "packageDependencies": [\
-          ["@esbuild/sunos-x64", "npm:0.25.1"]\
+          ["@esbuild/sunos-x64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/win32-arm64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-win32-arm64-npm-0.25.1-a78fe5b3cf/node_modules/@esbuild/win32-arm64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-win32-arm64-npm-0.25.2-39f04871ed/node_modules/@esbuild/win32-arm64/",\
         "packageDependencies": [\
-          ["@esbuild/win32-arm64", "npm:0.25.1"]\
+          ["@esbuild/win32-arm64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/win32-ia32", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-win32-ia32-npm-0.25.1-8224f18756/node_modules/@esbuild/win32-ia32/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-win32-ia32-npm-0.25.2-0b3b7dc698/node_modules/@esbuild/win32-ia32/",\
         "packageDependencies": [\
-          ["@esbuild/win32-ia32", "npm:0.25.1"]\
+          ["@esbuild/win32-ia32", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@esbuild/win32-x64", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/@esbuild-win32-x64-npm-0.25.1-a73d7afcce/node_modules/@esbuild/win32-x64/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/@esbuild-win32-x64-npm-0.25.2-bdc4b96867/node_modules/@esbuild/win32-x64/",\
         "packageDependencies": [\
-          ["@esbuild/win32-x64", "npm:0.25.1"]\
+          ["@esbuild/win32-x64", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -295,12 +296,12 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:e34b7fe48f58bebcd0c21b28e4dd0d5a7022590c302306760c0fa095b49760c3431cfcaed9456c6f6939311c6182a976bb8fc1cde6776fc45621093c8beed85e#npm:4.5.1", {\
-        "packageLocation": "./.yarn/__virtual__/@eslint-community-eslint-utils-virtual-24f8a2e3b2/0/cache/@eslint-community-eslint-utils-npm-4.5.1-88d38a08f4-336b85150c.zip/node_modules/@eslint-community/eslint-utils/",\
+      ["virtual:cc270bb13ff41813ffbf37f1b479199fa168e527304a89e02e6dd826228edbd0bf92d52fdf0fa34a788c66d45c805a7c1fc2e5f0d299dd8dbd9593ab0a430288#npm:4.5.1", {\
+        "packageLocation": "./.yarn/__virtual__/@eslint-community-eslint-utils-virtual-1742d3f901/0/cache/@eslint-community-eslint-utils-npm-4.5.1-88d38a08f4-336b85150c.zip/node_modules/@eslint-community/eslint-utils/",\
         "packageDependencies": [\
-          ["@eslint-community/eslint-utils", "virtual:e34b7fe48f58bebcd0c21b28e4dd0d5a7022590c302306760c0fa095b49760c3431cfcaed9456c6f6939311c6182a976bb8fc1cde6776fc45621093c8beed85e#npm:4.5.1"],\
+          ["@eslint-community/eslint-utils", "virtual:cc270bb13ff41813ffbf37f1b479199fa168e527304a89e02e6dd826228edbd0bf92d52fdf0fa34a788c66d45c805a7c1fc2e5f0d299dd8dbd9593ab0a430288#npm:4.5.1"],\
           ["@types/eslint", null],\
-          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.22.0"],\
+          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.24.0"],\
           ["eslint-visitor-keys", "npm:3.4.3"]\
         ],\
         "packagePeers": [\
@@ -320,10 +321,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@eslint/config-array", [\
-      ["npm:0.19.2", {\
-        "packageLocation": "./.yarn/cache/@eslint-config-array-npm-0.19.2-9310e910a9-a680972090.zip/node_modules/@eslint/config-array/",\
+      ["npm:0.20.0", {\
+        "packageLocation": "./.yarn/cache/@eslint-config-array-npm-0.20.0-f71b19056c-9db7f6cbb5.zip/node_modules/@eslint/config-array/",\
         "packageDependencies": [\
-          ["@eslint/config-array", "npm:0.19.2"],\
+          ["@eslint/config-array", "npm:0.20.0"],\
           ["@eslint/object-schema", "npm:2.1.6"],\
           ["debug", "virtual:c3967fc0c3b8915e804906b0fd751cab4f92941ee382919f75adac5959276e7821cb41492a6c394fe86691b903d5d627b8120597a4534d6ffe06ba7285e4003a#npm:4.4.0"],\
           ["minimatch", "npm:3.1.2"]\
@@ -332,10 +333,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@eslint/config-helpers", [\
-      ["npm:0.1.0", {\
-        "packageLocation": "./.yarn/cache/@eslint-config-helpers-npm-0.1.0-09250627f2-899b4783c2.zip/node_modules/@eslint/config-helpers/",\
+      ["npm:0.2.1", {\
+        "packageLocation": "./.yarn/cache/@eslint-config-helpers-npm-0.2.1-fb7508162a-7627d01a65.zip/node_modules/@eslint/config-helpers/",\
         "packageDependencies": [\
-          ["@eslint/config-helpers", "npm:0.1.0"]\
+          ["@eslint/config-helpers", "npm:0.2.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -348,25 +349,17 @@ const RAW_RUNTIME_STATE =
           ["@types/json-schema", "npm:7.0.15"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:0.13.0", {\
+        "packageLocation": "./.yarn/cache/@eslint-core-npm-0.13.0-53447b33b9-737fd1c237.zip/node_modules/@eslint/core/",\
+        "packageDependencies": [\
+          ["@eslint/core", "npm:0.13.0"],\
+          ["@types/json-schema", "npm:7.0.15"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@eslint/eslintrc", [\
-      ["npm:3.3.0", {\
-        "packageLocation": "./.yarn/cache/@eslint-eslintrc-npm-3.3.0-72b2f21ce8-f17d232fc4.zip/node_modules/@eslint/eslintrc/",\
-        "packageDependencies": [\
-          ["@eslint/eslintrc", "npm:3.3.0"],\
-          ["ajv", "npm:6.12.6"],\
-          ["debug", "virtual:c3967fc0c3b8915e804906b0fd751cab4f92941ee382919f75adac5959276e7821cb41492a6c394fe86691b903d5d627b8120597a4534d6ffe06ba7285e4003a#npm:4.4.0"],\
-          ["espree", "npm:10.3.0"],\
-          ["globals", "npm:14.0.0"],\
-          ["ignore", "npm:5.3.2"],\
-          ["import-fresh", "npm:3.3.1"],\
-          ["js-yaml", "npm:4.1.0"],\
-          ["minimatch", "npm:3.1.2"],\
-          ["strip-json-comments", "npm:3.1.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:3.3.1", {\
         "packageLocation": "./.yarn/cache/@eslint-eslintrc-npm-3.3.1-c3967fc0c3-cc240addba.zip/node_modules/@eslint/eslintrc/",\
         "packageDependencies": [\
@@ -385,13 +378,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@eslint/js", [\
-      ["npm:9.22.0", {\
-        "packageLocation": "./.yarn/cache/@eslint-js-npm-9.22.0-c06a0bdefc-2d7725f29e.zip/node_modules/@eslint/js/",\
-        "packageDependencies": [\
-          ["@eslint/js", "npm:9.22.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:9.24.0", {\
         "packageLocation": "./.yarn/cache/@eslint-js-npm-9.24.0-25f2165a01-d210114c14.zip/node_modules/@eslint/js/",\
         "packageDependencies": [\
@@ -410,11 +396,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@eslint/plugin-kit", [\
-      ["npm:0.2.7", {\
-        "packageLocation": "./.yarn/cache/@eslint-plugin-kit-npm-0.2.7-c313bcf919-e932da4ff9.zip/node_modules/@eslint/plugin-kit/",\
+      ["npm:0.2.8", {\
+        "packageLocation": "./.yarn/cache/@eslint-plugin-kit-npm-0.2.8-b9d7e2ad65-2e7fe7a88e.zip/node_modules/@eslint/plugin-kit/",\
         "packageDependencies": [\
-          ["@eslint/core", "npm:0.12.0"],\
-          ["@eslint/plugin-kit", "npm:0.2.7"],\
+          ["@eslint/core", "npm:0.13.0"],\
+          ["@eslint/plugin-kit", "npm:0.2.8"],\
           ["levn", "npm:0.4.1"]\
         ],\
         "linkType": "HARD"\
@@ -573,181 +559,190 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@rollup/rollup-android-arm-eabi", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-android-arm-eabi-npm-4.35.0-201e62a488/node_modules/@rollup/rollup-android-arm-eabi/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-android-arm-eabi-npm-4.39.0-896aaf182d/node_modules/@rollup/rollup-android-arm-eabi/",\
         "packageDependencies": [\
-          ["@rollup/rollup-android-arm-eabi", "npm:4.35.0"]\
+          ["@rollup/rollup-android-arm-eabi", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-android-arm64", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-android-arm64-npm-4.35.0-684b5ae27e/node_modules/@rollup/rollup-android-arm64/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-android-arm64-npm-4.39.0-d581e4c958/node_modules/@rollup/rollup-android-arm64/",\
         "packageDependencies": [\
-          ["@rollup/rollup-android-arm64", "npm:4.35.0"]\
+          ["@rollup/rollup-android-arm64", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-darwin-arm64", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-darwin-arm64-npm-4.35.0-e823448c39/node_modules/@rollup/rollup-darwin-arm64/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-darwin-arm64-npm-4.39.0-1435990235/node_modules/@rollup/rollup-darwin-arm64/",\
         "packageDependencies": [\
-          ["@rollup/rollup-darwin-arm64", "npm:4.35.0"]\
+          ["@rollup/rollup-darwin-arm64", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-darwin-x64", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-darwin-x64-npm-4.35.0-d113950a79/node_modules/@rollup/rollup-darwin-x64/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-darwin-x64-npm-4.39.0-44f607dfcd/node_modules/@rollup/rollup-darwin-x64/",\
         "packageDependencies": [\
-          ["@rollup/rollup-darwin-x64", "npm:4.35.0"]\
+          ["@rollup/rollup-darwin-x64", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-freebsd-arm64", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-freebsd-arm64-npm-4.35.0-74d0400c44/node_modules/@rollup/rollup-freebsd-arm64/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-freebsd-arm64-npm-4.39.0-4c3a4ca7d6/node_modules/@rollup/rollup-freebsd-arm64/",\
         "packageDependencies": [\
-          ["@rollup/rollup-freebsd-arm64", "npm:4.35.0"]\
+          ["@rollup/rollup-freebsd-arm64", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-freebsd-x64", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-freebsd-x64-npm-4.35.0-e789582e76/node_modules/@rollup/rollup-freebsd-x64/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-freebsd-x64-npm-4.39.0-7601674f0e/node_modules/@rollup/rollup-freebsd-x64/",\
         "packageDependencies": [\
-          ["@rollup/rollup-freebsd-x64", "npm:4.35.0"]\
+          ["@rollup/rollup-freebsd-x64", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-linux-arm-gnueabihf", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-arm-gnueabihf-npm-4.35.0-1f55121c42/node_modules/@rollup/rollup-linux-arm-gnueabihf/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-arm-gnueabihf-npm-4.39.0-f1369d0412/node_modules/@rollup/rollup-linux-arm-gnueabihf/",\
         "packageDependencies": [\
-          ["@rollup/rollup-linux-arm-gnueabihf", "npm:4.35.0"]\
+          ["@rollup/rollup-linux-arm-gnueabihf", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-linux-arm-musleabihf", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-arm-musleabihf-npm-4.35.0-8f913dfb78/node_modules/@rollup/rollup-linux-arm-musleabihf/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-arm-musleabihf-npm-4.39.0-3a462cb95b/node_modules/@rollup/rollup-linux-arm-musleabihf/",\
         "packageDependencies": [\
-          ["@rollup/rollup-linux-arm-musleabihf", "npm:4.35.0"]\
+          ["@rollup/rollup-linux-arm-musleabihf", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-linux-arm64-gnu", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-arm64-gnu-npm-4.35.0-b26646e5c1/node_modules/@rollup/rollup-linux-arm64-gnu/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-arm64-gnu-npm-4.39.0-27236e9d75/node_modules/@rollup/rollup-linux-arm64-gnu/",\
         "packageDependencies": [\
-          ["@rollup/rollup-linux-arm64-gnu", "npm:4.35.0"]\
+          ["@rollup/rollup-linux-arm64-gnu", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-linux-arm64-musl", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-arm64-musl-npm-4.35.0-aa9a848537/node_modules/@rollup/rollup-linux-arm64-musl/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-arm64-musl-npm-4.39.0-3f97a32aff/node_modules/@rollup/rollup-linux-arm64-musl/",\
         "packageDependencies": [\
-          ["@rollup/rollup-linux-arm64-musl", "npm:4.35.0"]\
+          ["@rollup/rollup-linux-arm64-musl", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-linux-loongarch64-gnu", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-loongarch64-gnu-npm-4.35.0-6c073b2e02/node_modules/@rollup/rollup-linux-loongarch64-gnu/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-loongarch64-gnu-npm-4.39.0-ed939b25d1/node_modules/@rollup/rollup-linux-loongarch64-gnu/",\
         "packageDependencies": [\
-          ["@rollup/rollup-linux-loongarch64-gnu", "npm:4.35.0"]\
+          ["@rollup/rollup-linux-loongarch64-gnu", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-linux-powerpc64le-gnu", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-powerpc64le-gnu-npm-4.35.0-9d8c880e3a/node_modules/@rollup/rollup-linux-powerpc64le-gnu/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-powerpc64le-gnu-npm-4.39.0-f59085a8fd/node_modules/@rollup/rollup-linux-powerpc64le-gnu/",\
         "packageDependencies": [\
-          ["@rollup/rollup-linux-powerpc64le-gnu", "npm:4.35.0"]\
+          ["@rollup/rollup-linux-powerpc64le-gnu", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-linux-riscv64-gnu", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-riscv64-gnu-npm-4.35.0-373e430772/node_modules/@rollup/rollup-linux-riscv64-gnu/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-riscv64-gnu-npm-4.39.0-63962a47da/node_modules/@rollup/rollup-linux-riscv64-gnu/",\
         "packageDependencies": [\
-          ["@rollup/rollup-linux-riscv64-gnu", "npm:4.35.0"]\
+          ["@rollup/rollup-linux-riscv64-gnu", "npm:4.39.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@rollup/rollup-linux-riscv64-musl", [\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-riscv64-musl-npm-4.39.0-cf752e0642/node_modules/@rollup/rollup-linux-riscv64-musl/",\
+        "packageDependencies": [\
+          ["@rollup/rollup-linux-riscv64-musl", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-linux-s390x-gnu", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-s390x-gnu-npm-4.35.0-ffb568c790/node_modules/@rollup/rollup-linux-s390x-gnu/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-s390x-gnu-npm-4.39.0-2712a6bac3/node_modules/@rollup/rollup-linux-s390x-gnu/",\
         "packageDependencies": [\
-          ["@rollup/rollup-linux-s390x-gnu", "npm:4.35.0"]\
+          ["@rollup/rollup-linux-s390x-gnu", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-linux-x64-gnu", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-x64-gnu-npm-4.35.0-dec8ff78df/node_modules/@rollup/rollup-linux-x64-gnu/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-x64-gnu-npm-4.39.0-7ddbec4184/node_modules/@rollup/rollup-linux-x64-gnu/",\
         "packageDependencies": [\
-          ["@rollup/rollup-linux-x64-gnu", "npm:4.35.0"]\
+          ["@rollup/rollup-linux-x64-gnu", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-linux-x64-musl", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-x64-musl-npm-4.35.0-4d96bf3a6f/node_modules/@rollup/rollup-linux-x64-musl/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-x64-musl-npm-4.39.0-b055735c92/node_modules/@rollup/rollup-linux-x64-musl/",\
         "packageDependencies": [\
-          ["@rollup/rollup-linux-x64-musl", "npm:4.35.0"]\
+          ["@rollup/rollup-linux-x64-musl", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-win32-arm64-msvc", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-win32-arm64-msvc-npm-4.35.0-e5d9961201/node_modules/@rollup/rollup-win32-arm64-msvc/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-win32-arm64-msvc-npm-4.39.0-43fb822d3d/node_modules/@rollup/rollup-win32-arm64-msvc/",\
         "packageDependencies": [\
-          ["@rollup/rollup-win32-arm64-msvc", "npm:4.35.0"]\
+          ["@rollup/rollup-win32-arm64-msvc", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-win32-ia32-msvc", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-win32-ia32-msvc-npm-4.35.0-8f005de7b6/node_modules/@rollup/rollup-win32-ia32-msvc/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-win32-ia32-msvc-npm-4.39.0-37e536e634/node_modules/@rollup/rollup-win32-ia32-msvc/",\
         "packageDependencies": [\
-          ["@rollup/rollup-win32-ia32-msvc", "npm:4.35.0"]\
+          ["@rollup/rollup-win32-ia32-msvc", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@rollup/rollup-win32-x64-msvc", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/unplugged/@rollup-rollup-win32-x64-msvc-npm-4.35.0-3835edf8b3/node_modules/@rollup/rollup-win32-x64-msvc/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-win32-x64-msvc-npm-4.39.0-719e339567/node_modules/@rollup/rollup-win32-x64-msvc/",\
         "packageDependencies": [\
-          ["@rollup/rollup-win32-x64-msvc", "npm:4.35.0"]\
+          ["@rollup/rollup-win32-x64-msvc", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@types/estree", [\
-      ["npm:1.0.6", {\
-        "packageLocation": "./.yarn/cache/@types-estree-npm-1.0.6-b5e23f2ea2-9d35d47509.zip/node_modules/@types/estree/",\
+      ["npm:1.0.7", {\
+        "packageLocation": "./.yarn/cache/@types-estree-npm-1.0.7-692605611f-419c845ece.zip/node_modules/@types/estree/",\
         "packageDependencies": [\
-          ["@types/estree", "npm:1.0.6"]\
+          ["@types/estree", "npm:1.0.7"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -757,7 +752,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-ink-big-text-npm-1.2.4-2a303597a6-f3adb70b98.zip/node_modules/@types/ink-big-text/",\
         "packageDependencies": [\
           ["@types/ink-big-text", "npm:1.2.4"],\
-          ["@types/react", "npm:19.0.10"]\
+          ["@types/react", "npm:19.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -772,10 +767,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
-      ["npm:22.14.0", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-22.14.0-a09e354ed5-d0669a8a37.zip/node_modules/@types/node/",\
+      ["npm:22.14.1", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-22.14.1-ff7e0a29d7-561b1ad98e.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:22.14.0"],\
+          ["@types/node", "npm:22.14.1"],\
           ["undici-types", "npm:6.21.0"]\
         ],\
         "linkType": "HARD"\
@@ -791,50 +786,50 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/react", [\
-      ["npm:18.3.18", {\
-        "packageLocation": "./.yarn/cache/@types-react-npm-18.3.18-2cfc7440b2-7fdd8b853e.zip/node_modules/@types/react/",\
+      ["npm:18.3.20", {\
+        "packageLocation": "./.yarn/cache/@types-react-npm-18.3.20-0aaa2627a6-020c51e63b.zip/node_modules/@types/react/",\
         "packageDependencies": [\
           ["@types/prop-types", "npm:15.7.14"],\
-          ["@types/react", "npm:18.3.18"],\
+          ["@types/react", "npm:18.3.20"],\
           ["csstype", "npm:3.1.3"]\
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:19.0.10", {\
-        "packageLocation": "./.yarn/cache/@types-react-npm-19.0.10-ad7744c06a-10b592d212.zip/node_modules/@types/react/",\
+      ["npm:19.1.1", {\
+        "packageLocation": "./.yarn/cache/@types-react-npm-19.1.1-b954e529d7-f267c2a7af.zip/node_modules/@types/react/",\
         "packageDependencies": [\
-          ["@types/react", "npm:19.0.10"],\
+          ["@types/react", "npm:19.1.1"],\
           ["csstype", "npm:3.1.3"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@typescript-eslint/eslint-plugin", [\
-      ["npm:8.26.1", {\
-        "packageLocation": "./.yarn/cache/@typescript-eslint-eslint-plugin-npm-8.26.1-1c840523d3-01fa0f560e.zip/node_modules/@typescript-eslint/eslint-plugin/",\
+      ["npm:8.29.1", {\
+        "packageLocation": "./.yarn/cache/@typescript-eslint-eslint-plugin-npm-8.29.1-ccdf3ebc13-0568894f0e.zip/node_modules/@typescript-eslint/eslint-plugin/",\
         "packageDependencies": [\
-          ["@typescript-eslint/eslint-plugin", "npm:8.26.1"]\
+          ["@typescript-eslint/eslint-plugin", "npm:8.29.1"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.26.1", {\
-        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-eslint-plugin-virtual-0015032b01/0/cache/@typescript-eslint-eslint-plugin-npm-8.26.1-1c840523d3-01fa0f560e.zip/node_modules/@typescript-eslint/eslint-plugin/",\
+      ["virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.29.1", {\
+        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-eslint-plugin-virtual-91e3a31ec8/0/cache/@typescript-eslint-eslint-plugin-npm-8.29.1-ccdf3ebc13-0568894f0e.zip/node_modules/@typescript-eslint/eslint-plugin/",\
         "packageDependencies": [\
           ["@eslint-community/regexpp", "npm:4.12.1"],\
           ["@types/eslint", null],\
           ["@types/typescript", null],\
           ["@types/typescript-eslint__parser", null],\
-          ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.26.1"],\
-          ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.29.0"],\
-          ["@typescript-eslint/scope-manager", "npm:8.26.1"],\
-          ["@typescript-eslint/type-utils", "virtual:0015032b01848a385900eef811caa7466d048f78aa97efefb3647bc10a3c4371333ce0608a04c2e2e9602d3754e185c8320f49abbacb73ee12b71589f13edf38#npm:8.26.1"],\
-          ["@typescript-eslint/utils", "virtual:0015032b01848a385900eef811caa7466d048f78aa97efefb3647bc10a3c4371333ce0608a04c2e2e9602d3754e185c8320f49abbacb73ee12b71589f13edf38#npm:8.26.1"],\
-          ["@typescript-eslint/visitor-keys", "npm:8.26.1"],\
-          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.22.0"],\
+          ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.29.1"],\
+          ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.29.1"],\
+          ["@typescript-eslint/scope-manager", "npm:8.29.1"],\
+          ["@typescript-eslint/type-utils", "virtual:91e3a31ec876d4bebb8c1285eb507c0f76c52734122eeb8ef04d18f64d9d77a4cdaa6a3c21056f4e8bbf07fdf8df4e2fc5a61d96a1796661d862eccd5d048605#npm:8.29.1"],\
+          ["@typescript-eslint/utils", "virtual:91e3a31ec876d4bebb8c1285eb507c0f76c52734122eeb8ef04d18f64d9d77a4cdaa6a3c21056f4e8bbf07fdf8df4e2fc5a61d96a1796661d862eccd5d048605#npm:8.29.1"],\
+          ["@typescript-eslint/visitor-keys", "npm:8.29.1"],\
+          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.24.0"],\
           ["graphemer", "npm:1.4.0"],\
           ["ignore", "npm:5.3.2"],\
           ["natural-compare", "npm:1.4.0"],\
-          ["ts-api-utils", "virtual:0015032b01848a385900eef811caa7466d048f78aa97efefb3647bc10a3c4371333ce0608a04c2e2e9602d3754e185c8320f49abbacb73ee12b71589f13edf38#npm:2.0.1"],\
+          ["ts-api-utils", "virtual:91e3a31ec876d4bebb8c1285eb507c0f76c52734122eeb8ef04d18f64d9d77a4cdaa6a3c21056f4e8bbf07fdf8df4e2fc5a61d96a1796661d862eccd5d048605#npm:2.1.0"],\
           ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "packagePeers": [\
@@ -849,25 +844,25 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@typescript-eslint/parser", [\
-      ["npm:8.29.0", {\
-        "packageLocation": "./.yarn/cache/@typescript-eslint-parser-npm-8.29.0-510bf7f523-d71fec12e7.zip/node_modules/@typescript-eslint/parser/",\
+      ["npm:8.29.1", {\
+        "packageLocation": "./.yarn/cache/@typescript-eslint-parser-npm-8.29.1-359ce3de55-effb4cc24e.zip/node_modules/@typescript-eslint/parser/",\
         "packageDependencies": [\
-          ["@typescript-eslint/parser", "npm:8.29.0"]\
+          ["@typescript-eslint/parser", "npm:8.29.1"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.29.0", {\
-        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-parser-virtual-11e1b026c8/0/cache/@typescript-eslint-parser-npm-8.29.0-510bf7f523-d71fec12e7.zip/node_modules/@typescript-eslint/parser/",\
+      ["virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.29.1", {\
+        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-parser-virtual-6b3dbebda4/0/cache/@typescript-eslint-parser-npm-8.29.1-359ce3de55-effb4cc24e.zip/node_modules/@typescript-eslint/parser/",\
         "packageDependencies": [\
           ["@types/eslint", null],\
           ["@types/typescript", null],\
-          ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.29.0"],\
-          ["@typescript-eslint/scope-manager", "npm:8.29.0"],\
-          ["@typescript-eslint/types", "npm:8.29.0"],\
-          ["@typescript-eslint/typescript-estree", "virtual:11e1b026c873eff027170a282de9437dec686496a67e04a6bb7ed03d81e16f6058dc99af6a26d3f1b248b560167a0496d1224607c900c68a6597f3a82905af77#npm:8.29.0"],\
-          ["@typescript-eslint/visitor-keys", "npm:8.29.0"],\
+          ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.29.1"],\
+          ["@typescript-eslint/scope-manager", "npm:8.29.1"],\
+          ["@typescript-eslint/types", "npm:8.29.1"],\
+          ["@typescript-eslint/typescript-estree", "virtual:be2d38162cab2c441b3466c648632df81d070feba39ddffe20c58eefb485c2fd097371d9a407f5f3e947774cb69299305c1eca1012c1b2eb7494289d17d21676#npm:8.29.1"],\
+          ["@typescript-eslint/visitor-keys", "npm:8.29.1"],\
           ["debug", "virtual:c3967fc0c3b8915e804906b0fd751cab4f92941ee382919f75adac5959276e7821cb41492a6c394fe86691b903d5d627b8120597a4534d6ffe06ba7285e4003a#npm:4.4.0"],\
-          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.22.0"],\
+          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.24.0"],\
           ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "packagePeers": [\
@@ -880,44 +875,35 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@typescript-eslint/scope-manager", [\
-      ["npm:8.26.1", {\
-        "packageLocation": "./.yarn/cache/@typescript-eslint-scope-manager-npm-8.26.1-e95481198a-0c5123e243.zip/node_modules/@typescript-eslint/scope-manager/",\
+      ["npm:8.29.1", {\
+        "packageLocation": "./.yarn/cache/@typescript-eslint-scope-manager-npm-8.29.1-9f6e68ac87-33a02f490b.zip/node_modules/@typescript-eslint/scope-manager/",\
         "packageDependencies": [\
-          ["@typescript-eslint/scope-manager", "npm:8.26.1"],\
-          ["@typescript-eslint/types", "npm:8.26.1"],\
-          ["@typescript-eslint/visitor-keys", "npm:8.26.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:8.29.0", {\
-        "packageLocation": "./.yarn/cache/@typescript-eslint-scope-manager-npm-8.29.0-6046e43075-23ce9962d5.zip/node_modules/@typescript-eslint/scope-manager/",\
-        "packageDependencies": [\
-          ["@typescript-eslint/scope-manager", "npm:8.29.0"],\
-          ["@typescript-eslint/types", "npm:8.29.0"],\
-          ["@typescript-eslint/visitor-keys", "npm:8.29.0"]\
+          ["@typescript-eslint/scope-manager", "npm:8.29.1"],\
+          ["@typescript-eslint/types", "npm:8.29.1"],\
+          ["@typescript-eslint/visitor-keys", "npm:8.29.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@typescript-eslint/type-utils", [\
-      ["npm:8.26.1", {\
-        "packageLocation": "./.yarn/cache/@typescript-eslint-type-utils-npm-8.26.1-cb25d3d453-e29a3b4feb.zip/node_modules/@typescript-eslint/type-utils/",\
+      ["npm:8.29.1", {\
+        "packageLocation": "./.yarn/cache/@typescript-eslint-type-utils-npm-8.29.1-f270db0ca1-3774d6fb32.zip/node_modules/@typescript-eslint/type-utils/",\
         "packageDependencies": [\
-          ["@typescript-eslint/type-utils", "npm:8.26.1"]\
+          ["@typescript-eslint/type-utils", "npm:8.29.1"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:0015032b01848a385900eef811caa7466d048f78aa97efefb3647bc10a3c4371333ce0608a04c2e2e9602d3754e185c8320f49abbacb73ee12b71589f13edf38#npm:8.26.1", {\
-        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-type-utils-virtual-d03ecac948/0/cache/@typescript-eslint-type-utils-npm-8.26.1-cb25d3d453-e29a3b4feb.zip/node_modules/@typescript-eslint/type-utils/",\
+      ["virtual:91e3a31ec876d4bebb8c1285eb507c0f76c52734122eeb8ef04d18f64d9d77a4cdaa6a3c21056f4e8bbf07fdf8df4e2fc5a61d96a1796661d862eccd5d048605#npm:8.29.1", {\
+        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-type-utils-virtual-be2d38162c/0/cache/@typescript-eslint-type-utils-npm-8.29.1-f270db0ca1-3774d6fb32.zip/node_modules/@typescript-eslint/type-utils/",\
         "packageDependencies": [\
           ["@types/eslint", null],\
           ["@types/typescript", null],\
-          ["@typescript-eslint/type-utils", "virtual:0015032b01848a385900eef811caa7466d048f78aa97efefb3647bc10a3c4371333ce0608a04c2e2e9602d3754e185c8320f49abbacb73ee12b71589f13edf38#npm:8.26.1"],\
-          ["@typescript-eslint/typescript-estree", "virtual:d03ecac94807f6b57c28df90a7665cf36c28a9eb903d28b8beb1019806bc7ea39c80b03c0d45114d4134b87eb19f84d843a8500fe2851beac9727817879c52a7#npm:8.26.1"],\
-          ["@typescript-eslint/utils", "virtual:0015032b01848a385900eef811caa7466d048f78aa97efefb3647bc10a3c4371333ce0608a04c2e2e9602d3754e185c8320f49abbacb73ee12b71589f13edf38#npm:8.26.1"],\
+          ["@typescript-eslint/type-utils", "virtual:91e3a31ec876d4bebb8c1285eb507c0f76c52734122eeb8ef04d18f64d9d77a4cdaa6a3c21056f4e8bbf07fdf8df4e2fc5a61d96a1796661d862eccd5d048605#npm:8.29.1"],\
+          ["@typescript-eslint/typescript-estree", "virtual:be2d38162cab2c441b3466c648632df81d070feba39ddffe20c58eefb485c2fd097371d9a407f5f3e947774cb69299305c1eca1012c1b2eb7494289d17d21676#npm:8.29.1"],\
+          ["@typescript-eslint/utils", "virtual:91e3a31ec876d4bebb8c1285eb507c0f76c52734122eeb8ef04d18f64d9d77a4cdaa6a3c21056f4e8bbf07fdf8df4e2fc5a61d96a1796661d862eccd5d048605#npm:8.29.1"],\
           ["debug", "virtual:c3967fc0c3b8915e804906b0fd751cab4f92941ee382919f75adac5959276e7821cb41492a6c394fe86691b903d5d627b8120597a4534d6ffe06ba7285e4003a#npm:4.4.0"],\
-          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.22.0"],\
-          ["ts-api-utils", "virtual:0015032b01848a385900eef811caa7466d048f78aa97efefb3647bc10a3c4371333ce0608a04c2e2e9602d3754e185c8320f49abbacb73ee12b71589f13edf38#npm:2.0.1"],\
+          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.24.0"],\
+          ["ts-api-utils", "virtual:91e3a31ec876d4bebb8c1285eb507c0f76c52734122eeb8ef04d18f64d9d77a4cdaa6a3c21056f4e8bbf07fdf8df4e2fc5a61d96a1796661d862eccd5d048605#npm:2.1.0"],\
           ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "packagePeers": [\
@@ -930,70 +916,35 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@typescript-eslint/types", [\
-      ["npm:8.26.1", {\
-        "packageLocation": "./.yarn/cache/@typescript-eslint-types-npm-8.26.1-b7d54af192-1452d0c021.zip/node_modules/@typescript-eslint/types/",\
+      ["npm:8.29.1", {\
+        "packageLocation": "./.yarn/cache/@typescript-eslint-types-npm-8.29.1-e9f417c3bf-99ff59e7af.zip/node_modules/@typescript-eslint/types/",\
         "packageDependencies": [\
-          ["@typescript-eslint/types", "npm:8.26.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:8.29.0", {\
-        "packageLocation": "./.yarn/cache/@typescript-eslint-types-npm-8.29.0-be9f1bbfb7-d65b9f2f6d.zip/node_modules/@typescript-eslint/types/",\
-        "packageDependencies": [\
-          ["@typescript-eslint/types", "npm:8.29.0"]\
+          ["@typescript-eslint/types", "npm:8.29.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@typescript-eslint/typescript-estree", [\
-      ["npm:8.26.1", {\
-        "packageLocation": "./.yarn/cache/@typescript-eslint-typescript-estree-npm-8.26.1-23f980f4b7-1ed242a989.zip/node_modules/@typescript-eslint/typescript-estree/",\
+      ["npm:8.29.1", {\
+        "packageLocation": "./.yarn/cache/@typescript-eslint-typescript-estree-npm-8.29.1-27872f0501-dded2ebe4c.zip/node_modules/@typescript-eslint/typescript-estree/",\
         "packageDependencies": [\
-          ["@typescript-eslint/typescript-estree", "npm:8.26.1"]\
+          ["@typescript-eslint/typescript-estree", "npm:8.29.1"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["npm:8.29.0", {\
-        "packageLocation": "./.yarn/cache/@typescript-eslint-typescript-estree-npm-8.29.0-92fb2cc910-276e6ea978.zip/node_modules/@typescript-eslint/typescript-estree/",\
-        "packageDependencies": [\
-          ["@typescript-eslint/typescript-estree", "npm:8.29.0"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:11e1b026c873eff027170a282de9437dec686496a67e04a6bb7ed03d81e16f6058dc99af6a26d3f1b248b560167a0496d1224607c900c68a6597f3a82905af77#npm:8.29.0", {\
-        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-typescript-estree-virtual-feabb8f043/0/cache/@typescript-eslint-typescript-estree-npm-8.29.0-92fb2cc910-276e6ea978.zip/node_modules/@typescript-eslint/typescript-estree/",\
+      ["virtual:be2d38162cab2c441b3466c648632df81d070feba39ddffe20c58eefb485c2fd097371d9a407f5f3e947774cb69299305c1eca1012c1b2eb7494289d17d21676#npm:8.29.1", {\
+        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-typescript-estree-virtual-518e130b85/0/cache/@typescript-eslint-typescript-estree-npm-8.29.1-27872f0501-dded2ebe4c.zip/node_modules/@typescript-eslint/typescript-estree/",\
         "packageDependencies": [\
           ["@types/typescript", null],\
-          ["@typescript-eslint/types", "npm:8.29.0"],\
-          ["@typescript-eslint/typescript-estree", "virtual:11e1b026c873eff027170a282de9437dec686496a67e04a6bb7ed03d81e16f6058dc99af6a26d3f1b248b560167a0496d1224607c900c68a6597f3a82905af77#npm:8.29.0"],\
-          ["@typescript-eslint/visitor-keys", "npm:8.29.0"],\
+          ["@typescript-eslint/types", "npm:8.29.1"],\
+          ["@typescript-eslint/typescript-estree", "virtual:be2d38162cab2c441b3466c648632df81d070feba39ddffe20c58eefb485c2fd097371d9a407f5f3e947774cb69299305c1eca1012c1b2eb7494289d17d21676#npm:8.29.1"],\
+          ["@typescript-eslint/visitor-keys", "npm:8.29.1"],\
           ["debug", "virtual:c3967fc0c3b8915e804906b0fd751cab4f92941ee382919f75adac5959276e7821cb41492a6c394fe86691b903d5d627b8120597a4534d6ffe06ba7285e4003a#npm:4.4.0"],\
           ["fast-glob", "npm:3.3.3"],\
           ["is-glob", "npm:4.0.3"],\
           ["minimatch", "npm:9.0.5"],\
           ["semver", "npm:7.7.1"],\
-          ["ts-api-utils", "virtual:0015032b01848a385900eef811caa7466d048f78aa97efefb3647bc10a3c4371333ce0608a04c2e2e9602d3754e185c8320f49abbacb73ee12b71589f13edf38#npm:2.0.1"],\
-          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
-        ],\
-        "packagePeers": [\
-          "@types/typescript",\
-          "typescript"\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["virtual:d03ecac94807f6b57c28df90a7665cf36c28a9eb903d28b8beb1019806bc7ea39c80b03c0d45114d4134b87eb19f84d843a8500fe2851beac9727817879c52a7#npm:8.26.1", {\
-        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-typescript-estree-virtual-f17129017e/0/cache/@typescript-eslint-typescript-estree-npm-8.26.1-23f980f4b7-1ed242a989.zip/node_modules/@typescript-eslint/typescript-estree/",\
-        "packageDependencies": [\
-          ["@types/typescript", null],\
-          ["@typescript-eslint/types", "npm:8.26.1"],\
-          ["@typescript-eslint/typescript-estree", "virtual:d03ecac94807f6b57c28df90a7665cf36c28a9eb903d28b8beb1019806bc7ea39c80b03c0d45114d4134b87eb19f84d843a8500fe2851beac9727817879c52a7#npm:8.26.1"],\
-          ["@typescript-eslint/visitor-keys", "npm:8.26.1"],\
-          ["debug", "virtual:c3967fc0c3b8915e804906b0fd751cab4f92941ee382919f75adac5959276e7821cb41492a6c394fe86691b903d5d627b8120597a4534d6ffe06ba7285e4003a#npm:4.4.0"],\
-          ["fast-glob", "npm:3.3.3"],\
-          ["is-glob", "npm:4.0.3"],\
-          ["minimatch", "npm:9.0.5"],\
-          ["semver", "npm:7.7.1"],\
-          ["ts-api-utils", "virtual:0015032b01848a385900eef811caa7466d048f78aa97efefb3647bc10a3c4371333ce0608a04c2e2e9602d3754e185c8320f49abbacb73ee12b71589f13edf38#npm:2.0.1"],\
+          ["ts-api-utils", "virtual:91e3a31ec876d4bebb8c1285eb507c0f76c52734122eeb8ef04d18f64d9d77a4cdaa6a3c21056f4e8bbf07fdf8df4e2fc5a61d96a1796661d862eccd5d048605#npm:2.1.0"],\
           ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "packagePeers": [\
@@ -1004,24 +955,24 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@typescript-eslint/utils", [\
-      ["npm:8.26.1", {\
-        "packageLocation": "./.yarn/cache/@typescript-eslint-utils-npm-8.26.1-33138d7104-53e4245534.zip/node_modules/@typescript-eslint/utils/",\
+      ["npm:8.29.1", {\
+        "packageLocation": "./.yarn/cache/@typescript-eslint-utils-npm-8.29.1-f2b2f4a68d-1d2c85c97a.zip/node_modules/@typescript-eslint/utils/",\
         "packageDependencies": [\
-          ["@typescript-eslint/utils", "npm:8.26.1"]\
+          ["@typescript-eslint/utils", "npm:8.29.1"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:0015032b01848a385900eef811caa7466d048f78aa97efefb3647bc10a3c4371333ce0608a04c2e2e9602d3754e185c8320f49abbacb73ee12b71589f13edf38#npm:8.26.1", {\
-        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-utils-virtual-e34b7fe48f/0/cache/@typescript-eslint-utils-npm-8.26.1-33138d7104-53e4245534.zip/node_modules/@typescript-eslint/utils/",\
+      ["virtual:91e3a31ec876d4bebb8c1285eb507c0f76c52734122eeb8ef04d18f64d9d77a4cdaa6a3c21056f4e8bbf07fdf8df4e2fc5a61d96a1796661d862eccd5d048605#npm:8.29.1", {\
+        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-utils-virtual-cc270bb13f/0/cache/@typescript-eslint-utils-npm-8.29.1-f2b2f4a68d-1d2c85c97a.zip/node_modules/@typescript-eslint/utils/",\
         "packageDependencies": [\
-          ["@eslint-community/eslint-utils", "virtual:e34b7fe48f58bebcd0c21b28e4dd0d5a7022590c302306760c0fa095b49760c3431cfcaed9456c6f6939311c6182a976bb8fc1cde6776fc45621093c8beed85e#npm:4.5.1"],\
+          ["@eslint-community/eslint-utils", "virtual:cc270bb13ff41813ffbf37f1b479199fa168e527304a89e02e6dd826228edbd0bf92d52fdf0fa34a788c66d45c805a7c1fc2e5f0d299dd8dbd9593ab0a430288#npm:4.5.1"],\
           ["@types/eslint", null],\
           ["@types/typescript", null],\
-          ["@typescript-eslint/scope-manager", "npm:8.26.1"],\
-          ["@typescript-eslint/types", "npm:8.26.1"],\
-          ["@typescript-eslint/typescript-estree", "virtual:d03ecac94807f6b57c28df90a7665cf36c28a9eb903d28b8beb1019806bc7ea39c80b03c0d45114d4134b87eb19f84d843a8500fe2851beac9727817879c52a7#npm:8.26.1"],\
-          ["@typescript-eslint/utils", "virtual:0015032b01848a385900eef811caa7466d048f78aa97efefb3647bc10a3c4371333ce0608a04c2e2e9602d3754e185c8320f49abbacb73ee12b71589f13edf38#npm:8.26.1"],\
-          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.22.0"],\
+          ["@typescript-eslint/scope-manager", "npm:8.29.1"],\
+          ["@typescript-eslint/types", "npm:8.29.1"],\
+          ["@typescript-eslint/typescript-estree", "virtual:be2d38162cab2c441b3466c648632df81d070feba39ddffe20c58eefb485c2fd097371d9a407f5f3e947774cb69299305c1eca1012c1b2eb7494289d17d21676#npm:8.29.1"],\
+          ["@typescript-eslint/utils", "virtual:91e3a31ec876d4bebb8c1285eb507c0f76c52734122eeb8ef04d18f64d9d77a4cdaa6a3c21056f4e8bbf07fdf8df4e2fc5a61d96a1796661d862eccd5d048605#npm:8.29.1"],\
+          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.24.0"],\
           ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "packagePeers": [\
@@ -1034,20 +985,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@typescript-eslint/visitor-keys", [\
-      ["npm:8.26.1", {\
-        "packageLocation": "./.yarn/cache/@typescript-eslint-visitor-keys-npm-8.26.1-74d45343c6-48bcd03d51.zip/node_modules/@typescript-eslint/visitor-keys/",\
+      ["npm:8.29.1", {\
+        "packageLocation": "./.yarn/cache/@typescript-eslint-visitor-keys-npm-8.29.1-1b00f9140e-788290c369.zip/node_modules/@typescript-eslint/visitor-keys/",\
         "packageDependencies": [\
-          ["@typescript-eslint/types", "npm:8.26.1"],\
-          ["@typescript-eslint/visitor-keys", "npm:8.26.1"],\
-          ["eslint-visitor-keys", "npm:4.2.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:8.29.0", {\
-        "packageLocation": "./.yarn/cache/@typescript-eslint-visitor-keys-npm-8.29.0-e8a9b1561e-02e0e86ab1.zip/node_modules/@typescript-eslint/visitor-keys/",\
-        "packageDependencies": [\
-          ["@typescript-eslint/types", "npm:8.29.0"],\
-          ["@typescript-eslint/visitor-keys", "npm:8.29.0"],\
+          ["@typescript-eslint/types", "npm:8.29.1"],\
+          ["@typescript-eslint/visitor-keys", "npm:8.29.1"],\
           ["eslint-visitor-keys", "npm:4.2.0"]\
         ],\
         "linkType": "HARD"\
@@ -1084,7 +1026,7 @@ const RAW_RUNTIME_STATE =
           ["estree-walker", "npm:3.0.3"],\
           ["magic-string", "npm:0.30.17"],\
           ["msw", null],\
-          ["vite", "virtual:4f7fb3b097ccc0e5c82eff9878d429340a62bd61f9335adc112934931f2b5ae0e3a6d9e1ef17668a7dd26979b3e4f462e3388a4809d7e3742f8672286acd1577#npm:6.2.2"]\
+          ["vite", "virtual:4f7fb3b097ccc0e5c82eff9878d429340a62bd61f9335adc112934931f2b5ae0e3a6d9e1ef17668a7dd26979b3e4f462e3388a4809d7e3742f8672286acd1577#npm:6.2.6"]\
         ],\
         "packagePeers": [\
           "@types/msw",\
@@ -1151,10 +1093,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["abbrev", [\
-      ["npm:3.0.0", {\
-        "packageLocation": "./.yarn/cache/abbrev-npm-3.0.0-946682a7b1-2ceee14efd.zip/node_modules/abbrev/",\
+      ["npm:3.0.1", {\
+        "packageLocation": "./.yarn/cache/abbrev-npm-3.0.1-a34d600e50-ebd2c149dd.zip/node_modules/abbrev/",\
         "packageDependencies": [\
-          ["abbrev", "npm:3.0.0"]\
+          ["abbrev", "npm:3.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2029,44 +1971,44 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["es-toolkit", [\
-      ["npm:1.33.0", {\
-        "packageLocation": "./.yarn/cache/es-toolkit-npm-1.33.0-807a736261-db613d885c.zip/node_modules/es-toolkit/",\
+      ["npm:1.34.1", {\
+        "packageLocation": "./.yarn/cache/es-toolkit-npm-1.34.1-02cf4b02fd-4542c82c38.zip/node_modules/es-toolkit/",\
         "packageDependencies": [\
-          ["es-toolkit", "npm:1.33.0"]\
+          ["es-toolkit", "npm:1.34.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["esbuild", [\
-      ["npm:0.25.1", {\
-        "packageLocation": "./.yarn/unplugged/esbuild-npm-0.25.1-d9214fa98d/node_modules/esbuild/",\
+      ["npm:0.25.2", {\
+        "packageLocation": "./.yarn/unplugged/esbuild-npm-0.25.2-1486e883dd/node_modules/esbuild/",\
         "packageDependencies": [\
-          ["@esbuild/aix-ppc64", "npm:0.25.1"],\
-          ["@esbuild/android-arm", "npm:0.25.1"],\
-          ["@esbuild/android-arm64", "npm:0.25.1"],\
-          ["@esbuild/android-x64", "npm:0.25.1"],\
-          ["@esbuild/darwin-arm64", "npm:0.25.1"],\
-          ["@esbuild/darwin-x64", "npm:0.25.1"],\
-          ["@esbuild/freebsd-arm64", "npm:0.25.1"],\
-          ["@esbuild/freebsd-x64", "npm:0.25.1"],\
-          ["@esbuild/linux-arm", "npm:0.25.1"],\
-          ["@esbuild/linux-arm64", "npm:0.25.1"],\
-          ["@esbuild/linux-ia32", "npm:0.25.1"],\
-          ["@esbuild/linux-loong64", "npm:0.25.1"],\
-          ["@esbuild/linux-mips64el", "npm:0.25.1"],\
-          ["@esbuild/linux-ppc64", "npm:0.25.1"],\
-          ["@esbuild/linux-riscv64", "npm:0.25.1"],\
-          ["@esbuild/linux-s390x", "npm:0.25.1"],\
-          ["@esbuild/linux-x64", "npm:0.25.1"],\
-          ["@esbuild/netbsd-arm64", "npm:0.25.1"],\
-          ["@esbuild/netbsd-x64", "npm:0.25.1"],\
-          ["@esbuild/openbsd-arm64", "npm:0.25.1"],\
-          ["@esbuild/openbsd-x64", "npm:0.25.1"],\
-          ["@esbuild/sunos-x64", "npm:0.25.1"],\
-          ["@esbuild/win32-arm64", "npm:0.25.1"],\
-          ["@esbuild/win32-ia32", "npm:0.25.1"],\
-          ["@esbuild/win32-x64", "npm:0.25.1"],\
-          ["esbuild", "npm:0.25.1"]\
+          ["@esbuild/aix-ppc64", "npm:0.25.2"],\
+          ["@esbuild/android-arm", "npm:0.25.2"],\
+          ["@esbuild/android-arm64", "npm:0.25.2"],\
+          ["@esbuild/android-x64", "npm:0.25.2"],\
+          ["@esbuild/darwin-arm64", "npm:0.25.2"],\
+          ["@esbuild/darwin-x64", "npm:0.25.2"],\
+          ["@esbuild/freebsd-arm64", "npm:0.25.2"],\
+          ["@esbuild/freebsd-x64", "npm:0.25.2"],\
+          ["@esbuild/linux-arm", "npm:0.25.2"],\
+          ["@esbuild/linux-arm64", "npm:0.25.2"],\
+          ["@esbuild/linux-ia32", "npm:0.25.2"],\
+          ["@esbuild/linux-loong64", "npm:0.25.2"],\
+          ["@esbuild/linux-mips64el", "npm:0.25.2"],\
+          ["@esbuild/linux-ppc64", "npm:0.25.2"],\
+          ["@esbuild/linux-riscv64", "npm:0.25.2"],\
+          ["@esbuild/linux-s390x", "npm:0.25.2"],\
+          ["@esbuild/linux-x64", "npm:0.25.2"],\
+          ["@esbuild/netbsd-arm64", "npm:0.25.2"],\
+          ["@esbuild/netbsd-x64", "npm:0.25.2"],\
+          ["@esbuild/openbsd-arm64", "npm:0.25.2"],\
+          ["@esbuild/openbsd-x64", "npm:0.25.2"],\
+          ["@esbuild/sunos-x64", "npm:0.25.2"],\
+          ["@esbuild/win32-arm64", "npm:0.25.2"],\
+          ["@esbuild/win32-ia32", "npm:0.25.2"],\
+          ["@esbuild/win32-x64", "npm:0.25.2"],\
+          ["esbuild", "npm:0.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2088,28 +2030,28 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["eslint", [\
-      ["npm:9.22.0", {\
-        "packageLocation": "./.yarn/cache/eslint-npm-9.22.0-dd7abea6c7-0a21a46fb4.zip/node_modules/eslint/",\
+      ["npm:9.24.0", {\
+        "packageLocation": "./.yarn/cache/eslint-npm-9.24.0-4c9da5b490-05810e135c.zip/node_modules/eslint/",\
         "packageDependencies": [\
-          ["eslint", "npm:9.22.0"]\
+          ["eslint", "npm:9.24.0"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.22.0", {\
-        "packageLocation": "./.yarn/__virtual__/eslint-virtual-8652eabc52/0/cache/eslint-npm-9.22.0-dd7abea6c7-0a21a46fb4.zip/node_modules/eslint/",\
+      ["virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.24.0", {\
+        "packageLocation": "./.yarn/__virtual__/eslint-virtual-1d7f433ea0/0/cache/eslint-npm-9.24.0-4c9da5b490-05810e135c.zip/node_modules/eslint/",\
         "packageDependencies": [\
-          ["@eslint-community/eslint-utils", "virtual:e34b7fe48f58bebcd0c21b28e4dd0d5a7022590c302306760c0fa095b49760c3431cfcaed9456c6f6939311c6182a976bb8fc1cde6776fc45621093c8beed85e#npm:4.5.1"],\
+          ["@eslint-community/eslint-utils", "virtual:cc270bb13ff41813ffbf37f1b479199fa168e527304a89e02e6dd826228edbd0bf92d52fdf0fa34a788c66d45c805a7c1fc2e5f0d299dd8dbd9593ab0a430288#npm:4.5.1"],\
           ["@eslint-community/regexpp", "npm:4.12.1"],\
-          ["@eslint/config-array", "npm:0.19.2"],\
-          ["@eslint/config-helpers", "npm:0.1.0"],\
+          ["@eslint/config-array", "npm:0.20.0"],\
+          ["@eslint/config-helpers", "npm:0.2.1"],\
           ["@eslint/core", "npm:0.12.0"],\
-          ["@eslint/eslintrc", "npm:3.3.0"],\
-          ["@eslint/js", "npm:9.22.0"],\
-          ["@eslint/plugin-kit", "npm:0.2.7"],\
+          ["@eslint/eslintrc", "npm:3.3.1"],\
+          ["@eslint/js", "npm:9.24.0"],\
+          ["@eslint/plugin-kit", "npm:0.2.8"],\
           ["@humanfs/node", "npm:0.16.6"],\
           ["@humanwhocodes/module-importer", "npm:1.0.1"],\
           ["@humanwhocodes/retry", "npm:0.4.2"],\
-          ["@types/estree", "npm:1.0.6"],\
+          ["@types/estree", "npm:1.0.7"],\
           ["@types/jiti", null],\
           ["@types/json-schema", "npm:7.0.15"],\
           ["ajv", "npm:6.12.6"],\
@@ -2117,7 +2059,7 @@ const RAW_RUNTIME_STATE =
           ["cross-spawn", "npm:7.0.6"],\
           ["debug", "virtual:c3967fc0c3b8915e804906b0fd751cab4f92941ee382919f75adac5959276e7821cb41492a6c394fe86691b903d5d627b8120597a4534d6ffe06ba7285e4003a#npm:4.4.0"],\
           ["escape-string-regexp", "npm:4.0.0"],\
-          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.22.0"],\
+          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.24.0"],\
           ["eslint-scope", "npm:8.3.0"],\
           ["eslint-visitor-keys", "npm:4.2.0"],\
           ["espree", "npm:10.3.0"],\
@@ -2162,7 +2104,7 @@ const RAW_RUNTIME_STATE =
           ["array.prototype.tosorted", "npm:1.1.4"],\
           ["doctrine", "npm:2.1.0"],\
           ["es-iterator-helpers", "npm:1.2.1"],\
-          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.22.0"],\
+          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.24.0"],\
           ["eslint-plugin-react", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:7.37.5"],\
           ["estraverse", "npm:5.3.0"],\
           ["hasown", "npm:2.0.2"],\
@@ -2196,7 +2138,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/eslint-plugin-react-hooks-virtual-4d7de880de/0/cache/eslint-plugin-react-hooks-npm-5.2.0-1c4af50caf-ebb79e9cf6.zip/node_modules/eslint-plugin-react-hooks/",\
         "packageDependencies": [\
           ["@types/eslint", null],\
-          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.22.0"],\
+          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.24.0"],\
           ["eslint-plugin-react-hooks", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:5.2.0"]\
         ],\
         "packagePeers": [\
@@ -2278,7 +2220,7 @@ const RAW_RUNTIME_STATE =
       ["npm:3.0.3", {\
         "packageLocation": "./.yarn/cache/estree-walker-npm-3.0.3-0372979673-a65728d572.zip/node_modules/estree-walker/",\
         "packageDependencies": [\
-          ["@types/estree", "npm:1.0.6"],\
+          ["@types/estree", "npm:1.0.7"],\
           ["estree-walker", "npm:3.0.3"]\
         ],\
         "linkType": "HARD"\
@@ -2294,10 +2236,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["expect-type", [\
-      ["npm:1.2.0", {\
-        "packageLocation": "./.yarn/cache/expect-type-npm-1.2.0-5509bb3f8f-12a081159e.zip/node_modules/expect-type/",\
+      ["npm:1.2.1", {\
+        "packageLocation": "./.yarn/cache/expect-type-npm-1.2.1-5a68fc99bd-d121d90f4f.zip/node_modules/expect-type/",\
         "packageDependencies": [\
-          ["expect-type", "npm:1.2.0"]\
+          ["expect-type", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2358,6 +2300,28 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["fastq", "npm:1.19.1"],\
           ["reusify", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["fdir", [\
+      ["npm:6.4.3", {\
+        "packageLocation": "./.yarn/cache/fdir-npm-6.4.3-938f734d57-8e6d20f459.zip/node_modules/fdir/",\
+        "packageDependencies": [\
+          ["fdir", "npm:6.4.3"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:c8807de691826868d9a774dfe20fb184997709c19896ccda6c1d382d679c7c2453bf893d9e0510372bd84566a8523db06ec721126eb95bb24e97992998e8a625#npm:6.4.3", {\
+        "packageLocation": "./.yarn/__virtual__/fdir-virtual-4be5a9f550/0/cache/fdir-npm-6.4.3-938f734d57-8e6d20f459.zip/node_modules/fdir/",\
+        "packageDependencies": [\
+          ["@types/picomatch", null],\
+          ["fdir", "virtual:c8807de691826868d9a774dfe20fb184997709c19896ccda6c1d382d679c7c2453bf893d9e0510372bd84566a8523db06ec721126eb95bb24e97992998e8a625#npm:6.4.3"],\
+          ["picomatch", "npm:4.0.2"]\
+        ],\
+        "packagePeers": [\
+          "@types/picomatch",\
+          "picomatch"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2449,7 +2413,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/unplugged/fsevents-patch-6b67494872/node_modules/fsevents/",\
         "packageDependencies": [\
           ["fsevents", "patch:fsevents@npm%3A2.3.3#optional!builtin<compat/fsevents>::version=2.3.3&hash=df0bf1"],\
-          ["node-gyp", "npm:11.1.0"]\
+          ["node-gyp", "npm:11.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2776,7 +2740,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/ink-virtual-18155ea0c2/0/cache/ink-npm-5.2.0-b7b8889cf6-aedc717534.zip/node_modules/ink/",\
         "packageDependencies": [\
           ["@alcalzone/ansi-tokenize", "npm:0.1.3"],\
-          ["@types/react", "npm:18.3.18"],\
+          ["@types/react", "npm:18.3.20"],\
           ["@types/react-devtools-core", null],\
           ["ansi-escapes", "npm:7.0.0"],\
           ["ansi-styles", "npm:6.2.1"],\
@@ -2786,7 +2750,7 @@ const RAW_RUNTIME_STATE =
           ["cli-cursor", "npm:4.0.0"],\
           ["cli-truncate", "npm:4.0.0"],\
           ["code-excerpt", "npm:4.0.0"],\
-          ["es-toolkit", "npm:1.33.0"],\
+          ["es-toolkit", "npm:1.34.1"],\
           ["indent-string", "npm:5.0.0"],\
           ["ink", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:5.2.0"],\
           ["is-in-ci", "npm:1.0.0"],\
@@ -2799,7 +2763,7 @@ const RAW_RUNTIME_STATE =
           ["slice-ansi", "npm:7.1.0"],\
           ["stack-utils", "npm:2.0.6"],\
           ["string-width", "npm:7.2.0"],\
-          ["type-fest", "npm:4.37.0"],\
+          ["type-fest", "npm:4.39.1"],\
           ["widest-line", "npm:5.0.0"],\
           ["wrap-ansi", "npm:9.0.0"],\
           ["ws", "virtual:18155ea0c21ba902de79c0f49e1153b3058e3605a6cb0c7d7656b627fa3ef7efa361615cf53c61d47916711237b6e33fa6a38f656b43c131074e73d65034f2dd#npm:8.18.1"],\
@@ -2826,7 +2790,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/ink-big-text-virtual-69714dafb4/0/cache/ink-big-text-npm-2.0.0-d9364a0f49-e923e31751.zip/node_modules/ink-big-text/",\
         "packageDependencies": [\
           ["@types/ink", null],\
-          ["@types/react", "npm:18.3.18"],\
+          ["@types/react", "npm:18.3.20"],\
           ["cfonts", "npm:3.3.0"],\
           ["ink", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:5.2.0"],\
           ["ink-big-text", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:2.0.0"],\
@@ -2853,7 +2817,7 @@ const RAW_RUNTIME_STATE =
       ["virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.0.0", {\
         "packageLocation": "./.yarn/__virtual__/ink-testing-library-virtual-402f5b65d8/0/cache/ink-testing-library-npm-4.0.0-06cc10e681-f1f8549fe5.zip/node_modules/ink-testing-library/",\
         "packageDependencies": [\
-          ["@types/react", "npm:18.3.18"],\
+          ["@types/react", "npm:18.3.20"],\
           ["ink-testing-library", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.0.0"]\
         ],\
         "packagePeers": [\
@@ -2869,11 +2833,11 @@ const RAW_RUNTIME_STATE =
           ["@eslint/eslintrc", "npm:3.3.1"],\
           ["@eslint/js", "npm:9.24.0"],\
           ["@types/ink-big-text", "npm:1.2.4"],\
-          ["@types/node", "npm:22.14.0"],\
-          ["@types/react", "npm:18.3.18"],\
-          ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.26.1"],\
-          ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.29.0"],\
-          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.22.0"],\
+          ["@types/node", "npm:22.14.1"],\
+          ["@types/react", "npm:18.3.20"],\
+          ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.29.1"],\
+          ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.29.1"],\
+          ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.24.0"],\
           ["eslint-plugin-react", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:7.37.5"],\
           ["eslint-plugin-react-hooks", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:5.2.0"],\
           ["ink", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:5.2.0"],\
@@ -3576,7 +3540,7 @@ const RAW_RUNTIME_STATE =
           ["minipass", "npm:7.1.2"],\
           ["minipass-fetch", "npm:4.0.1"],\
           ["minipass-sized", "npm:1.0.3"],\
-          ["minizlib", "npm:3.0.1"]\
+          ["minizlib", "npm:3.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3612,12 +3576,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["minizlib", [\
-      ["npm:3.0.1", {\
-        "packageLocation": "./.yarn/cache/minizlib-npm-3.0.1-4bdabd978f-622cb85f51.zip/node_modules/minizlib/",\
+      ["npm:3.0.2", {\
+        "packageLocation": "./.yarn/cache/minizlib-npm-3.0.2-f56e815013-c075bed159.zip/node_modules/minizlib/",\
         "packageDependencies": [\
           ["minipass", "npm:7.1.2"],\
-          ["minizlib", "npm:3.0.1"],\
-          ["rimraf", "npm:5.0.10"]\
+          ["minizlib", "npm:3.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3641,10 +3604,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nanoid", [\
-      ["npm:3.3.9", {\
-        "packageLocation": "./.yarn/cache/nanoid-npm-3.3.9-8fe0f624ac-80ec0f2f7f.zip/node_modules/nanoid/",\
+      ["npm:3.3.11", {\
+        "packageLocation": "./.yarn/cache/nanoid-npm-3.3.11-f98c1f9ef6-73b5afe597.zip/node_modules/nanoid/",\
         "packageDependencies": [\
-          ["nanoid", "npm:3.3.9"]\
+          ["nanoid", "npm:3.3.11"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3668,19 +3631,19 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["node-gyp", [\
-      ["npm:11.1.0", {\
-        "packageLocation": "./.yarn/unplugged/node-gyp-npm-11.1.0-bd7044e197/node_modules/node-gyp/",\
+      ["npm:11.2.0", {\
+        "packageLocation": "./.yarn/unplugged/node-gyp-npm-11.2.0-36aeb0fa50/node_modules/node-gyp/",\
         "packageDependencies": [\
           ["env-paths", "npm:2.2.1"],\
           ["exponential-backoff", "npm:3.1.2"],\
-          ["glob", "npm:10.4.5"],\
           ["graceful-fs", "npm:4.2.11"],\
           ["make-fetch-happen", "npm:14.0.3"],\
-          ["node-gyp", "npm:11.1.0"],\
+          ["node-gyp", "npm:11.2.0"],\
           ["nopt", "npm:8.1.0"],\
           ["proc-log", "npm:5.0.0"],\
           ["semver", "npm:7.7.1"],\
           ["tar", "npm:7.4.3"],\
+          ["tinyglobby", "npm:0.2.12"],\
           ["which", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -3690,7 +3653,7 @@ const RAW_RUNTIME_STATE =
       ["npm:8.1.0", {\
         "packageLocation": "./.yarn/cache/nopt-npm-8.1.0-5570ef63cd-26ab456c51.zip/node_modules/nopt/",\
         "packageDependencies": [\
-          ["abbrev", "npm:3.0.0"],\
+          ["abbrev", "npm:3.0.1"],\
           ["nopt", "npm:8.1.0"]\
         ],\
         "linkType": "HARD"\
@@ -3943,6 +3906,13 @@ const RAW_RUNTIME_STATE =
           ["picomatch", "npm:2.3.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:4.0.2", {\
+        "packageLocation": "./.yarn/cache/picomatch-npm-4.0.2-e93516ddf2-ce617b8da3.zip/node_modules/picomatch/",\
+        "packageDependencies": [\
+          ["picomatch", "npm:4.0.2"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["possible-typed-array-names", [\
@@ -3958,7 +3928,7 @@ const RAW_RUNTIME_STATE =
       ["npm:8.5.3", {\
         "packageLocation": "./.yarn/cache/postcss-npm-8.5.3-37174aa03d-6d7e21a772.zip/node_modules/postcss/",\
         "packageDependencies": [\
-          ["nanoid", "npm:3.3.9"],\
+          ["nanoid", "npm:3.3.11"],\
           ["picocolors", "npm:1.1.1"],\
           ["postcss", "npm:8.5.3"],\
           ["source-map-js", "npm:1.2.1"]\
@@ -4094,7 +4064,7 @@ const RAW_RUNTIME_STATE =
       ["virtual:18155ea0c21ba902de79c0f49e1153b3058e3605a6cb0c7d7656b627fa3ef7efa361615cf53c61d47916711237b6e33fa6a38f656b43c131074e73d65034f2dd#npm:0.29.2", {\
         "packageLocation": "./.yarn/__virtual__/react-reconciler-virtual-7123f78eb9/0/cache/react-reconciler-npm-0.29.2-9982426dcb-f9ef98a88e.zip/node_modules/react-reconciler/",\
         "packageDependencies": [\
-          ["@types/react", "npm:18.3.18"],\
+          ["@types/react", "npm:18.3.20"],\
           ["loose-envify", "npm:1.4.0"],\
           ["react", "npm:18.3.1"],\
           ["react-reconciler", "virtual:18155ea0c21ba902de79c0f49e1153b3058e3605a6cb0c7d7656b627fa3ef7efa361615cf53c61d47916711237b6e33fa6a38f656b43c131074e73d65034f2dd#npm:0.29.2"],\
@@ -4189,42 +4159,33 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["rimraf", [\
-      ["npm:5.0.10", {\
-        "packageLocation": "./.yarn/cache/rimraf-npm-5.0.10-d0c6647697-f3b8ce81ee.zip/node_modules/rimraf/",\
-        "packageDependencies": [\
-          ["glob", "npm:10.4.5"],\
-          ["rimraf", "npm:5.0.10"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["rollup", [\
-      ["npm:4.35.0", {\
-        "packageLocation": "./.yarn/cache/rollup-npm-4.35.0-56047e0cb3-1fd13b8cb8.zip/node_modules/rollup/",\
+      ["npm:4.39.0", {\
+        "packageLocation": "./.yarn/cache/rollup-npm-4.39.0-8409a7015f-d3b106efb7.zip/node_modules/rollup/",\
         "packageDependencies": [\
-          ["@rollup/rollup-android-arm-eabi", "npm:4.35.0"],\
-          ["@rollup/rollup-android-arm64", "npm:4.35.0"],\
-          ["@rollup/rollup-darwin-arm64", "npm:4.35.0"],\
-          ["@rollup/rollup-darwin-x64", "npm:4.35.0"],\
-          ["@rollup/rollup-freebsd-arm64", "npm:4.35.0"],\
-          ["@rollup/rollup-freebsd-x64", "npm:4.35.0"],\
-          ["@rollup/rollup-linux-arm-gnueabihf", "npm:4.35.0"],\
-          ["@rollup/rollup-linux-arm-musleabihf", "npm:4.35.0"],\
-          ["@rollup/rollup-linux-arm64-gnu", "npm:4.35.0"],\
-          ["@rollup/rollup-linux-arm64-musl", "npm:4.35.0"],\
-          ["@rollup/rollup-linux-loongarch64-gnu", "npm:4.35.0"],\
-          ["@rollup/rollup-linux-powerpc64le-gnu", "npm:4.35.0"],\
-          ["@rollup/rollup-linux-riscv64-gnu", "npm:4.35.0"],\
-          ["@rollup/rollup-linux-s390x-gnu", "npm:4.35.0"],\
-          ["@rollup/rollup-linux-x64-gnu", "npm:4.35.0"],\
-          ["@rollup/rollup-linux-x64-musl", "npm:4.35.0"],\
-          ["@rollup/rollup-win32-arm64-msvc", "npm:4.35.0"],\
-          ["@rollup/rollup-win32-ia32-msvc", "npm:4.35.0"],\
-          ["@rollup/rollup-win32-x64-msvc", "npm:4.35.0"],\
-          ["@types/estree", "npm:1.0.6"],\
+          ["@rollup/rollup-android-arm-eabi", "npm:4.39.0"],\
+          ["@rollup/rollup-android-arm64", "npm:4.39.0"],\
+          ["@rollup/rollup-darwin-arm64", "npm:4.39.0"],\
+          ["@rollup/rollup-darwin-x64", "npm:4.39.0"],\
+          ["@rollup/rollup-freebsd-arm64", "npm:4.39.0"],\
+          ["@rollup/rollup-freebsd-x64", "npm:4.39.0"],\
+          ["@rollup/rollup-linux-arm-gnueabihf", "npm:4.39.0"],\
+          ["@rollup/rollup-linux-arm-musleabihf", "npm:4.39.0"],\
+          ["@rollup/rollup-linux-arm64-gnu", "npm:4.39.0"],\
+          ["@rollup/rollup-linux-arm64-musl", "npm:4.39.0"],\
+          ["@rollup/rollup-linux-loongarch64-gnu", "npm:4.39.0"],\
+          ["@rollup/rollup-linux-powerpc64le-gnu", "npm:4.39.0"],\
+          ["@rollup/rollup-linux-riscv64-gnu", "npm:4.39.0"],\
+          ["@rollup/rollup-linux-riscv64-musl", "npm:4.39.0"],\
+          ["@rollup/rollup-linux-s390x-gnu", "npm:4.39.0"],\
+          ["@rollup/rollup-linux-x64-gnu", "npm:4.39.0"],\
+          ["@rollup/rollup-linux-x64-musl", "npm:4.39.0"],\
+          ["@rollup/rollup-win32-arm64-msvc", "npm:4.39.0"],\
+          ["@rollup/rollup-win32-ia32-msvc", "npm:4.39.0"],\
+          ["@rollup/rollup-win32-x64-msvc", "npm:4.39.0"],\
+          ["@types/estree", "npm:1.0.7"],\
           ["fsevents", "patch:fsevents@npm%3A2.3.3#optional!builtin<compat/fsevents>::version=2.3.3&hash=df0bf1"],\
-          ["rollup", "npm:4.35.0"]\
+          ["rollup", "npm:4.39.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4547,10 +4508,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["std-env", [\
-      ["npm:3.8.1", {\
-        "packageLocation": "./.yarn/cache/std-env-npm-3.8.1-edc2df513e-ee119570e2.zip/node_modules/std-env/",\
+      ["npm:3.9.0", {\
+        "packageLocation": "./.yarn/cache/std-env-npm-3.9.0-67cc0f541d-3044b2c54a.zip/node_modules/std-env/",\
         "packageDependencies": [\
-          ["std-env", "npm:3.8.1"]\
+          ["std-env", "npm:3.9.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4722,7 +4683,7 @@ const RAW_RUNTIME_STATE =
           ["@isaacs/fs-minipass", "npm:4.0.1"],\
           ["chownr", "npm:3.0.0"],\
           ["minipass", "npm:7.1.2"],\
-          ["minizlib", "npm:3.0.1"],\
+          ["minizlib", "npm:3.0.2"],\
           ["mkdirp", "npm:3.0.1"],\
           ["tar", "npm:7.4.3"],\
           ["yallist", "npm:5.0.0"]\
@@ -4744,6 +4705,17 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/tinyexec-npm-0.3.2-381b1e349c-b9d5fed316.zip/node_modules/tinyexec/",\
         "packageDependencies": [\
           ["tinyexec", "npm:0.3.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["tinyglobby", [\
+      ["npm:0.2.12", {\
+        "packageLocation": "./.yarn/cache/tinyglobby-npm-0.2.12-c8807de691-4ad28701fa.zip/node_modules/tinyglobby/",\
+        "packageDependencies": [\
+          ["fdir", "virtual:c8807de691826868d9a774dfe20fb184997709c19896ccda6c1d382d679c7c2453bf893d9e0510372bd84566a8523db06ec721126eb95bb24e97992998e8a625#npm:6.4.3"],\
+          ["picomatch", "npm:4.0.2"],\
+          ["tinyglobby", "npm:0.2.12"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4786,18 +4758,18 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["ts-api-utils", [\
-      ["npm:2.0.1", {\
-        "packageLocation": "./.yarn/cache/ts-api-utils-npm-2.0.1-03c1d3773a-2e68938cd5.zip/node_modules/ts-api-utils/",\
+      ["npm:2.1.0", {\
+        "packageLocation": "./.yarn/cache/ts-api-utils-npm-2.1.0-2549dfd29f-02e55b49d9.zip/node_modules/ts-api-utils/",\
         "packageDependencies": [\
-          ["ts-api-utils", "npm:2.0.1"]\
+          ["ts-api-utils", "npm:2.1.0"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:0015032b01848a385900eef811caa7466d048f78aa97efefb3647bc10a3c4371333ce0608a04c2e2e9602d3754e185c8320f49abbacb73ee12b71589f13edf38#npm:2.0.1", {\
-        "packageLocation": "./.yarn/__virtual__/ts-api-utils-virtual-05df9334fd/0/cache/ts-api-utils-npm-2.0.1-03c1d3773a-2e68938cd5.zip/node_modules/ts-api-utils/",\
+      ["virtual:91e3a31ec876d4bebb8c1285eb507c0f76c52734122eeb8ef04d18f64d9d77a4cdaa6a3c21056f4e8bbf07fdf8df4e2fc5a61d96a1796661d862eccd5d048605#npm:2.1.0", {\
+        "packageLocation": "./.yarn/__virtual__/ts-api-utils-virtual-7de5a110ea/0/cache/ts-api-utils-npm-2.1.0-2549dfd29f-02e55b49d9.zip/node_modules/ts-api-utils/",\
         "packageDependencies": [\
           ["@types/typescript", null],\
-          ["ts-api-utils", "virtual:0015032b01848a385900eef811caa7466d048f78aa97efefb3647bc10a3c4371333ce0608a04c2e2e9602d3754e185c8320f49abbacb73ee12b71589f13edf38#npm:2.0.1"],\
+          ["ts-api-utils", "virtual:91e3a31ec876d4bebb8c1285eb507c0f76c52734122eeb8ef04d18f64d9d77a4cdaa6a3c21056f4e8bbf07fdf8df4e2fc5a61d96a1796661d862eccd5d048605#npm:2.1.0"],\
           ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "packagePeers": [\
@@ -4818,10 +4790,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["type-fest", [\
-      ["npm:4.37.0", {\
-        "packageLocation": "./.yarn/cache/type-fest-npm-4.37.0-91bfb2c937-882cf05374.zip/node_modules/type-fest/",\
+      ["npm:4.39.1", {\
+        "packageLocation": "./.yarn/cache/type-fest-npm-4.39.1-227092867f-8f3fc947cb.zip/node_modules/type-fest/",\
         "packageDependencies": [\
-          ["type-fest", "npm:4.37.0"]\
+          ["type-fest", "npm:4.39.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4945,15 +4917,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["vite", [\
-      ["npm:6.2.2", {\
-        "packageLocation": "./.yarn/cache/vite-npm-6.2.2-4aa434443a-30896cbdbc.zip/node_modules/vite/",\
+      ["npm:6.2.6", {\
+        "packageLocation": "./.yarn/cache/vite-npm-6.2.6-19e4bde6cc-d8fb01a190.zip/node_modules/vite/",\
         "packageDependencies": [\
-          ["vite", "npm:6.2.2"]\
+          ["vite", "npm:6.2.6"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:369a4723de5621406eebc7ee691fd61b6cb60ab3f898ec375217e392d24a0361947989a2aeee001ccf699f843ebc327d2ece7e112980764a8da4f26c442c19e4#npm:6.2.2", {\
-        "packageLocation": "./.yarn/__virtual__/vite-virtual-8b27e993cd/0/cache/vite-npm-6.2.2-4aa434443a-30896cbdbc.zip/node_modules/vite/",\
+      ["virtual:369a4723de5621406eebc7ee691fd61b6cb60ab3f898ec375217e392d24a0361947989a2aeee001ccf699f843ebc327d2ece7e112980764a8da4f26c442c19e4#npm:6.2.6", {\
+        "packageLocation": "./.yarn/__virtual__/vite-virtual-bbceccf878/0/cache/vite-npm-6.2.6-19e4bde6cc-d8fb01a190.zip/node_modules/vite/",\
         "packageDependencies": [\
           ["@types/jiti", null],\
           ["@types/less", null],\
@@ -4966,20 +4938,20 @@ const RAW_RUNTIME_STATE =
           ["@types/terser", null],\
           ["@types/tsx", null],\
           ["@types/yaml", null],\
-          ["esbuild", "npm:0.25.1"],\
+          ["esbuild", "npm:0.25.2"],\
           ["fsevents", "patch:fsevents@npm%3A2.3.3#optional!builtin<compat/fsevents>::version=2.3.3&hash=df0bf1"],\
           ["jiti", null],\
           ["less", null],\
           ["lightningcss", null],\
           ["postcss", "npm:8.5.3"],\
-          ["rollup", "npm:4.35.0"],\
+          ["rollup", "npm:4.39.0"],\
           ["sass", null],\
           ["sass-embedded", null],\
           ["stylus", null],\
           ["sugarss", null],\
           ["terser", null],\
           ["tsx", null],\
-          ["vite", "virtual:369a4723de5621406eebc7ee691fd61b6cb60ab3f898ec375217e392d24a0361947989a2aeee001ccf699f843ebc327d2ece7e112980764a8da4f26c442c19e4#npm:6.2.2"],\
+          ["vite", "virtual:369a4723de5621406eebc7ee691fd61b6cb60ab3f898ec375217e392d24a0361947989a2aeee001ccf699f843ebc327d2ece7e112980764a8da4f26c442c19e4#npm:6.2.6"],\
           ["yaml", null]\
         ],\
         "packagePeers": [\
@@ -5007,13 +4979,13 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:4f7fb3b097ccc0e5c82eff9878d429340a62bd61f9335adc112934931f2b5ae0e3a6d9e1ef17668a7dd26979b3e4f462e3388a4809d7e3742f8672286acd1577#npm:6.2.2", {\
-        "packageLocation": "./.yarn/__virtual__/vite-virtual-71c0763d01/0/cache/vite-npm-6.2.2-4aa434443a-30896cbdbc.zip/node_modules/vite/",\
+      ["virtual:4f7fb3b097ccc0e5c82eff9878d429340a62bd61f9335adc112934931f2b5ae0e3a6d9e1ef17668a7dd26979b3e4f462e3388a4809d7e3742f8672286acd1577#npm:6.2.6", {\
+        "packageLocation": "./.yarn/__virtual__/vite-virtual-b956208f53/0/cache/vite-npm-6.2.6-19e4bde6cc-d8fb01a190.zip/node_modules/vite/",\
         "packageDependencies": [\
           ["@types/jiti", null],\
           ["@types/less", null],\
           ["@types/lightningcss", null],\
-          ["@types/node", "npm:22.14.0"],\
+          ["@types/node", "npm:22.14.1"],\
           ["@types/sass", null],\
           ["@types/sass-embedded", null],\
           ["@types/stylus", null],\
@@ -5021,20 +4993,20 @@ const RAW_RUNTIME_STATE =
           ["@types/terser", null],\
           ["@types/tsx", null],\
           ["@types/yaml", null],\
-          ["esbuild", "npm:0.25.1"],\
+          ["esbuild", "npm:0.25.2"],\
           ["fsevents", "patch:fsevents@npm%3A2.3.3#optional!builtin<compat/fsevents>::version=2.3.3&hash=df0bf1"],\
           ["jiti", null],\
           ["less", null],\
           ["lightningcss", null],\
           ["postcss", "npm:8.5.3"],\
-          ["rollup", "npm:4.35.0"],\
+          ["rollup", "npm:4.39.0"],\
           ["sass", null],\
           ["sass-embedded", null],\
           ["stylus", null],\
           ["sugarss", null],\
           ["terser", null],\
           ["tsx", null],\
-          ["vite", "virtual:4f7fb3b097ccc0e5c82eff9878d429340a62bd61f9335adc112934931f2b5ae0e3a6d9e1ef17668a7dd26979b3e4f462e3388a4809d7e3742f8672286acd1577#npm:6.2.2"],\
+          ["vite", "virtual:4f7fb3b097ccc0e5c82eff9878d429340a62bd61f9335adc112934931f2b5ae0e3a6d9e1ef17668a7dd26979b3e4f462e3388a4809d7e3742f8672286acd1577#npm:6.2.6"],\
           ["yaml", null]\
         ],\
         "packagePeers": [\
@@ -5071,7 +5043,7 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:c3967fc0c3b8915e804906b0fd751cab4f92941ee382919f75adac5959276e7821cb41492a6c394fe86691b903d5d627b8120597a4534d6ffe06ba7285e4003a#npm:4.4.0"],\
           ["es-module-lexer", "npm:1.6.0"],\
           ["pathe", "npm:2.0.3"],\
-          ["vite", "virtual:369a4723de5621406eebc7ee691fd61b6cb60ab3f898ec375217e392d24a0361947989a2aeee001ccf699f843ebc327d2ece7e112980764a8da4f26c442c19e4#npm:6.2.2"],\
+          ["vite", "virtual:369a4723de5621406eebc7ee691fd61b6cb60ab3f898ec375217e392d24a0361947989a2aeee001ccf699f843ebc327d2ece7e112980764a8da4f26c442c19e4#npm:6.2.6"],\
           ["vite-node", "npm:3.1.1"]\
         ],\
         "linkType": "HARD"\
@@ -5093,7 +5065,7 @@ const RAW_RUNTIME_STATE =
           ["@types/edge-runtime__vm", null],\
           ["@types/happy-dom", null],\
           ["@types/jsdom", null],\
-          ["@types/node", "npm:22.14.0"],\
+          ["@types/node", "npm:22.14.1"],\
           ["@types/vitest__browser", null],\
           ["@types/vitest__ui", null],\
           ["@vitest/browser", null],\
@@ -5107,17 +5079,17 @@ const RAW_RUNTIME_STATE =
           ["@vitest/utils", "npm:3.1.1"],\
           ["chai", "npm:5.2.0"],\
           ["debug", "virtual:c3967fc0c3b8915e804906b0fd751cab4f92941ee382919f75adac5959276e7821cb41492a6c394fe86691b903d5d627b8120597a4534d6ffe06ba7285e4003a#npm:4.4.0"],\
-          ["expect-type", "npm:1.2.0"],\
+          ["expect-type", "npm:1.2.1"],\
           ["happy-dom", null],\
           ["jsdom", null],\
           ["magic-string", "npm:0.30.17"],\
           ["pathe", "npm:2.0.3"],\
-          ["std-env", "npm:3.8.1"],\
+          ["std-env", "npm:3.9.0"],\
           ["tinybench", "npm:2.9.0"],\
           ["tinyexec", "npm:0.3.2"],\
           ["tinypool", "npm:1.0.2"],\
           ["tinyrainbow", "npm:2.0.0"],\
-          ["vite", "virtual:4f7fb3b097ccc0e5c82eff9878d429340a62bd61f9335adc112934931f2b5ae0e3a6d9e1ef17668a7dd26979b3e4f462e3388a4809d7e3742f8672286acd1577#npm:6.2.2"],\
+          ["vite", "virtual:4f7fb3b097ccc0e5c82eff9878d429340a62bd61f9335adc112934931f2b5ae0e3a6d9e1ef17668a7dd26979b3e4f462e3388a4809d7e3742f8672286acd1577#npm:6.2.6"],\
           ["vite-node", "npm:3.1.1"],\
           ["vitest", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.1.1"],\
           ["why-is-node-running", "npm:2.3.0"]\
@@ -9505,14 +9477,16 @@ class ZipOpenFS extends MountFS {
       return new ZipFS(p, {
         baseFs,
         readOnly: readOnlyArchives,
-        stats: baseFs.statSync(p)
+        stats: baseFs.statSync(p),
+        customZipImplementation: opts.customZipImplementation
       });
     };
     const factoryPromise = async (baseFs, p) => {
       const zipOptions = {
         baseFs,
         readOnly: readOnlyArchives,
-        stats: await baseFs.statPromise(p)
+        stats: await baseFs.statPromise(p),
+        customZipImplementation: opts.customZipImplementation
       };
       return () => {
         return new ZipFS(p, zipOptions);
@@ -9527,6 +9501,236 @@ class ZipOpenFS extends MountFS {
   }
 }
 
+class LibzipError extends Error {
+  code;
+  constructor(message, code) {
+    super(message);
+    this.name = `Libzip Error`;
+    this.code = code;
+  }
+}
+class LibZipImpl {
+  libzip;
+  lzSource;
+  zip;
+  listings;
+  symlinkCount;
+  filesShouldBeCached = true;
+  constructor(opts) {
+    const buffer = `buffer` in opts ? opts.buffer : opts.baseFs.readFileSync(opts.path);
+    this.libzip = getInstance();
+    const errPtr = this.libzip.malloc(4);
+    try {
+      let flags = 0;
+      if (opts.readOnly)
+        flags |= this.libzip.ZIP_RDONLY;
+      const lzSource = this.allocateUnattachedSource(buffer);
+      try {
+        this.zip = this.libzip.openFromSource(lzSource, flags, errPtr);
+        this.lzSource = lzSource;
+      } catch (error) {
+        this.libzip.source.free(lzSource);
+        throw error;
+      }
+      if (this.zip === 0) {
+        const error = this.libzip.struct.errorS();
+        this.libzip.error.initWithCode(error, this.libzip.getValue(errPtr, `i32`));
+        throw this.makeLibzipError(error);
+      }
+    } finally {
+      this.libzip.free(errPtr);
+    }
+    const entryCount = this.libzip.getNumEntries(this.zip, 0);
+    const listings = new Array(entryCount);
+    for (let t = 0; t < entryCount; ++t)
+      listings[t] = this.libzip.getName(this.zip, t, 0);
+    this.listings = listings;
+    this.symlinkCount = this.libzip.ext.countSymlinks(this.zip);
+    if (this.symlinkCount === -1) {
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    }
+  }
+  getSymlinkCount() {
+    return this.symlinkCount;
+  }
+  getListings() {
+    return this.listings;
+  }
+  stat(entry) {
+    const stat = this.libzip.struct.statS();
+    const rc = this.libzip.statIndex(this.zip, entry, 0, 0, stat);
+    if (rc === -1)
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    const size = this.libzip.struct.statSize(stat) >>> 0;
+    const mtime = this.libzip.struct.statMtime(stat) >>> 0;
+    const crc = this.libzip.struct.statCrc(stat) >>> 0;
+    return { size, mtime, crc };
+  }
+  makeLibzipError(error) {
+    const errorCode = this.libzip.struct.errorCodeZip(error);
+    const strerror = this.libzip.error.strerror(error);
+    const libzipError = new LibzipError(strerror, this.libzip.errors[errorCode]);
+    if (errorCode === this.libzip.errors.ZIP_ER_CHANGED)
+      throw new Error(`Assertion failed: Unexpected libzip error: ${libzipError.message}`);
+    return libzipError;
+  }
+  setFileSource(target, compression, buffer) {
+    const lzSource = this.allocateSource(buffer);
+    try {
+      const newIndex = this.libzip.file.add(this.zip, target, lzSource, this.libzip.ZIP_FL_OVERWRITE);
+      if (newIndex === -1)
+        throw this.makeLibzipError(this.libzip.getError(this.zip));
+      if (compression !== null) {
+        const rc = this.libzip.file.setCompression(this.zip, newIndex, 0, compression[0], compression[1]);
+        if (rc === -1) {
+          throw this.makeLibzipError(this.libzip.getError(this.zip));
+        }
+      }
+      return newIndex;
+    } catch (error) {
+      this.libzip.source.free(lzSource);
+      throw error;
+    }
+  }
+  setMtime(entry, mtime) {
+    const rc = this.libzip.file.setMtime(this.zip, entry, 0, mtime, 0);
+    if (rc === -1) {
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    }
+  }
+  getExternalAttributes(index) {
+    const attrs = this.libzip.file.getExternalAttributes(this.zip, index, 0, 0, this.libzip.uint08S, this.libzip.uint32S);
+    if (attrs === -1)
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    const opsys = this.libzip.getValue(this.libzip.uint08S, `i8`) >>> 0;
+    const attributes = this.libzip.getValue(this.libzip.uint32S, `i32`) >>> 0;
+    return [opsys, attributes];
+  }
+  setExternalAttributes(index, opsys, attributes) {
+    const rc = this.libzip.file.setExternalAttributes(this.zip, index, 0, 0, opsys, attributes);
+    if (rc === -1) {
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    }
+  }
+  locate(name) {
+    return this.libzip.name.locate(this.zip, name, 0);
+  }
+  getFileSource(index) {
+    const stat = this.libzip.struct.statS();
+    const rc = this.libzip.statIndex(this.zip, index, 0, 0, stat);
+    if (rc === -1)
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    const size = this.libzip.struct.statCompSize(stat);
+    const compressionMethod = this.libzip.struct.statCompMethod(stat);
+    const buffer = this.libzip.malloc(size);
+    try {
+      const file = this.libzip.fopenIndex(this.zip, index, 0, this.libzip.ZIP_FL_COMPRESSED);
+      if (file === 0)
+        throw this.makeLibzipError(this.libzip.getError(this.zip));
+      try {
+        const rc2 = this.libzip.fread(file, buffer, size, 0);
+        if (rc2 === -1)
+          throw this.makeLibzipError(this.libzip.file.getError(file));
+        else if (rc2 < size)
+          throw new Error(`Incomplete read`);
+        else if (rc2 > size)
+          throw new Error(`Overread`);
+        const memory = this.libzip.HEAPU8.subarray(buffer, buffer + size);
+        const data = Buffer.from(memory);
+        return { data, compressionMethod };
+      } finally {
+        this.libzip.fclose(file);
+      }
+    } finally {
+      this.libzip.free(buffer);
+    }
+  }
+  deleteEntry(index) {
+    const rc = this.libzip.delete(this.zip, index);
+    if (rc === -1) {
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    }
+  }
+  addDirectory(path) {
+    const index = this.libzip.dir.add(this.zip, path);
+    if (index === -1)
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    return index;
+  }
+  getBufferAndClose() {
+    try {
+      this.libzip.source.keep(this.lzSource);
+      if (this.libzip.close(this.zip) === -1)
+        throw this.makeLibzipError(this.libzip.getError(this.zip));
+      if (this.libzip.source.open(this.lzSource) === -1)
+        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
+      if (this.libzip.source.seek(this.lzSource, 0, 0, this.libzip.SEEK_END) === -1)
+        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
+      const size = this.libzip.source.tell(this.lzSource);
+      if (size === -1)
+        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
+      if (this.libzip.source.seek(this.lzSource, 0, 0, this.libzip.SEEK_SET) === -1)
+        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
+      const buffer = this.libzip.malloc(size);
+      if (!buffer)
+        throw new Error(`Couldn't allocate enough memory`);
+      try {
+        const rc = this.libzip.source.read(this.lzSource, buffer, size);
+        if (rc === -1)
+          throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
+        else if (rc < size)
+          throw new Error(`Incomplete read`);
+        else if (rc > size)
+          throw new Error(`Overread`);
+        let result = Buffer.from(this.libzip.HEAPU8.subarray(buffer, buffer + size));
+        if (process.env.YARN_IS_TEST_ENV && process.env.YARN_ZIP_DATA_EPILOGUE)
+          result = Buffer.concat([result, Buffer.from(process.env.YARN_ZIP_DATA_EPILOGUE)]);
+        return result;
+      } finally {
+        this.libzip.free(buffer);
+      }
+    } finally {
+      this.libzip.source.close(this.lzSource);
+      this.libzip.source.free(this.lzSource);
+    }
+  }
+  allocateBuffer(content) {
+    if (!Buffer.isBuffer(content))
+      content = Buffer.from(content);
+    const buffer = this.libzip.malloc(content.byteLength);
+    if (!buffer)
+      throw new Error(`Couldn't allocate enough memory`);
+    const heap = new Uint8Array(this.libzip.HEAPU8.buffer, buffer, content.byteLength);
+    heap.set(content);
+    return { buffer, byteLength: content.byteLength };
+  }
+  allocateUnattachedSource(content) {
+    const error = this.libzip.struct.errorS();
+    const { buffer, byteLength } = this.allocateBuffer(content);
+    const source = this.libzip.source.fromUnattachedBuffer(buffer, byteLength, 0, 1, error);
+    if (source === 0) {
+      this.libzip.free(error);
+      throw this.makeLibzipError(error);
+    }
+    return source;
+  }
+  allocateSource(content) {
+    const { buffer, byteLength } = this.allocateBuffer(content);
+    const source = this.libzip.source.fromBuffer(this.zip, buffer, byteLength, 0, 1);
+    if (source === 0) {
+      this.libzip.free(buffer);
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    }
+    return source;
+  }
+  discard() {
+    this.libzip.discard(this.zip);
+  }
+}
+
+const ZIP_UNIX = 3;
+const STORE = 0;
+const DEFLATE = 8;
 const DEFAULT_COMPRESSION_LEVEL = `mixed`;
 function toUnixTimestamp(time) {
   if (typeof time === `string` && String(+time) === time)
@@ -9568,22 +9772,12 @@ function makeEmptyArchive() {
     0
   ]);
 }
-class LibzipError extends Error {
-  code;
-  constructor(message, code) {
-    super(message);
-    this.name = `Libzip Error`;
-    this.code = code;
-  }
-}
 class ZipFS extends BasePortableFakeFS {
-  libzip;
   baseFs;
   path;
   stats;
-  zip;
-  lzSource;
   level;
+  zipImpl;
   listings = /* @__PURE__ */ new Map();
   entries = /* @__PURE__ */ new Map();
   /**
@@ -9599,9 +9793,11 @@ class ZipFS extends BasePortableFakeFS {
   readOnly = false;
   constructor(source, opts = {}) {
     super();
+    if (opts.readOnly)
+      this.readOnly = true;
     const pathOptions = opts;
     this.level = typeof pathOptions.level !== `undefined` ? pathOptions.level : DEFAULT_COMPRESSION_LEVEL;
-    source ??= makeEmptyArchive();
+    const ZipImplCls = opts.customZipImplementation ?? LibZipImpl;
     if (typeof source === `string`) {
       const { baseFs = new NodeFS() } = pathOptions;
       this.baseFs = baseFs;
@@ -9627,36 +9823,19 @@ class ZipFS extends BasePortableFakeFS {
         this.stats = makeDefaultStats();
       }
     }
-    this.libzip = getInstance();
-    const errPtr = this.libzip.malloc(4);
-    try {
-      let flags = 0;
-      if (opts.readOnly) {
-        flags |= this.libzip.ZIP_RDONLY;
-        this.readOnly = true;
+    if (typeof source === `string`) {
+      if (opts.create) {
+        this.zipImpl = new ZipImplCls({ buffer: makeEmptyArchive(), readOnly: this.readOnly });
+      } else {
+        this.zipImpl = new ZipImplCls({ path: source, baseFs: this.baseFs, readOnly: this.readOnly, size: this.stats.size });
       }
-      if (typeof source === `string`)
-        source = pathOptions.create ? makeEmptyArchive() : this.baseFs.readFileSync(source);
-      const lzSource = this.allocateUnattachedSource(source);
-      try {
-        this.zip = this.libzip.openFromSource(lzSource, flags, errPtr);
-        this.lzSource = lzSource;
-      } catch (error) {
-        this.libzip.source.free(lzSource);
-        throw error;
-      }
-      if (this.zip === 0) {
-        const error = this.libzip.struct.errorS();
-        this.libzip.error.initWithCode(error, this.libzip.getValue(errPtr, `i32`));
-        throw this.makeLibzipError(error);
-      }
-    } finally {
-      this.libzip.free(errPtr);
+    } else {
+      this.zipImpl = new ZipImplCls({ buffer: source ?? makeEmptyArchive(), readOnly: this.readOnly });
     }
     this.listings.set(PortablePath.root, /* @__PURE__ */ new Set());
-    const entryCount = this.libzip.getNumEntries(this.zip, 0);
-    for (let t = 0; t < entryCount; ++t) {
-      const raw = this.libzip.getName(this.zip, t, 0);
+    const listings = this.zipImpl.getListings();
+    for (let t = 0; t < listings.length; t++) {
+      const raw = listings[t];
       if (ppath.isAbsolute(raw))
         continue;
       const p = ppath.resolve(PortablePath.root, raw);
@@ -9665,18 +9844,8 @@ class ZipFS extends BasePortableFakeFS {
         this.registerListing(p);
       }
     }
-    this.symlinkCount = this.libzip.ext.countSymlinks(this.zip);
-    if (this.symlinkCount === -1)
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    this.symlinkCount = this.zipImpl.getSymlinkCount();
     this.ready = true;
-  }
-  makeLibzipError(error) {
-    const errorCode = this.libzip.struct.errorCodeZip(error);
-    const strerror = this.libzip.error.strerror(error);
-    const libzipError = new LibzipError(strerror, this.libzip.errors[errorCode]);
-    if (errorCode === this.libzip.errors.ZIP_ER_CHANGED)
-      throw new Error(`Assertion failed: Unexpected libzip error: ${libzipError.message}`);
-    return libzipError;
   }
   getExtractHint(hints) {
     for (const fileName of this.entries.keys()) {
@@ -9707,45 +9876,14 @@ class ZipFS extends BasePortableFakeFS {
       return makeEmptyArchive();
     }
     try {
-      this.libzip.source.keep(this.lzSource);
-      if (this.libzip.close(this.zip) === -1)
-        throw this.makeLibzipError(this.libzip.getError(this.zip));
-      if (this.libzip.source.open(this.lzSource) === -1)
-        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
-      if (this.libzip.source.seek(this.lzSource, 0, 0, this.libzip.SEEK_END) === -1)
-        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
-      const size = this.libzip.source.tell(this.lzSource);
-      if (size === -1)
-        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
-      if (this.libzip.source.seek(this.lzSource, 0, 0, this.libzip.SEEK_SET) === -1)
-        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
-      const buffer = this.libzip.malloc(size);
-      if (!buffer)
-        throw new Error(`Couldn't allocate enough memory`);
-      try {
-        const rc = this.libzip.source.read(this.lzSource, buffer, size);
-        if (rc === -1)
-          throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
-        else if (rc < size)
-          throw new Error(`Incomplete read`);
-        else if (rc > size)
-          throw new Error(`Overread`);
-        let result = Buffer.from(this.libzip.HEAPU8.subarray(buffer, buffer + size));
-        if (process.env.YARN_IS_TEST_ENV && process.env.YARN_ZIP_DATA_EPILOGUE)
-          result = Buffer.concat([result, Buffer.from(process.env.YARN_ZIP_DATA_EPILOGUE)]);
-        return result;
-      } finally {
-        this.libzip.free(buffer);
-      }
+      return this.zipImpl.getBufferAndClose();
     } finally {
-      this.libzip.source.close(this.lzSource);
-      this.libzip.source.free(this.lzSource);
       this.ready = false;
     }
   }
   discardAndClose() {
     this.prepareClose();
-    this.libzip.discard(this.zip);
+    this.zipImpl.discard();
     this.ready = false;
   }
   saveAndClose() {
@@ -9999,16 +10137,14 @@ class ZipFS extends BasePortableFakeFS {
   statImpl(reason, p, opts = {}) {
     const entry = this.entries.get(p);
     if (typeof entry !== `undefined`) {
-      const stat = this.libzip.struct.statS();
-      const rc = this.libzip.statIndex(this.zip, entry, 0, 0, stat);
-      if (rc === -1)
-        throw this.makeLibzipError(this.libzip.getError(this.zip));
+      const stat = this.zipImpl.stat(entry);
+      const crc = stat.crc;
+      const size = stat.size;
+      const mtimeMs = stat.mtime * 1e3;
       const uid = this.stats.uid;
       const gid = this.stats.gid;
-      const size = this.libzip.struct.statSize(stat) >>> 0;
       const blksize = 512;
-      const blocks = Math.ceil(size / blksize);
-      const mtimeMs = (this.libzip.struct.statMtime(stat) >>> 0) * 1e3;
+      const blocks = Math.ceil(stat.size / blksize);
       const atimeMs = mtimeMs;
       const birthtimeMs = mtimeMs;
       const ctimeMs = mtimeMs;
@@ -10019,7 +10155,6 @@ class ZipFS extends BasePortableFakeFS {
       const type = this.listings.has(p) ? fs.constants.S_IFDIR : this.isSymbolicLink(entry) ? fs.constants.S_IFLNK : fs.constants.S_IFREG;
       const defaultMode = type === fs.constants.S_IFDIR ? 493 : 420;
       const mode = type | this.getUnixMode(entry, defaultMode) & 511;
-      const crc = this.libzip.struct.statCrc(stat);
       const statInstance = Object.assign(new StatEntry(), { uid, gid, size, blksize, blocks, atime, birthtime, ctime, mtime, atimeMs, birthtimeMs, ctimeMs, mtimeMs, mode, crc });
       return opts.bigint === true ? convertToBigIntStats(statInstance) : statInstance;
     }
@@ -10045,13 +10180,10 @@ class ZipFS extends BasePortableFakeFS {
     throw new Error(`Unreachable`);
   }
   getUnixMode(index, defaultMode) {
-    const rc = this.libzip.file.getExternalAttributes(this.zip, index, 0, 0, this.libzip.uint08S, this.libzip.uint32S);
-    if (rc === -1)
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
-    const opsys = this.libzip.getValue(this.libzip.uint08S, `i8`) >>> 0;
-    if (opsys !== this.libzip.ZIP_OPSYS_UNIX)
+    const [opsys, attributes] = this.zipImpl.getExternalAttributes(index);
+    if (opsys !== ZIP_UNIX)
       return defaultMode;
-    return this.libzip.getValue(this.libzip.uint32S, `i32`) >>> 16;
+    return attributes >>> 16;
   }
   registerListing(p) {
     const existingListing = this.listings.get(p);
@@ -10086,10 +10218,7 @@ class ZipFS extends BasePortableFakeFS {
   }
   deleteEntry(p, index) {
     this.unregisterEntry(p);
-    const rc = this.libzip.delete(this.zip, index);
-    if (rc === -1) {
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
-    }
+    this.zipImpl.deleteEntry(index);
   }
   resolveFilename(reason, p, resolveLastComponent = true, throwIfNoEntry = true) {
     if (!this.ready)
@@ -10122,7 +10251,7 @@ class ZipFS extends BasePortableFakeFS {
       resolvedP = ppath.resolve(parentP, ppath.basename(resolvedP));
       if (!resolveLastComponent || this.symlinkCount === 0)
         break;
-      const index = this.libzip.name.locate(this.zip, resolvedP.slice(1), 0);
+      const index = this.zipImpl.locate(resolvedP.slice(1));
       if (index === -1)
         break;
       if (this.isSymbolicLink(index)) {
@@ -10134,118 +10263,57 @@ class ZipFS extends BasePortableFakeFS {
     }
     return resolvedP;
   }
-  allocateBuffer(content) {
-    if (!Buffer.isBuffer(content))
-      content = Buffer.from(content);
-    const buffer = this.libzip.malloc(content.byteLength);
-    if (!buffer)
-      throw new Error(`Couldn't allocate enough memory`);
-    const heap = new Uint8Array(this.libzip.HEAPU8.buffer, buffer, content.byteLength);
-    heap.set(content);
-    return { buffer, byteLength: content.byteLength };
-  }
-  allocateUnattachedSource(content) {
-    const error = this.libzip.struct.errorS();
-    const { buffer, byteLength } = this.allocateBuffer(content);
-    const source = this.libzip.source.fromUnattachedBuffer(buffer, byteLength, 0, 1, error);
-    if (source === 0) {
-      this.libzip.free(error);
-      throw this.makeLibzipError(error);
-    }
-    return source;
-  }
-  allocateSource(content) {
-    const { buffer, byteLength } = this.allocateBuffer(content);
-    const source = this.libzip.source.fromBuffer(this.zip, buffer, byteLength, 0, 1);
-    if (source === 0) {
-      this.libzip.free(buffer);
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
-    }
-    return source;
-  }
   setFileSource(p, content) {
     const buffer = Buffer.isBuffer(content) ? content : Buffer.from(content);
     const target = ppath.relative(PortablePath.root, p);
-    const lzSource = this.allocateSource(content);
-    try {
-      const newIndex = this.libzip.file.add(this.zip, target, lzSource, this.libzip.ZIP_FL_OVERWRITE);
-      if (newIndex === -1)
-        throw this.makeLibzipError(this.libzip.getError(this.zip));
-      if (this.level !== `mixed`) {
-        const method = this.level === 0 ? this.libzip.ZIP_CM_STORE : this.libzip.ZIP_CM_DEFLATE;
-        const rc = this.libzip.file.setCompression(this.zip, newIndex, 0, method, this.level);
-        if (rc === -1) {
-          throw this.makeLibzipError(this.libzip.getError(this.zip));
-        }
-      }
-      this.fileSources.set(newIndex, buffer);
-      return newIndex;
-    } catch (error) {
-      this.libzip.source.free(lzSource);
-      throw error;
+    let compression = null;
+    if (this.level !== `mixed`) {
+      const method = this.level === 0 ? STORE : DEFLATE;
+      compression = [method, this.level];
     }
+    const newIndex = this.zipImpl.setFileSource(target, compression, buffer);
+    this.fileSources.set(newIndex, buffer);
+    return newIndex;
   }
   isSymbolicLink(index) {
     if (this.symlinkCount === 0)
       return false;
-    const attrs = this.libzip.file.getExternalAttributes(this.zip, index, 0, 0, this.libzip.uint08S, this.libzip.uint32S);
-    if (attrs === -1)
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
-    const opsys = this.libzip.getValue(this.libzip.uint08S, `i8`) >>> 0;
-    if (opsys !== this.libzip.ZIP_OPSYS_UNIX)
+    const [opsys, attrs] = this.zipImpl.getExternalAttributes(index);
+    if (opsys !== ZIP_UNIX)
       return false;
-    const attributes = this.libzip.getValue(this.libzip.uint32S, `i32`) >>> 16;
+    const attributes = attrs >>> 16;
     return (attributes & fs.constants.S_IFMT) === fs.constants.S_IFLNK;
   }
   getFileSource(index, opts = { asyncDecompress: false }) {
     const cachedFileSource = this.fileSources.get(index);
     if (typeof cachedFileSource !== `undefined`)
       return cachedFileSource;
-    const stat = this.libzip.struct.statS();
-    const rc = this.libzip.statIndex(this.zip, index, 0, 0, stat);
-    if (rc === -1)
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
-    const size = this.libzip.struct.statCompSize(stat);
-    const compressionMethod = this.libzip.struct.statCompMethod(stat);
-    const buffer = this.libzip.malloc(size);
-    try {
-      const file = this.libzip.fopenIndex(this.zip, index, 0, this.libzip.ZIP_FL_COMPRESSED);
-      if (file === 0)
-        throw this.makeLibzipError(this.libzip.getError(this.zip));
-      try {
-        const rc2 = this.libzip.fread(file, buffer, size, 0);
-        if (rc2 === -1)
-          throw this.makeLibzipError(this.libzip.file.getError(file));
-        else if (rc2 < size)
-          throw new Error(`Incomplete read`);
-        else if (rc2 > size)
-          throw new Error(`Overread`);
-        const memory = this.libzip.HEAPU8.subarray(buffer, buffer + size);
-        const data = Buffer.from(memory);
-        if (compressionMethod === 0) {
-          this.fileSources.set(index, data);
-          return data;
-        } else if (opts.asyncDecompress) {
-          return new Promise((resolve, reject) => {
-            zlib__default.default.inflateRaw(data, (error, result) => {
-              if (error) {
-                reject(error);
-              } else {
+    const { data, compressionMethod } = this.zipImpl.getFileSource(index);
+    if (compressionMethod === STORE) {
+      if (this.zipImpl.filesShouldBeCached)
+        this.fileSources.set(index, data);
+      return data;
+    } else if (compressionMethod === DEFLATE) {
+      if (opts.asyncDecompress) {
+        return new Promise((resolve, reject) => {
+          zlib__default.default.inflateRaw(data, (error, result) => {
+            if (error) {
+              reject(error);
+            } else {
+              if (this.zipImpl.filesShouldBeCached)
                 this.fileSources.set(index, result);
-                resolve(result);
-              }
-            });
+              resolve(result);
+            }
           });
-        } else {
-          const decompressedData = zlib__default.default.inflateRawSync(data);
+        });
+      } else {
+        const decompressedData = zlib__default.default.inflateRawSync(data);
+        if (this.zipImpl.filesShouldBeCached)
           this.fileSources.set(index, decompressedData);
-          return decompressedData;
-        }
-      } finally {
-        this.libzip.fclose(file);
+        return decompressedData;
       }
-    } finally {
-      this.libzip.free(buffer);
+    } else {
+      throw new Error(`Unsupported compression method: ${compressionMethod}`);
     }
   }
   async fchmodPromise(fd, mask) {
@@ -10267,10 +10335,7 @@ class ZipFS extends BasePortableFakeFS {
       throw new Error(`Assertion failed: The entry should have been registered (${resolvedP})`);
     const oldMod = this.getUnixMode(entry, fs.constants.S_IFREG | 0);
     const newMod = oldMod & ~511 | mask;
-    const rc = this.libzip.file.setExternalAttributes(this.zip, entry, 0, 0, this.libzip.ZIP_OPSYS_UNIX, newMod << 16);
-    if (rc === -1) {
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
-    }
+    this.zipImpl.setExternalAttributes(entry, ZIP_UNIX, newMod << 16);
   }
   async fchownPromise(fd, uid, gid) {
     return this.chownPromise(this.fdToPath(fd, `fchown`), uid, gid);
@@ -10444,10 +10509,7 @@ class ZipFS extends BasePortableFakeFS {
     const entry = this.entries.get(resolvedP);
     if (entry === void 0)
       throw new Error(`Unreachable`);
-    const rc = this.libzip.file.setMtime(this.zip, entry, 0, toUnixTimestamp(mtime), 0);
-    if (rc === -1) {
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
-    }
+    this.zipImpl.setMtime(entry, toUnixTimestamp(mtime));
   }
   async mkdirPromise(p, opts) {
     return this.mkdirSync(p, opts);
@@ -10507,9 +10569,7 @@ class ZipFS extends BasePortableFakeFS {
     this.deleteEntry(p, index);
   }
   hydrateDirectory(resolvedP) {
-    const index = this.libzip.dir.add(this.zip, ppath.relative(PortablePath.root, resolvedP));
-    if (index === -1)
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    const index = this.zipImpl.addDirectory(ppath.relative(PortablePath.root, resolvedP));
     this.registerListing(resolvedP);
     this.registerEntry(resolvedP, index);
     return index;
@@ -10533,9 +10593,7 @@ class ZipFS extends BasePortableFakeFS {
       throw EEXIST(`symlink '${target}' -> '${p}'`);
     const index = this.setFileSource(resolvedP, target);
     this.registerEntry(resolvedP, index);
-    const rc = this.libzip.file.setExternalAttributes(this.zip, index, 0, 0, this.libzip.ZIP_OPSYS_UNIX, (fs.constants.S_IFLNK | 511) << 16);
-    if (rc === -1)
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    this.zipImpl.setExternalAttributes(index, ZIP_UNIX, (fs.constants.S_IFLNK | 511) << 16);
     this.symlinkCount += 1;
   }
   async readFilePromise(p, encoding) {
@@ -10690,10 +10748,13 @@ class ZipFS extends BasePortableFakeFS {
       } };
     const interval = setInterval(() => {
     }, 24 * 60 * 60 * 1e3);
-    return { on: () => {
-    }, close: () => {
-      clearInterval(interval);
-    } };
+    return {
+      on: () => {
+      },
+      close: () => {
+        clearInterval(interval);
+      }
+    };
   }
   watchFile(p, a, b) {
     const resolvedP = ppath.resolve(PortablePath.root, p);
@@ -10702,6 +10763,201 @@ class ZipFS extends BasePortableFakeFS {
   unwatchFile(p, cb) {
     const resolvedP = ppath.resolve(PortablePath.root, p);
     return unwatchFile(this, resolvedP, cb);
+  }
+}
+
+const SIGNATURE = {
+  CENTRAL_DIRECTORY: 33639248,
+  END_OF_CENTRAL_DIRECTORY: 101010256
+};
+const noCommentCDSize = 22;
+class JsZipImpl {
+  fd;
+  baseFs;
+  entries;
+  filesShouldBeCached = false;
+  constructor(opts) {
+    if (`buffer` in opts)
+      throw new Error(`Buffer based zip archives are not supported`);
+    if (!opts.readOnly)
+      throw new Error(`Writable zip archives are not supported`);
+    this.baseFs = opts.baseFs;
+    this.fd = this.baseFs.openSync(opts.path, `r`);
+    try {
+      this.entries = JsZipImpl.readZipSync(this.fd, this.baseFs, opts.size);
+    } catch (error) {
+      this.baseFs.closeSync(this.fd);
+      this.fd = `closed`;
+      throw error;
+    }
+  }
+  static readZipSync(fd, baseFs, fileSize) {
+    if (fileSize < noCommentCDSize)
+      throw new Error(`Invalid ZIP file: EOCD not found`);
+    let eocdOffset = -1;
+    let eocdBuffer = Buffer.alloc(noCommentCDSize);
+    baseFs.readSync(
+      fd,
+      eocdBuffer,
+      0,
+      noCommentCDSize,
+      fileSize - noCommentCDSize
+    );
+    if (eocdBuffer.readUInt32LE(0) === SIGNATURE.END_OF_CENTRAL_DIRECTORY) {
+      eocdOffset = 0;
+    } else {
+      const bufferSize = Math.min(65557, fileSize);
+      eocdBuffer = Buffer.alloc(bufferSize);
+      baseFs.readSync(
+        fd,
+        eocdBuffer,
+        0,
+        bufferSize,
+        Math.max(0, fileSize - bufferSize)
+      );
+      for (let i = eocdBuffer.length - 4; i >= 0; i--) {
+        if (eocdBuffer.readUInt32LE(i) === SIGNATURE.END_OF_CENTRAL_DIRECTORY) {
+          eocdOffset = i;
+          break;
+        }
+      }
+      if (eocdOffset === -1) {
+        throw new Error(`Not a zip archive`);
+      }
+    }
+    const totalEntries = eocdBuffer.readUInt16LE(eocdOffset + 10);
+    const centralDirSize = eocdBuffer.readUInt32LE(eocdOffset + 12);
+    const centralDirOffset = eocdBuffer.readUInt32LE(eocdOffset + 16);
+    const commentLength = eocdBuffer.readUInt16LE(eocdOffset + 20);
+    if (eocdOffset + commentLength + noCommentCDSize > eocdBuffer.length)
+      throw new Error(`Zip archive inconsistent`);
+    if (totalEntries == 65535 || centralDirSize == 4294967295 || centralDirOffset == 4294967295)
+      throw new Error(`Zip 64 is not supported`);
+    if (centralDirSize > fileSize)
+      throw new Error(`Zip archive inconsistent`);
+    if (totalEntries > centralDirSize / 46)
+      throw new Error(`Zip archive inconsistent`);
+    const cdBuffer = Buffer.alloc(centralDirSize);
+    if (baseFs.readSync(fd, cdBuffer, 0, cdBuffer.length, centralDirOffset) !== cdBuffer.length)
+      throw new Error(`Zip archive inconsistent`);
+    const entries = [];
+    let offset = 0;
+    let index = 0;
+    let sumCompressedSize = 0;
+    while (index < totalEntries) {
+      if (offset + 46 > cdBuffer.length)
+        throw new Error(`Zip archive inconsistent`);
+      if (cdBuffer.readUInt32LE(offset) !== SIGNATURE.CENTRAL_DIRECTORY)
+        throw new Error(`Zip archive inconsistent`);
+      const versionMadeBy = cdBuffer.readUInt16LE(offset + 4);
+      const os = versionMadeBy >>> 8;
+      const flags = cdBuffer.readUInt16LE(offset + 8);
+      if ((flags & 1) !== 0)
+        throw new Error(`Encrypted zip files are not supported`);
+      const compressionMethod = cdBuffer.readUInt16LE(offset + 10);
+      const crc = cdBuffer.readUInt32LE(offset + 16);
+      const nameLength = cdBuffer.readUInt16LE(offset + 28);
+      const extraLength = cdBuffer.readUInt16LE(offset + 30);
+      const commentLength2 = cdBuffer.readUInt16LE(offset + 32);
+      const localHeaderOffset = cdBuffer.readUInt32LE(offset + 42);
+      const name = cdBuffer.toString(`utf8`, offset + 46, offset + 46 + nameLength).replaceAll(`\0`, ` `);
+      if (name.includes(`\0`))
+        throw new Error(`Invalid ZIP file`);
+      const compressedSize = cdBuffer.readUInt32LE(offset + 20);
+      const externalAttributes = cdBuffer.readUInt32LE(offset + 38);
+      entries.push({
+        name,
+        os,
+        mtime: SAFE_TIME,
+        //we dont care,
+        crc,
+        compressionMethod,
+        isSymbolicLink: os === ZIP_UNIX && (externalAttributes >>> 16 & S_IFMT) === S_IFLNK,
+        size: cdBuffer.readUInt32LE(offset + 24),
+        compressedSize,
+        externalAttributes,
+        localHeaderOffset
+      });
+      sumCompressedSize += compressedSize;
+      index += 1;
+      offset += 46 + nameLength + extraLength + commentLength2;
+    }
+    if (sumCompressedSize > fileSize)
+      throw new Error(`Zip archive inconsistent`);
+    if (offset !== cdBuffer.length)
+      throw new Error(`Zip archive inconsistent`);
+    return entries;
+  }
+  getExternalAttributes(index) {
+    const entry = this.entries[index];
+    return [entry.os, entry.externalAttributes];
+  }
+  getListings() {
+    return this.entries.map((e) => e.name);
+  }
+  getSymlinkCount() {
+    let count = 0;
+    for (const entry of this.entries)
+      if (entry.isSymbolicLink)
+        count += 1;
+    return count;
+  }
+  stat(index) {
+    const entry = this.entries[index];
+    return {
+      crc: entry.crc,
+      mtime: entry.mtime,
+      size: entry.size
+    };
+  }
+  locate(name) {
+    for (let ind = 0; ind < this.entries.length; ind++)
+      if (this.entries[ind].name === name)
+        return ind;
+    return -1;
+  }
+  getFileSource(index) {
+    if (this.fd === `closed`)
+      throw new Error(`ZIP file is closed`);
+    const entry = this.entries[index];
+    const localHeaderBuf = Buffer.alloc(30);
+    this.baseFs.readSync(
+      this.fd,
+      localHeaderBuf,
+      0,
+      localHeaderBuf.length,
+      entry.localHeaderOffset
+    );
+    const nameLength = localHeaderBuf.readUInt16LE(26);
+    const extraLength = localHeaderBuf.readUInt16LE(28);
+    const buffer = Buffer.alloc(entry.compressedSize);
+    if (this.baseFs.readSync(this.fd, buffer, 0, entry.compressedSize, entry.localHeaderOffset + 30 + nameLength + extraLength) !== entry.compressedSize)
+      throw new Error(`Invalid ZIP file`);
+    return { data: buffer, compressionMethod: entry.compressionMethod };
+  }
+  discard() {
+    if (this.fd !== `closed`) {
+      this.baseFs.closeSync(this.fd);
+      this.fd = `closed`;
+    }
+  }
+  addDirectory(path) {
+    throw new Error(`Not implemented`);
+  }
+  deleteEntry(index) {
+    throw new Error(`Not implemented`);
+  }
+  setMtime(index, mtime) {
+    throw new Error(`Not implemented`);
+  }
+  getBufferAndClose() {
+    throw new Error(`Not implemented`);
+  }
+  setFileSource(target, compression, buffer) {
+    throw new Error(`Not implemented`);
+  }
+  setExternalAttributes(index, opsys, attributes) {
+    throw new Error(`Not implemented`);
   }
 }
 
@@ -11055,6 +11311,7 @@ function hydrateRuntimeState(data, { basePath }) {
     dependencyTreeRoots,
     enableTopLevelFallback,
     fallbackExclusionList,
+    pnpZipBackend: data.pnpZipBackend,
     fallbackPool,
     ignorePattern,
     packageLocatorsByLocations,
@@ -12711,8 +12968,10 @@ const localFs = { ...fs__default.default };
 const nodeFs = new NodeFS(localFs);
 const defaultRuntimeState = $$SETUP_STATE(hydrateRuntimeState);
 const defaultPnpapiResolution = __filename;
+const customZipImplementation = defaultRuntimeState.pnpZipBackend === `js` ? JsZipImpl : void 0;
 const defaultFsLayer = new VirtualFS({
   baseFs: new ZipOpenFS({
+    customZipImplementation,
     baseFs: nodeFs,
     maxOpenFiles: 80,
     readOnlyArchives: true
