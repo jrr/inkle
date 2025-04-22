@@ -29,7 +29,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@eslint/eslintrc", "npm:3.3.1"],\
-          ["@eslint/js", "npm:9.24.0"],\
+          ["@eslint/js", "npm:9.25.1"],\
           ["@types/ink-big-text", "npm:1.2.4"],\
           ["@types/node", "npm:22.14.1"],\
           ["@types/react", "npm:18.3.20"],\
@@ -370,17 +370,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@eslint/js", [\
-      ["npm:9.24.0", {\
-        "packageLocation": "./.yarn/cache/@eslint-js-npm-9.24.0-25f2165a01-d210114c14.zip/node_modules/@eslint/js/",\
-        "packageDependencies": [\
-          ["@eslint/js", "npm:9.24.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:9.25.0", {\
         "packageLocation": "./.yarn/cache/@eslint-js-npm-9.25.0-8d252d12cf-c00b5abc95.zip/node_modules/@eslint/js/",\
         "packageDependencies": [\
           ["@eslint/js", "npm:9.25.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:9.25.1", {\
+        "packageLocation": "./.yarn/cache/@eslint-js-npm-9.25.1-6002ce1a0f-ad58128895.zip/node_modules/@eslint/js/",\
+        "packageDependencies": [\
+          ["@eslint/js", "npm:9.25.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2830,7 +2830,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@eslint/eslintrc", "npm:3.3.1"],\
-          ["@eslint/js", "npm:9.24.0"],\
+          ["@eslint/js", "npm:9.25.1"],\
           ["@types/ink-big-text", "npm:1.2.4"],\
           ["@types/node", "npm:22.14.1"],\
           ["@types/react", "npm:18.3.20"],\
