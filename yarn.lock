@@ -2349,9 +2349,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ink@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "ink@npm:5.2.0"
+"ink@npm:^5.2.1":
+  version: 5.2.1
+  resolution: "ink@npm:5.2.1"
   dependencies:
     "@alcalzone/ansi-tokenize": "npm:^0.1.3"
     ansi-escapes: "npm:^7.0.0"
@@ -2386,7 +2386,7 @@ __metadata:
       optional: true
     react-devtools-core:
       optional: true
-  checksum: 10/aedc71753468839518c194c93d343f96321aca9c3d8966606bd0e2476103424c3ad14b9e96322c8ce16a745e334e142a90d1ad77523dfaca5f196ebe6bbf3562
+  checksum: 10/780aecdcfe4c55b5ecbd939ff21c153a9c1e3912f5217727d913d6cd05be508057037e74948e60f3b22ee0aa4ad5f089d31e97cf972f260c8926d0f509c3a3fd
   languageName: node
   linkType: hard
 
@@ -2404,7 +2404,7 @@ __metadata:
     eslint: "npm:^9.25.0"
     eslint-plugin-react: "npm:^7.37.5"
     eslint-plugin-react-hooks: "npm:^5.2.0"
-    ink: "npm:^5.2.0"
+    ink: "npm:^5.2.1"
     ink-big-text: "npm:^2.0.0"
     ink-testing-library: "npm:^4.0.0"
     meow: "npm:^13.2.0"
