@@ -32,7 +32,7 @@ const RAW_RUNTIME_STATE =
           ["@eslint/js", "npm:9.27.0"],\
           ["@types/ink-big-text", "npm:1.2.4"],\
           ["@types/node", "npm:22.15.21"],\
-          ["@types/react", "npm:18.3.20"],\
+          ["@types/react", "npm:19.1.5"],\
           ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.32.1"],\
           ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.32.1"],\
           ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.27.0"],\
@@ -45,7 +45,7 @@ const RAW_RUNTIME_STATE =
           ["meow", "npm:13.2.0"],\
           ["prettier", "npm:3.5.3"],\
           ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.1.0"],\
-          ["react", "npm:18.3.1"],\
+          ["react", "npm:19.1.0"],\
           ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"],\
           ["vitest", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.1.4"]\
         ],\
@@ -789,29 +789,19 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@types/prop-types", [\
-      ["npm:15.7.14", {\
-        "packageLocation": "./.yarn/cache/@types-prop-types-npm-15.7.14-4ccaa07795-d0c5407b9c.zip/node_modules/@types/prop-types/",\
-        "packageDependencies": [\
-          ["@types/prop-types", "npm:15.7.14"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["@types/react", [\
-      ["npm:18.3.20", {\
-        "packageLocation": "./.yarn/cache/@types-react-npm-18.3.20-0aaa2627a6-020c51e63b.zip/node_modules/@types/react/",\
-        "packageDependencies": [\
-          ["@types/prop-types", "npm:15.7.14"],\
-          ["@types/react", "npm:18.3.20"],\
-          ["csstype", "npm:3.1.3"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:19.1.1", {\
         "packageLocation": "./.yarn/cache/@types-react-npm-19.1.1-b954e529d7-f267c2a7af.zip/node_modules/@types/react/",\
         "packageDependencies": [\
           ["@types/react", "npm:19.1.1"],\
+          ["csstype", "npm:3.1.3"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:19.1.5", {\
+        "packageLocation": "./.yarn/cache/@types-react-npm-19.1.5-b45d776812-ea007c6c3a.zip/node_modules/@types/react/",\
+        "packageDependencies": [\
+          ["@types/react", "npm:19.1.5"],\
           ["csstype", "npm:3.1.3"]\
         ],\
         "linkType": "HARD"\
@@ -2780,7 +2770,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/ink-virtual-f497438816/0/cache/ink-npm-5.2.1-41d086a4b7-780aecdcfe.zip/node_modules/ink/",\
         "packageDependencies": [\
           ["@alcalzone/ansi-tokenize", "npm:0.1.3"],\
-          ["@types/react", "npm:18.3.20"],\
+          ["@types/react", "npm:19.1.5"],\
           ["@types/react-devtools-core", null],\
           ["ansi-escapes", "npm:7.0.0"],\
           ["ansi-styles", "npm:6.2.1"],\
@@ -2795,7 +2785,7 @@ const RAW_RUNTIME_STATE =
           ["ink", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:5.2.1"],\
           ["is-in-ci", "npm:1.0.0"],\
           ["patch-console", "npm:2.0.0"],\
-          ["react", "npm:18.3.1"],\
+          ["react", "npm:19.1.0"],\
           ["react-devtools-core", null],\
           ["react-reconciler", "virtual:f4974388162e4bd82ff903256edc0a74b7c39c2ac0728fc973ade002767d3cfc5bdf7096befa9fc407cea761e293d9672793be5685c7e025e74fd286b31e7601#npm:0.29.2"],\
           ["scheduler", "npm:0.23.2"],\
@@ -2830,12 +2820,12 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/ink-big-text-virtual-69714dafb4/0/cache/ink-big-text-npm-2.0.0-d9364a0f49-e923e31751.zip/node_modules/ink-big-text/",\
         "packageDependencies": [\
           ["@types/ink", null],\
-          ["@types/react", "npm:18.3.20"],\
+          ["@types/react", "npm:19.1.5"],\
           ["cfonts", "npm:3.3.0"],\
           ["ink", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:5.2.1"],\
           ["ink-big-text", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:2.0.0"],\
           ["prop-types", "npm:15.8.1"],\
-          ["react", "npm:18.3.1"]\
+          ["react", "npm:19.1.0"]\
         ],\
         "packagePeers": [\
           "@types/ink",\
@@ -2857,7 +2847,7 @@ const RAW_RUNTIME_STATE =
       ["virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.0.0", {\
         "packageLocation": "./.yarn/__virtual__/ink-testing-library-virtual-402f5b65d8/0/cache/ink-testing-library-npm-4.0.0-06cc10e681-f1f8549fe5.zip/node_modules/ink-testing-library/",\
         "packageDependencies": [\
-          ["@types/react", "npm:18.3.20"],\
+          ["@types/react", "npm:19.1.5"],\
           ["ink-testing-library", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.0.0"]\
         ],\
         "packagePeers": [\
@@ -2874,7 +2864,7 @@ const RAW_RUNTIME_STATE =
           ["@eslint/js", "npm:9.27.0"],\
           ["@types/ink-big-text", "npm:1.2.4"],\
           ["@types/node", "npm:22.15.21"],\
-          ["@types/react", "npm:18.3.20"],\
+          ["@types/react", "npm:19.1.5"],\
           ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.32.1"],\
           ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.32.1"],\
           ["eslint", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:9.27.0"],\
@@ -2887,7 +2877,7 @@ const RAW_RUNTIME_STATE =
           ["meow", "npm:13.2.0"],\
           ["prettier", "npm:3.5.3"],\
           ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.1.0"],\
-          ["react", "npm:18.3.1"],\
+          ["react", "npm:19.1.0"],\
           ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"],\
           ["vitest", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:3.1.4"]\
         ],\
@@ -4075,11 +4065,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["react", [\
-      ["npm:18.3.1", {\
-        "packageLocation": "./.yarn/cache/react-npm-18.3.1-af38f3c1ae-261137d3f3.zip/node_modules/react/",\
+      ["npm:19.1.0", {\
+        "packageLocation": "./.yarn/cache/react-npm-19.1.0-9804a7da5b-d018068982.zip/node_modules/react/",\
         "packageDependencies": [\
-          ["loose-envify", "npm:1.4.0"],\
-          ["react", "npm:18.3.1"]\
+          ["react", "npm:19.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4104,9 +4093,9 @@ const RAW_RUNTIME_STATE =
       ["virtual:f4974388162e4bd82ff903256edc0a74b7c39c2ac0728fc973ade002767d3cfc5bdf7096befa9fc407cea761e293d9672793be5685c7e025e74fd286b31e7601#npm:0.29.2", {\
         "packageLocation": "./.yarn/__virtual__/react-reconciler-virtual-3f90fb5d53/0/cache/react-reconciler-npm-0.29.2-9982426dcb-f9ef98a88e.zip/node_modules/react-reconciler/",\
         "packageDependencies": [\
-          ["@types/react", "npm:18.3.20"],\
+          ["@types/react", "npm:19.1.5"],\
           ["loose-envify", "npm:1.4.0"],\
-          ["react", "npm:18.3.1"],\
+          ["react", "npm:19.1.0"],\
           ["react-reconciler", "virtual:f4974388162e4bd82ff903256edc0a74b7c39c2ac0728fc973ade002767d3cfc5bdf7096befa9fc407cea761e293d9672793be5685c7e025e74fd286b31e7601#npm:0.29.2"],\
           ["scheduler", "npm:0.23.2"]\
         ],\
