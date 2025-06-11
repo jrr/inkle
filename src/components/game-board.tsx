@@ -26,7 +26,7 @@ export const GameBoard: React.FC<{
   );
 };
 
-const GameBoardRow: React.FC<{ row: DisplayRow }> = ({ row }): JSX.Element => {
+const GameBoardRow: React.FC<{ row: DisplayRow }> = ({ row }) => {
   switch (row.rowType) {
     case "guessed":
       return <BoardRow guessedRow={row} />;
