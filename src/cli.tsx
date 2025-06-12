@@ -39,19 +39,19 @@ const cli = meow(
       },
     },
     importMeta: import.meta,
-  },
+  }
 );
 
 function chooseState(
   stateName: string | undefined,
-  exitPlease: boolean | undefined,
+  exitPlease: boolean | undefined
 ) {
   if (stateName == undefined) {
     return undefined;
   }
   if (!isKnownState(stateName)) {
     console.log(
-      `Unknown test state '${stateName}'. Valid states are ${knownStateNames}`,
+      `Unknown test state '${stateName}'. Valid states are ${knownStateNames}`
     );
     process.exit(1);
   }
@@ -61,12 +61,12 @@ function chooseState(
   return { ...state, exitPlease };
 }
 
-const app = render(
+const _app = render(
   <App
     initialState={chooseState(cli.flags.test, cli.flags.quit)}
     numBoards={cli.flags.numBoards}
     numGuesses={cli.flags.numGuesses}
-  />,
+  />
 );
 
 // this was cauing a 'Warning: Detected unsettled top-level await' with exit code 13:
