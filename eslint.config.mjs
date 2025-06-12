@@ -26,7 +26,7 @@ export default [
   },
   ...compat.extends(
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended"
   ),
   {
     plugins: {
@@ -35,6 +35,17 @@ export default [
 
     languageOptions: {
       parser: tsParser,
+    },
+
+    rules: {
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
+        },
+      ],
     },
   },
 ];
