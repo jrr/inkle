@@ -69,4 +69,5 @@ const app = render(
   />,
 );
 
-await app.waitUntilExit();
+// this was cauing a 'Warning: Detected unsettled top-level await' with exit code 13:
+// await app.waitUntilExit();
