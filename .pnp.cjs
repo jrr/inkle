@@ -31,7 +31,7 @@ const RAW_RUNTIME_STATE =
           ["@eslint/eslintrc", "npm:3.3.1"],\
           ["@eslint/js", "npm:9.29.0"],\
           ["@types/ink-big-text", "npm:1.2.4"],\
-          ["@types/node", "npm:24.0.1"],\
+          ["@types/node", "npm:24.0.3"],\
           ["@types/react", "npm:19.1.8"],\
           ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.34.0"],\
           ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.34.0"],\
@@ -793,10 +793,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
-      ["npm:24.0.1", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-24.0.1-5aabcdf68a-6b77554f83.zip/node_modules/@types/node/",\
+      ["npm:24.0.3", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-24.0.3-e96f3e375e-6cce0afa9b.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:24.0.1"],\
+          ["@types/node", "npm:24.0.3"],\
           ["undici-types", "npm:7.8.0"]\
         ],\
         "linkType": "HARD"\
@@ -2904,7 +2904,7 @@ const RAW_RUNTIME_STATE =
           ["@eslint/eslintrc", "npm:3.3.1"],\
           ["@eslint/js", "npm:9.29.0"],\
           ["@types/ink-big-text", "npm:1.2.4"],\
-          ["@types/node", "npm:24.0.1"],\
+          ["@types/node", "npm:24.0.3"],\
           ["@types/react", "npm:19.1.8"],\
           ["@typescript-eslint/eslint-plugin", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.34.0"],\
           ["@typescript-eslint/parser", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:8.34.0"],\
@@ -5101,7 +5101,7 @@ const RAW_RUNTIME_STATE =
           ["@types/jiti", null],\
           ["@types/less", null],\
           ["@types/lightningcss", null],\
-          ["@types/node", "npm:24.0.1"],\
+          ["@types/node", "npm:24.0.3"],\
           ["@types/sass", null],\
           ["@types/sass-embedded", null],\
           ["@types/stylus", null],\
@@ -5185,7 +5185,7 @@ const RAW_RUNTIME_STATE =
           ["@types/edge-runtime__vm", null],\
           ["@types/happy-dom", null],\
           ["@types/jsdom", null],\
-          ["@types/node", "npm:24.0.1"],\
+          ["@types/node", "npm:24.0.3"],\
           ["@types/vitest__browser", null],\
           ["@types/vitest__ui", null],\
           ["@vitest/browser", null],\
