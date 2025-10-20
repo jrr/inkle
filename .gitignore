@@ -12,3 +12,7 @@ node_modules
 !.yarn/versions
 
 .vscode/*.log
+
+# Visual testing
+.ink-visual/diff
+.ink-visual/actual

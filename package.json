@@ -17,6 +17,9 @@
     "start": "node dist/cli.js",
     "build-start": "yarn build && yarn start",
     "test": "vitest",
+    "test:visual": "vitest ui.visual.test.tsx --run",
+    "test:visual:watch": "vitest ui.visual.test.tsx",
+    "test:visual:update": "vitest ui.visual.test.tsx --run --update",
     "format": "prettier --write .",
     "lint": "eslint ."
   },
@@ -41,6 +44,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "ink-testing-library": "^4.0.0",
+    "ink-visual-testing": "^1.0.1",
     "prettier": "^3.6.2",
     "prettier-plugin-organize-imports": "^4.3.0",
     "typescript": "5.9.3",
