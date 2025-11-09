@@ -599,12 +599,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^24.3.0":
-  version: 24.3.0
-  resolution: "@types/node@npm:24.3.0"
+"@types/node@npm:^24.10.0":
+  version: 24.10.0
+  resolution: "@types/node@npm:24.10.0"
   dependencies:
-    undici-types: "npm:~7.10.0"
-  checksum: 10/1331c2d0e9a512ac27a016b4df3eff92317e4603dbbbab31731275dff14d3a04847a50c5776cbf94f99ff4dedac0ba5f721dce8cea020d8eea5e21711fd964b0
+    undici-types: "npm:~7.16.0"
+  checksum: 10/bc3abd9adc61423b1a72324208f3fcfe4f957b9fc8b9e81bf3fed584deb0b40f0e2af63cd0e2afa8f408d06f14bdba899ac638ac619f646badf8e72de246c052
   languageName: node
   linkType: hard
 
@@ -617,12 +617,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.1.11":
-  version: 19.1.11
-  resolution: "@types/react@npm:19.1.11"
+"@types/react@npm:^19.2.2":
+  version: 19.2.2
+  resolution: "@types/react@npm:19.2.2"
   dependencies:
     csstype: "npm:^3.0.2"
-  checksum: 10/a9b8356783a5dd7f37803b9e4021610fe479186d1b8ee9c0c67a0f2f91b853e142349c913d39fd05af77065eb67f098b9b216214d82cdacf99c1589e04ed0d64
+  checksum: 10/d6adf8fd4bb23a7e04da5700d96b15dc0f59653727a9c6e940c151d7232fa1dbbab98417d5ac830dcfb6cba3f206efbd4cd83647e6f9a688d7363a90e607f6bf
   languageName: node
   linkType: hard
 
@@ -2398,8 +2398,8 @@ __metadata:
     "@eslint/eslintrc": "npm:^3.3.1"
     "@eslint/js": "npm:^9.39.1"
     "@types/ink-big-text": "npm:^1.2.4"
-    "@types/node": "npm:^24.3.0"
-    "@types/react": "npm:^19.1.11"
+    "@types/node": "npm:^24.10.0"
+    "@types/react": "npm:^19.2.2"
     "@typescript-eslint/eslint-plugin": "npm:^8.46.3"
     "@typescript-eslint/parser": "npm:^8.46.3"
     eslint: "npm:^9.39.1"
@@ -4303,10 +4303,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~7.10.0":
-  version: 7.10.0
-  resolution: "undici-types@npm:7.10.0"
-  checksum: 10/1f3fe777937690ab8a7a7bccabc8fdf4b3171f4899b5a384fb5f3d6b56c4b5fec2a51fbf345c9dd002ff6716fd440a37fa8fdb0e13af8eca8889f25445875ba3
+"undici-types@npm:~7.16.0":
+  version: 7.16.0
+  resolution: "undici-types@npm:7.16.0"
+  checksum: 10/db43439f69c2d94cc29f75cbfe9de86df87061d6b0c577ebe9bb3255f49b22c50162a7d7eb413b0458b6510b8ca299ac7cff38c3a29fbd31af9f504bcf7fbc0d
   languageName: node
   linkType: hard
 
