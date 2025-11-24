@@ -24,7 +24,7 @@
     "dist"
   ],
   "dependencies": {
-    "ink": "^6.5.0",
+    "ink": "^6.5.1",
     "ink-big-text": "^2.0.0",
     "meow": "^13.2.0",
     "react": "^19.2.0"
@@ -34,9 +34,9 @@
     "@eslint/js": "^9.39.1",
     "@types/ink-big-text": "^1.2.4",
     "@types/node": "^24.10.1",
-    "@types/react": "^19.2.5",
-    "@typescript-eslint/eslint-plugin": "^8.46.4",
-    "@typescript-eslint/parser": "^8.46.4",
+    "@types/react": "^19.2.7",
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
     "eslint": "^9.39.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
