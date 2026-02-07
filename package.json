@@ -44,7 +44,7 @@
     "prettier": "^3.8.1",
     "prettier-plugin-organize-imports": "^4.3.0",
     "typescript": "5.9.3",
-    "vitest": "^3.2.4"
+    "vitest": "^4.0.18"
   },
   "packageManager": "yarn@4.12.0"
 }
