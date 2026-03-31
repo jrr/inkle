@@ -27,7 +27,7 @@ interactive-node-22: $(tarball)
 	docker run -it --entrypoint bash -v $(PWD)/out:/out node:22-bookworm
 
 interactive-node-24: $(tarball)
-	docker run -it --entrypoint bash -v $(PWD)/out:/out node:22-bookworm
+	docker run -it --entrypoint bash -v $(PWD)/out:/out node:24-bookworm
 
 clean:
 	rm -rf dist
