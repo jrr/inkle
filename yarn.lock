@@ -5,13 +5,13 @@ __metadata:
   version: 8
   cacheKey: 10
 
-"@alcalzone/ansi-tokenize@npm:^0.2.4":
-  version: 0.2.5
-  resolution: "@alcalzone/ansi-tokenize@npm:0.2.5"
+"@alcalzone/ansi-tokenize@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@alcalzone/ansi-tokenize@npm:0.3.0"
   dependencies:
     ansi-styles: "npm:^6.2.1"
     is-fullwidth-code-point: "npm:^5.0.0"
-  checksum: 10/f7203d61e004c89f6097bd1fd6d049540e1480293f260fad7c5a18538786048012cc4558b82f72081db4a3422110252875901aec66414181f5875b9e33afa8d4
+  checksum: 10/fb83e6c2f30efebf3476d48c81e28f5d0da5c929e18fb415e83b2bcdda3cd4b31a2c0d2258abc1e4afec2d3f387ca63dc44c00431a14896a9a2205e2d06b7c65
   languageName: node
   linkType: hard
 
@@ -1207,7 +1207,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^5.6.0":
+"chalk@npm:^5.6.2":
   version: 5.6.2
   resolution: "chalk@npm:5.6.2"
   checksum: 10/1b2f48f6fba1370670d5610f9cd54c391d6ede28f4b7062dd38244ea5768777af72e5be6b74fb6c6d54cb84c4a2dff3f3afa9b7cb5948f7f022cfd3d087989e0
@@ -1221,10 +1221,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-boxes@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "cli-boxes@npm:3.0.0"
-  checksum: 10/637d84419d293a9eac40a1c8c96a2859e7d98b24a1a317788e13c8f441be052fc899480c6acab3acc82eaf1bccda6b7542d7cdcf5c9c3cc39227175dc098d5b2
+"cli-boxes@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "cli-boxes@npm:4.0.1"
+  checksum: 10/4a655f2d3644f4721672b617db084b81d5957e44c0421f17ee8a1414bb9da9f90f29d985ed4ed246ebc5782c5acf431a5927ab63c1e3733e8e98ec8fa2b0e85f
   languageName: node
   linkType: hard
 
@@ -1237,13 +1237,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-truncate@npm:^5.1.1":
-  version: 5.2.0
-  resolution: "cli-truncate@npm:5.2.0"
+"cli-truncate@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "cli-truncate@npm:6.0.0"
   dependencies:
-    slice-ansi: "npm:^8.0.0"
+    slice-ansi: "npm:^9.0.0"
     string-width: "npm:^8.2.0"
-  checksum: 10/b789b6c2caff1560259aedeb6aaafcf41167d478df418d718a8c92edd6bc5a0ece272b8fb7e7911fbd31cef7b1ac8a30f2b21d90c3174b55a018fe3f2604a137
+  checksum: 10/319fed1cbb65d0d86e8b943665ae86e459594b2fd6a441b491a7e9b2d518886c15b8b3f76c230a69bcb4e8b81bdeda8b700f340b97d64272e8f55ac34ab668ca
   languageName: node
   linkType: hard
 
@@ -1412,13 +1412,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"emoji-regex@npm:^10.3.0":
-  version: 10.6.0
-  resolution: "emoji-regex@npm:10.6.0"
-  checksum: 10/98cc0b0e1daed1ed25afbf69dcb921fee00f712f51aab93aa1547e4e4e8171725cc4f0098aaa645b4f611a19da11ec9f4623eb6ff2b72314b39a8f2ae7c12bf2
-  languageName: node
-  linkType: hard
-
 "env-paths@npm:^2.2.0":
   version: 2.2.1
   resolution: "env-paths@npm:2.2.1"
@@ -1581,7 +1574,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"es-toolkit@npm:^1.39.10":
+"es-toolkit@npm:^1.45.1":
   version: 1.45.1
   resolution: "es-toolkit@npm:1.45.1"
   dependenciesMeta:
@@ -1960,7 +1953,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-east-asian-width@npm:^1.0.0, get-east-asian-width@npm:^1.3.1, get-east-asian-width@npm:^1.5.0":
+"get-east-asian-width@npm:^1.3.1, get-east-asian-width@npm:^1.5.0":
   version: 1.5.0
   resolution: "get-east-asian-width@npm:1.5.0"
   checksum: 10/60bc34cd1e975055ab99f0f177e31bed3e516ff7cee9c536474383954a976abaa6b94a51d99ad158ef1e372790fa096cab7d07f166bb0778f6587954c0fbe946
@@ -2232,45 +2225,45 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ink@npm:^6.8.0":
-  version: 6.8.0
-  resolution: "ink@npm:6.8.0"
+"ink@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "ink@npm:7.0.0"
   dependencies:
-    "@alcalzone/ansi-tokenize": "npm:^0.2.4"
+    "@alcalzone/ansi-tokenize": "npm:^0.3.0"
     ansi-escapes: "npm:^7.3.0"
-    ansi-styles: "npm:^6.2.1"
+    ansi-styles: "npm:^6.2.3"
     auto-bind: "npm:^5.0.1"
-    chalk: "npm:^5.6.0"
-    cli-boxes: "npm:^3.0.0"
+    chalk: "npm:^5.6.2"
+    cli-boxes: "npm:^4.0.1"
     cli-cursor: "npm:^4.0.0"
-    cli-truncate: "npm:^5.1.1"
+    cli-truncate: "npm:^6.0.0"
     code-excerpt: "npm:^4.0.0"
-    es-toolkit: "npm:^1.39.10"
+    es-toolkit: "npm:^1.45.1"
     indent-string: "npm:^5.0.0"
     is-in-ci: "npm:^2.0.0"
     patch-console: "npm:^2.0.0"
     react-reconciler: "npm:^0.33.0"
     scheduler: "npm:^0.27.0"
     signal-exit: "npm:^3.0.7"
-    slice-ansi: "npm:^8.0.0"
+    slice-ansi: "npm:^9.0.0"
     stack-utils: "npm:^2.0.6"
-    string-width: "npm:^8.1.1"
+    string-width: "npm:^8.2.0"
     terminal-size: "npm:^4.0.1"
-    type-fest: "npm:^5.4.1"
+    type-fest: "npm:^5.5.0"
     widest-line: "npm:^6.0.0"
-    wrap-ansi: "npm:^9.0.0"
-    ws: "npm:^8.18.0"
+    wrap-ansi: "npm:^10.0.0"
+    ws: "npm:^8.20.0"
     yoga-layout: "npm:~3.2.1"
   peerDependencies:
-    "@types/react": ">=19.0.0"
-    react: ">=19.0.0"
+    "@types/react": ">=19.2.0"
+    react: ">=19.2.0"
     react-devtools-core: ">=6.1.2"
   peerDependenciesMeta:
     "@types/react":
       optional: true
     react-devtools-core:
       optional: true
-  checksum: 10/3b46abb18d11328f4b97947a638963fbd439776572527a49180ef176eeafe810fdffc0d28e249eef55dde1b441f6c52b75cc6b7cb7ff9cd02d43c1c51a150a6c
+  checksum: 10/e1539ce582c2e36100b41fac10fb3c069121784acf975cad70da961079f4c39281f4a31394fb57e4630a9f9e758a98683c95b6c26f630f746ff18ae9915b327a
   languageName: node
   linkType: hard
 
@@ -2288,7 +2281,7 @@ __metadata:
     eslint: "npm:^10.2.0"
     eslint-plugin-react: "npm:^7.37.5"
     eslint-plugin-react-hooks: "npm:^7.0.1"
-    ink: "npm:^6.8.0"
+    ink: "npm:^7.0.0"
     ink-big-text: "npm:^2.0.0"
     ink-testing-library: "npm:^4.0.0"
     meow: "npm:^14.1.0"
@@ -3741,13 +3734,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"slice-ansi@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "slice-ansi@npm:8.0.0"
+"slice-ansi@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "slice-ansi@npm:9.0.0"
   dependencies:
     ansi-styles: "npm:^6.2.3"
     is-fullwidth-code-point: "npm:^5.1.0"
-  checksum: 10/6a7e146852047e26dd5857b35c767e52906549c580cce0ad2287cc32f54f5a582494f674817fc9ac21b2e4ac1ddeaa85b3dee409782681b465330278890c73a8
+  checksum: 10/efa7017ab01400db7153791237c21c760089a08619b10e5ea05e6e978a468b17438e4a02babccf3a71bf0b73585a60290db9b012bb364e2df6eb09cd3d5e98d9
   languageName: node
   linkType: hard
 
@@ -3828,18 +3821,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string-width@npm:^7.0.0":
-  version: 7.2.0
-  resolution: "string-width@npm:7.2.0"
-  dependencies:
-    emoji-regex: "npm:^10.3.0"
-    get-east-asian-width: "npm:^1.0.0"
-    strip-ansi: "npm:^7.1.0"
-  checksum: 10/42f9e82f61314904a81393f6ef75b832c39f39761797250de68c041d8ba4df2ef80db49ab6cd3a292923a6f0f409b8c9980d120f7d32c820b4a8a84a2598a295
-  languageName: node
-  linkType: hard
-
-"string-width@npm:^8.1.0, string-width@npm:^8.1.1, string-width@npm:^8.2.0":
+"string-width@npm:^8.1.0, string-width@npm:^8.2.0":
   version: 8.2.0
   resolution: "string-width@npm:8.2.0"
   dependencies:
@@ -3918,7 +3900,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strip-ansi@npm:^7.1.0, strip-ansi@npm:^7.1.2":
+"strip-ansi@npm:^7.1.2":
   version: 7.2.0
   resolution: "strip-ansi@npm:7.2.0"
   dependencies:
@@ -4033,7 +4015,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:^5.4.1":
+"type-fest@npm:^5.5.0":
   version: 5.5.0
   resolution: "type-fest@npm:5.5.0"
   dependencies:
@@ -4405,18 +4387,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrap-ansi@npm:^9.0.0":
-  version: 9.0.2
-  resolution: "wrap-ansi@npm:9.0.2"
+"wrap-ansi@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "wrap-ansi@npm:10.0.0"
   dependencies:
-    ansi-styles: "npm:^6.2.1"
-    string-width: "npm:^7.0.0"
-    strip-ansi: "npm:^7.1.0"
-  checksum: 10/f3907e1ea9717404ca53a338fa5a017c2121550c3a5305180e2bc08c03e21aa45068df55b0d7676bf57be1880ba51a84458c17241ebedea485fafa9ef16b4024
+    ansi-styles: "npm:^6.2.3"
+    string-width: "npm:^8.2.0"
+    strip-ansi: "npm:^7.1.2"
+  checksum: 10/b9ac5290e2c5b88cba928b72fbc04e4bb7196cebde1522eeb82a56b1e32c2e706a20169d305c182fe7e4b31100cb05bb1d98dc2747a4a98700ac44303b3ac2ce
   languageName: node
   linkType: hard
 
-"ws@npm:^8.18.0":
+"ws@npm:^8.20.0":
   version: 8.20.0
   resolution: "ws@npm:8.20.0"
   peerDependencies:
