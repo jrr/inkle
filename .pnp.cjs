@@ -43,7 +43,7 @@ const RAW_RUNTIME_STATE =
           ["ink-testing-library", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.0.0"],\
           ["inkle", "workspace:."],\
           ["meow", "npm:14.1.0"],\
-          ["prettier", "npm:3.8.2"],\
+          ["prettier", "npm:3.8.3"],\
           ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.3.0"],\
           ["react", "npm:19.2.5"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
@@ -532,19 +532,19 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@napi-rs/wasm-runtime", [\
-      ["npm:1.1.3", {\
-        "packageLocation": "./.yarn/cache/@napi-rs-wasm-runtime-npm-1.1.3-8c18c422ba-a09f53dea7.zip/node_modules/@napi-rs/wasm-runtime/",\
+      ["npm:1.1.4", {\
+        "packageLocation": "./.yarn/cache/@napi-rs-wasm-runtime-npm-1.1.4-53a1e4ec11-1db3dc7eeb.zip/node_modules/@napi-rs/wasm-runtime/",\
         "packageDependencies": [\
-          ["@napi-rs/wasm-runtime", "npm:1.1.3"]\
+          ["@napi-rs/wasm-runtime", "npm:1.1.4"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:e6389002f0bc56dc61451e40ec0e6ad5899fe244e7d1eddcbd1a554a832aeced29926d28607f97fb76c1f01f40bd04ea7b4ea62d6526ee6d7c25331043a55650#npm:1.1.3", {\
-        "packageLocation": "./.yarn/__virtual__/@napi-rs-wasm-runtime-virtual-2b8a4af66c/0/cache/@napi-rs-wasm-runtime-npm-1.1.3-8c18c422ba-a09f53dea7.zip/node_modules/@napi-rs/wasm-runtime/",\
+      ["virtual:e6389002f0bc56dc61451e40ec0e6ad5899fe244e7d1eddcbd1a554a832aeced29926d28607f97fb76c1f01f40bd04ea7b4ea62d6526ee6d7c25331043a55650#npm:1.1.4", {\
+        "packageLocation": "./.yarn/__virtual__/@napi-rs-wasm-runtime-virtual-a987f0b9be/0/cache/@napi-rs-wasm-runtime-npm-1.1.4-53a1e4ec11-1db3dc7eeb.zip/node_modules/@napi-rs/wasm-runtime/",\
         "packageDependencies": [\
           ["@emnapi/core", "npm:1.9.2"],\
           ["@emnapi/runtime", "npm:1.9.2"],\
-          ["@napi-rs/wasm-runtime", "virtual:e6389002f0bc56dc61451e40ec0e6ad5899fe244e7d1eddcbd1a554a832aeced29926d28607f97fb76c1f01f40bd04ea7b4ea62d6526ee6d7c25331043a55650#npm:1.1.3"],\
+          ["@napi-rs/wasm-runtime", "virtual:e6389002f0bc56dc61451e40ec0e6ad5899fe244e7d1eddcbd1a554a832aeced29926d28607f97fb76c1f01f40bd04ea7b4ea62d6526ee6d7c25331043a55650#npm:1.1.4"],\
           ["@tybys/wasm-util", "npm:0.10.1"],\
           ["@types/emnapi__core", null],\
           ["@types/emnapi__runtime", null]\
@@ -714,7 +714,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@emnapi/core", "npm:1.9.2"],\
           ["@emnapi/runtime", "npm:1.9.2"],\
-          ["@napi-rs/wasm-runtime", "virtual:e6389002f0bc56dc61451e40ec0e6ad5899fe244e7d1eddcbd1a554a832aeced29926d28607f97fb76c1f01f40bd04ea7b4ea62d6526ee6d7c25331043a55650#npm:1.1.3"],\
+          ["@napi-rs/wasm-runtime", "virtual:e6389002f0bc56dc61451e40ec0e6ad5899fe244e7d1eddcbd1a554a832aeced29926d28607f97fb76c1f01f40bd04ea7b4ea62d6526ee6d7c25331043a55650#npm:1.1.4"],\
           ["@rolldown/binding-wasm32-wasi", "npm:1.0.0-rc.15"]\
         ],\
         "linkType": "HARD"\
@@ -2862,7 +2862,7 @@ const RAW_RUNTIME_STATE =
           ["ink-testing-library", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.0.0"],\
           ["inkle", "workspace:."],\
           ["meow", "npm:14.1.0"],\
-          ["prettier", "npm:3.8.2"],\
+          ["prettier", "npm:3.8.3"],\
           ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.3.0"],\
           ["react", "npm:19.2.5"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
@@ -4015,12 +4015,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["postcss", [\
-      ["npm:8.5.9", {\
-        "packageLocation": "./.yarn/cache/postcss-npm-8.5.9-0b69075ff7-b34661c6ef.zip/node_modules/postcss/",\
+      ["npm:8.5.10", {\
+        "packageLocation": "./.yarn/cache/postcss-npm-8.5.10-e528db09cb-7eac6169e5.zip/node_modules/postcss/",\
         "packageDependencies": [\
           ["nanoid", "npm:3.3.11"],\
           ["picocolors", "npm:1.1.1"],\
-          ["postcss", "npm:8.5.9"],\
+          ["postcss", "npm:8.5.10"],\
           ["source-map-js", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
@@ -4036,10 +4036,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["prettier", [\
-      ["npm:3.8.2", {\
-        "packageLocation": "./.yarn/unplugged/prettier-npm-3.8.2-9004f3b431/node_modules/prettier/",\
+      ["npm:3.8.3", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.8.3-ecd857a540/node_modules/prettier/",\
         "packageDependencies": [\
-          ["prettier", "npm:3.8.2"]\
+          ["prettier", "npm:3.8.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4058,7 +4058,7 @@ const RAW_RUNTIME_STATE =
           ["@types/prettier", null],\
           ["@types/typescript", null],\
           ["@types/vue-tsc", null],\
-          ["prettier", "npm:3.8.2"],\
+          ["prettier", "npm:3.8.3"],\
           ["prettier-plugin-organize-imports", "virtual:4daedd184d2eed90ecbafa2653d25fce090eeefe7ec25abfdc1c0cfdd6b3d9221aa0e923a53795d59ff4ec861bca99001ff2d2112a62e3587233fba5c0279ee4#npm:4.3.0"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["vue-tsc", null]\
@@ -4520,10 +4520,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["std-env", [\
-      ["npm:4.0.0", {\
-        "packageLocation": "./.yarn/cache/std-env-npm-4.0.0-f7307ba504-19ef21cd85.zip/node_modules/std-env/",\
+      ["npm:4.1.0", {\
+        "packageLocation": "./.yarn/cache/std-env-npm-4.1.0-38011783e0-008146cdb8.zip/node_modules/std-env/",\
         "packageDependencies": [\
-          ["std-env", "npm:4.0.0"]\
+          ["std-env", "npm:4.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4945,7 +4945,7 @@ const RAW_RUNTIME_STATE =
           ["less", null],\
           ["lightningcss", "npm:1.32.0"],\
           ["picomatch", "npm:4.0.4"],\
-          ["postcss", "npm:8.5.9"],\
+          ["postcss", "npm:8.5.10"],\
           ["rolldown", "npm:1.0.0-rc.15"],\
           ["sass", null],\
           ["sass-embedded", null],\
@@ -5031,7 +5031,7 @@ const RAW_RUNTIME_STATE =
           ["obug", "npm:2.1.1"],\
           ["pathe", "npm:2.0.3"],\
           ["picomatch", "npm:4.0.4"],\
-          ["std-env", "npm:4.0.0"],\
+          ["std-env", "npm:4.1.0"],\
           ["tinybench", "npm:2.9.0"],\
           ["tinyexec", "npm:1.1.1"],\
           ["tinyglobby", "npm:0.2.16"],\
