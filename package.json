@@ -24,7 +24,7 @@
     "dist"
   ],
   "dependencies": {
-    "ink": "^7.0.0",
+    "ink": "^7.0.1",
     "ink-big-text": "^2.0.0",
     "meow": "^14.1.0",
     "react": "^19.2.5"
@@ -35,15 +35,15 @@
     "@types/ink-big-text": "^1.2.4",
     "@types/node": "^24.12.2",
     "@types/react": "^19.2.14",
-    "@typescript-eslint/eslint-plugin": "^8.58.2",
-    "@typescript-eslint/parser": "^8.58.2",
-    "eslint": "^10.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.59.0",
+    "@typescript-eslint/parser": "^8.59.0",
+    "eslint": "^10.2.1",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "ink-testing-library": "^4.0.0",
     "prettier": "^3.8.3",
     "prettier-plugin-organize-imports": "^4.3.0",
-    "typescript": "6.0.2",
+    "typescript": "6.0.3",
     "vitest": "^4.1.4"
   },
   "packageManager": "yarn@4.13.0"
