@@ -24,10 +24,11 @@ function notesForState(gameState: GameState): [string, string] {
         `Press '${KEY_NEW_GAME}' for a new game, or '${KEY_QUIT}' to quit.`,
       ];
   }
+  const giveUpHint = "Press Ctrl+G to give up and reveal the answer.";
   if (gameState.note) {
-    return [gameState.note, ""];
+    return [gameState.note, giveUpHint];
   }
-  return ["", ""];
+  return ["", giveUpHint];
 }
 
 export const StatusText: React.FC<{ gameState: GameState }> = ({

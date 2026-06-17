@@ -13,7 +13,8 @@ import { useStdoutDimensions } from "./use-stdout-dimensions.js";
 export type GameAction =
   | { action: "input-letter"; letter: string }
   | { action: "submit-guess" }
-  | { action: "backspace" };
+  | { action: "backspace" }
+  | { action: "give-up" };
 
 const App: FC<{
   initialState?: GameState;
@@ -51,6 +52,9 @@ const App: FC<{
       }
       if (key.backspace || key.delete) {
         dispatch({ action: "backspace" });
+      }
+      if (key.ctrl && input == "q") {
+        dispatch({ action: "give-up" });
       }
     },
     { isActive: gameState.exitPlease != true },
