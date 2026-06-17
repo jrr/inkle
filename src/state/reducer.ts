@@ -30,6 +30,9 @@ export function reducer(state: GameState, action: GameAction): GameState {
         if (rowIsFull(state)) {
           return handleSubmission(state);
         }
+        break;
+      case "give-up":
+        return { ...state, status: "loss" };
     }
   } else {
     if (action.action == "input-letter" && action.letter == KEY_NEW_GAME) {
