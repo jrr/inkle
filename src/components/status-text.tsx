@@ -1,10 +1,6 @@
 import { Box, Text } from "ink";
 import React, { useEffect, useState } from "react";
-import {
-  GIVE_UP_HINT_DELAY_MS,
-  KEY_NEW_GAME,
-  KEY_QUIT,
-} from "../constants.js";
+import { GIVE_UP_HINT_DELAY_MS, KEY_NEW_GAME, KEY_QUIT } from "../constants.js";
 import { GameState } from "../types.js";
 
 function notesForState(gameState: GameState): [string, string, boolean] {
