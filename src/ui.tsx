@@ -5,17 +5,12 @@ import { Keyboard } from "./components/keyboard.js";
 import { StatusText } from "./components/status-text.js";
 import { TitleText } from "./components/title-text.js";
 import { deriveGameColors } from "./game-colors.js";
+import { keyToAction } from "./key-actions.js";
 import { pickSolutions } from "./game-logic.js";
 import { newGame } from "./state/game-states.js";
 import { reducer } from "./state/reducer.js";
 import { GameState } from "./types.js";
 import { useStdoutDimensions } from "./use-stdout-dimensions.js";
-
-export type GameAction =
-  | { action: "input-letter"; letter: string }
-  | { action: "submit-guess" }
-  | { action: "backspace" }
-  | { action: "give-up" };
 
 const App: FC<{
   initialState?: GameState;
@@ -47,21 +42,11 @@ const App: FC<{
     (input, key) => {
       if (key.escape) {
         exit();
+        return;
       }
-      if (input.length == 1) {
-        const c = input.toUpperCase();
-        if (c >= "A" && c <= "Z") {
-          dispatch({ action: "input-letter", letter: c });
-        }
-      }
-      if (key.return) {
-        dispatch({ action: "submit-guess" });
-      }
-      if (key.backspace || key.delete) {
-        dispatch({ action: "backspace" });
-      }
-      if (key.ctrl && input == "q") {
-        dispatch({ action: "give-up" });
+      const action = keyToAction(input, key);
+      if (action) {
+        dispatch(action);
       }
     },
     { isActive: gameState.exitPlease != true },

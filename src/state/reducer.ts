@@ -1,7 +1,6 @@
 import { KEY_NEW_GAME, KEY_QUIT, WORD_LEN } from "../constants.js";
 import { colorGuess, isValidWord, pickSolutions } from "../game-logic.js";
-import { GameBoardState, GameState } from "../types.js";
-import { GameAction } from "../ui.js";
+import { GameAction, GameBoardState, GameState } from "../types.js";
 import { newGame } from "./game-states.js";
 
 const rowIsFull = (state: GameState & { status: "guessing" }) =>
