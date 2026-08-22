@@ -5,6 +5,7 @@ import { Keyboard } from "./components/keyboard.js";
 import { StatusText } from "./components/status-text.js";
 import { TitleText } from "./components/title-text.js";
 import { deriveGameColors } from "./game-colors.js";
+import { pickSolutions } from "./game-logic.js";
 import { newGame } from "./state/game-states.js";
 import { reducer } from "./state/reducer.js";
 import { GameState } from "./types.js";
@@ -25,9 +26,15 @@ const App: FC<{
 
   const [x, y] = useStdoutDimensions();
 
+  // Lazy init: the initial-state argument is re-evaluated on every render, so
+  // picking the words here rather than inline avoids drawing throwaway
+  // solutions on each keystroke.
   const [gameState, dispatch] = useReducer(
     reducer,
-    initialState ?? newGame({ numBoards, numGuesses }),
+    initialState,
+    (initial) =>
+      initial ??
+      newGame({ solutions: pickSolutions(numBoards ?? 1), numGuesses }),
   );
 
   useEffect(() => {

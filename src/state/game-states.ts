@@ -1,24 +1,17 @@
-import { pickSolution } from "../game-logic.js";
 import { GameState, GuessedRow } from "../types.js";
 
 type NewGameParams = {
-  numBoards?: number;
+  /** One solution per board; its length decides how many boards there are. */
+  solutions: string[];
   numGuesses?: number;
-  /**
-   * Solutions to use, by board index. Boards without one get a random word.
-   * Lets tests pin the answers instead of working around Math.random().
-   */
-  solutions?: string[];
 };
-export function newGame(opts?: NewGameParams): GameState {
-  const numBoards = opts?.numBoards || opts?.solutions?.length || 1;
-  const numGuesses = opts?.numGuesses || numBoards + 5;
+export function newGame({ solutions, numGuesses }: NewGameParams): GameState {
   return {
-    numGuessesAllowed: numGuesses,
+    numGuessesAllowed: numGuesses || solutions.length + 5,
     status: "guessing",
-    gameBoards: Array.from({ length: numBoards }).map((_, i) => ({
+    gameBoards: solutions.map((solution) => ({
       guessedRows: [],
-      solution: opts?.solutions?.[i]?.toUpperCase() ?? pickSolution(),
+      solution: solution.toUpperCase(),
       boardStatus: "in-play",
     })),
     currentRow: "",

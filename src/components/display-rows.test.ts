@@ -5,7 +5,7 @@ import { computeDisplayRows } from "./display-rows.js";
 
 describe("computeDisplayRows", () => {
   it("new game", () => {
-    const game = newGame();
+    const game = newGame({ solutions: ["CIGAR"] });
     const result = computeDisplayRows(game.gameBoards[0], game);
     expectEqual(result, [
       { rowType: "guessing", currentRow: "" },
