@@ -1,8 +1,9 @@
 import { describe, it } from "vitest";
-import { KEY_NEW_GAME, KEY_QUIT } from "../constants.js";
-import { expectEqual } from "../test-util.js";
+import { KEY_NEW_GAME, KEY_QUIT, WORD_LEN } from "../constants.js";
+import { expectEqual, seededRandom } from "../test-util.js";
 import { GameAction } from "../ui.js";
 import { GameState } from "../types.js";
+import { possibleSolutions } from "../words/possible-solutions.js";
 import { newGame } from "./game-states.js";
 import { reducer } from "./reducer.js";
 
@@ -198,5 +199,136 @@ describe("reducer", () => {
       expectEqual(submit(won), won);
       expectEqual(giveUp(won), won);
     });
+  });
+});
+
+/*
+Rules that should hold throughout any game, checked by playing out seeded
+random games rather than by listing cases. Violations are collected rather
+than asserted one at a time, so a failure reports every rule that broke and
+the seed that broke it.
+*/
+
+const BOARD_COUNTS = [1, 2, 3];
+const SEEDS = 30;
+const MAX_TURNS = 200;
+
+type Violation = { boards: number; seed: number; rule: string; detail: string };
+type ReportFn = (rule: string, detail: string) => void;
+
+/**
+ * Plays one random game, stopping as soon as it ends. Staying inside a single
+ * game keeps the new-game key from resetting the boards mid-sequence, which
+ * would legitimately break several of these rules.
+ */
+function playRandomGame(boards: number, seed: number): GameState[] {
+  const rand = seededRandom(seed * 1000 + boards);
+  const words = possibleSolutions.map((w) => w.toUpperCase());
+  const pick = (from: string[]) => from[Math.floor(rand() * from.length)];
+
+  const solutions = Array.from({ length: boards }, () => pick(words));
+  let state = newGame({ solutions });
+  const history = [state];
+
+  for (let turn = 0; turn < MAX_TURNS && state.status == "guessing"; turn++) {
+    const roll = rand();
+    if (roll < 0.6) {
+      // a whole word, often one of the answers, so games actually finish
+      state = guess(state, rand() < 0.3 ? pick(solutions) : pick(words));
+    } else if (roll < 0.85) {
+      state = type(state, String.fromCharCode(65 + Math.floor(rand() * 26)));
+    } else {
+      state = backspace(state);
+    }
+    history.push(state);
+  }
+  return history;
+}
+
+function eachGame(check: (states: GameState[], report: ReportFn) => void) {
+  const violations: Violation[] = [];
+  for (const boards of BOARD_COUNTS) {
+    for (let seed = 1; seed <= SEEDS; seed++) {
+      check(playRandomGame(boards, seed), (rule, detail) =>
+        violations.push({ boards, seed, rule, detail }),
+      );
+    }
+  }
+  return violations;
+}
+
+describe("invariants", () => {
+  it("hold for every state a random game passes through", () => {
+    const violations = eachGame((states, report) => {
+      for (const state of states) {
+        if (state.status == "guessing" && state.currentRow.length > WORD_LEN) {
+          report("the current row fits in a word", `row '${state.currentRow}'`);
+        }
+        state.gameBoards.forEach((board, i) => {
+          if (board.guessedRows.some((r) => r.letters.length != WORD_LEN)) {
+            report("every guessed row is a full word", `board ${i}`);
+          }
+        });
+      }
+    });
+
+    expectEqual(violations, []);
+  });
+
+  it("hold across every move a random game makes", () => {
+    const violations = eachGame((states, report) => {
+      for (let i = 1; i < states.length; i++) {
+        const before = states[i - 1].gameBoards;
+        const after = states[i].gameBoards;
+
+        after.forEach((board, b) => {
+          const added = board.guessedRows.length - before[b].guessedRows.length;
+
+          if (added < 0) {
+            report("guessed rows never disappear", `board ${b}: ${added}`);
+          }
+          if (added > 1) {
+            report("a move adds at most one row", `board ${b}: +${added}`);
+          }
+          // A board takes the guess that wins it, then nothing further.
+          if (before[b].boardStatus == "won" && added > 0) {
+            report(
+              "an already-solved board takes no more guesses",
+              `board ${b}`,
+            );
+          }
+          if (before[b].boardStatus == "won" && board.boardStatus != "won") {
+            report("a solved board stays solved", `board ${b}`);
+          }
+        });
+      }
+    });
+
+    expectEqual(violations, []);
+  });
+
+  const overGuessLimit = (boardCounts: number[]) =>
+    eachGame((states, report) => {
+      for (const state of states) {
+        state.gameBoards.forEach((board, i) => {
+          if (board.guessedRows.length > state.numGuessesAllowed) {
+            report(
+              "no board exceeds the guess limit",
+              `board ${i}: ${board.guessedRows.length} rows, ${state.numGuessesAllowed} allowed`,
+            );
+          }
+        });
+      }
+    }).filter((v) => boardCounts.includes(v.boards));
+
+  it("keep a single-board game inside its guess limit", () => {
+    expectEqual(overGuessLimit([1]), []);
+  });
+
+  // Known bug — see docs/architecture-review.md finding 1.1. This is the broad
+  // form of the targeted case above: random play of a multi-board game runs
+  // past the limit. Flip to `it` when fixed.
+  it.fails("keep a multi-board game inside its guess limit", () => {
+    expectEqual(overGuessLimit([2, 3]), []);
   });
 });
