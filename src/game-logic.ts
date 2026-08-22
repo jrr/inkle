@@ -46,3 +46,7 @@ export const pickSolution = () => {
   }
   throw new Error("Problem selecting word.");
 };
+
+/** One random solution per board. */
+export const pickSolutions = (numBoards: number): string[] =>
+  Array.from({ length: numBoards }, () => pickSolution());

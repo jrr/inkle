@@ -1,5 +1,5 @@
 import { KEY_NEW_GAME, KEY_QUIT, WORD_LEN } from "../constants.js";
-import { colorGuess, isValidWord } from "../game-logic.js";
+import { colorGuess, isValidWord, pickSolutions } from "../game-logic.js";
 import { GameBoardState, GameState } from "../types.js";
 import { GameAction } from "../ui.js";
 import { newGame } from "./game-states.js";
@@ -37,7 +37,7 @@ export function reducer(state: GameState, action: GameAction): GameState {
   } else {
     if (action.action == "input-letter" && action.letter == KEY_NEW_GAME) {
       return newGame({
-        numBoards: state.gameBoards.length,
+        solutions: pickSolutions(state.gameBoards.length),
         numGuesses: state.numGuessesAllowed,
       });
     }
