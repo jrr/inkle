@@ -4,16 +4,21 @@ import { GameState, GuessedRow } from "../types.js";
 type NewGameParams = {
   numBoards?: number;
   numGuesses?: number;
+  /**
+   * Solutions to use, by board index. Boards without one get a random word.
+   * Lets tests pin the answers instead of working around Math.random().
+   */
+  solutions?: string[];
 };
 export function newGame(opts?: NewGameParams): GameState {
-  const numBoards = opts?.numBoards || 1;
+  const numBoards = opts?.numBoards || opts?.solutions?.length || 1;
   const numGuesses = opts?.numGuesses || numBoards + 5;
   return {
     numGuessesAllowed: numGuesses,
     status: "guessing",
-    gameBoards: Array.from({ length: numBoards }).map(() => ({
+    gameBoards: Array.from({ length: numBoards }).map((_, i) => ({
       guessedRows: [],
-      solution: pickSolution(),
+      solution: opts?.solutions?.[i]?.toUpperCase() ?? pickSolution(),
       boardStatus: "in-play",
     })),
     currentRow: "",
