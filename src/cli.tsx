@@ -2,10 +2,8 @@
 import { render } from "ink";
 import meow from "meow";
 import React from "react";
-import { isKnownState, testStates } from "./state/game-states.js";
+import { knownStateNames, parseFlags } from "./cli-options.js";
 import App from "./ui.js";
-
-const knownStateNames = Object.keys(testStates).join("|");
 
 const cli = meow(
   `
@@ -42,32 +40,14 @@ const cli = meow(
   },
 );
 
-function chooseState(
-  stateName: string | undefined,
-  exitPlease: boolean | undefined,
-) {
-  if (stateName == undefined) {
-    return undefined;
-  }
-  if (!isKnownState(stateName)) {
-    console.log(
-      `Unknown test state '${stateName}'. Valid states are ${knownStateNames}`,
-    );
-    process.exit(1);
-  }
+const parsed = parseFlags(cli.flags);
 
-  const state = testStates[stateName];
-
-  return { ...state, exitPlease };
+if (!parsed.ok) {
+  console.log(parsed.error);
+  process.exit(1);
 }
 
-const _app = render(
-  <App
-    initialState={chooseState(cli.flags.test, cli.flags.quit)}
-    numBoards={cli.flags.numBoards}
-    numGuesses={cli.flags.numGuesses}
-  />,
-);
+const _app = render(<App {...parsed.options} />);
 
 // this was cauing a 'Warning: Detected unsettled top-level await' with exit code 13:
 // await app.waitUntilExit();

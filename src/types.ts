@@ -30,3 +30,9 @@ export type GameState = {
       status: "loss";
     }
 );
+
+export type GameAction =
+  | { action: "input-letter"; letter: string }
+  | { action: "submit-guess" }
+  | { action: "backspace" }
+  | { action: "give-up" };

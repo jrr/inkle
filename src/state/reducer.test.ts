@@ -1,8 +1,7 @@
 import { describe, it } from "vitest";
 import { KEY_NEW_GAME, KEY_QUIT, WORD_LEN } from "../constants.js";
 import { expectEqual, seededRandom } from "../test-util.js";
-import { GameAction } from "../ui.js";
-import { GameState } from "../types.js";
+import { GameAction, GameState } from "../types.js";
 import { possibleSolutions } from "../words/possible-solutions.js";
 import { newGame } from "./game-states.js";
 import { reducer } from "./reducer.js";
