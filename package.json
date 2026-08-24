@@ -24,27 +24,27 @@
     "dist"
   ],
   "dependencies": {
-    "ink": "^7.0.0",
+    "ink": "^7.1.1",
     "ink-big-text": "^2.0.0",
     "meow": "^14.1.0",
-    "react": "^19.2.5"
+    "react": "^19.2.8"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.5",
+    "@eslint/eslintrc": "^3.3.6",
     "@eslint/js": "^10.0.1",
     "@types/ink-big-text": "^1.2.4",
     "@types/node": "^24.12.2",
-    "@types/react": "^19.2.14",
-    "@typescript-eslint/eslint-plugin": "^8.58.2",
-    "@typescript-eslint/parser": "^8.58.2",
-    "eslint": "^10.2.0",
+    "@types/react": "^19.2.18",
+    "@typescript-eslint/eslint-plugin": "^8.67.0",
+    "@typescript-eslint/parser": "^8.67.0",
+    "eslint": "^10.9.0",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "ink-testing-library": "^4.0.0",
-    "prettier": "^3.8.3",
+    "prettier": "^3.9.6",
     "prettier-plugin-organize-imports": "^4.3.0",
     "typescript": "6.0.2",
-    "vitest": "^4.1.4"
+    "vitest": "^4.1.11"
   },
   "packageManager": "yarn@4.13.0"
 }
