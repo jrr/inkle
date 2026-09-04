@@ -20,8 +20,7 @@ export type CliOptions = {
 
 /** Either the options to start with, or the reason we can't start. */
 export type ParseResult =
-  | { ok: true; options: CliOptions }
-  | { ok: false; error: string };
+  { ok: true; options: CliOptions } | { ok: false; error: string };
 
 export function parseFlags(flags: CliFlags): ParseResult {
   const { test, quit, numBoards, numGuesses } = flags;
