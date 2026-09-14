@@ -27,17 +27,17 @@
     "ink": "^7.1.1",
     "ink-big-text": "^2.0.0",
     "meow": "^14.1.0",
-    "react": "^19.2.8"
+    "react": "^19.3.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.7",
     "@eslint/js": "^10.0.1",
     "@types/ink-big-text": "^1.2.4",
     "@types/node": "^24.13.3",
-    "@types/react": "^19.2.18",
-    "@typescript-eslint/eslint-plugin": "^8.69.0",
-    "@typescript-eslint/parser": "^8.69.0",
-    "eslint": "^10.9.1",
+    "@types/react": "^19.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.70.0",
+    "@typescript-eslint/parser": "^8.70.0",
+    "eslint": "^10.10.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
     "ink-testing-library": "^4.0.0",
