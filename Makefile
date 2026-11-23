@@ -20,6 +20,9 @@ test-npx-node-22: $(tarball)
 test-npx-node-24: $(tarball)
 	docker run --entrypoint bash -v $(PWD)/out:/out node:24-bookworm -c 'npm i -g npm && npm exec -y file:///out/inkle-0.0.0-testing.tgz -- --test midgame --quit'
 
+test-npx-node-26: $(tarball)
+	docker run --entrypoint bash -v $(PWD)/out:/out node:26-bookworm -c 'npm i -g npm && npm exec -y file:///out/inkle-0.0.0-testing.tgz -- --test midgame --quit'
+
 interactive-node-20: $(tarball)
 	docker run -it --entrypoint bash -v $(PWD)/out:/out node:20-bookworm
 
@@ -28,6 +31,9 @@ interactive-node-22: $(tarball)
 
 interactive-node-24: $(tarball)
 	docker run -it --entrypoint bash -v $(PWD)/out:/out node:24-bookworm
+
+interactive-node-26: $(tarball)
+	docker run -it --entrypoint bash -v $(PWD)/out:/out node:26-bookworm
 
 clean:
 	rm -rf dist
